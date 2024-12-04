@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Third() {
@@ -14,7 +13,7 @@ export default function Third() {
       <div className="w-[1093px] h-[808.24px] left-[203px] top-[213.69px] absolute">
         <div className="w-[449px] h-[62px] left-[345px] top-[544.97px] absolute justify-start items-start gap-[41.20px] inline-flex">
           <div className="grow shrink basis-0 h-[62px] px-[74px] py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex">
-            <div className="w-[94px] text-[#e97f18] text-xl font-semibold"> <Link href="/signup">Join Now</Link> </div>
+            <div className="w-[94px] text-[#e97f18] text-xl font-semibold hover"> <Link href="/signup">Join Now</Link> </div>
           </div>
         </div>
 

@@ -20,13 +20,13 @@ export default function Pricing() {
             <span className="mr-12 font-semibold text-[34px]">₹ 1001 / Year</span>
           </div>
           <div className="flex justify-between items-start w-full mt-5">
-            <span className="text-[#a6a6a6] text-xl font-normal leading-relaxed w-3/4">
+            <span className="text-white text-xl font-normal leading-relaxed w-3/4">
               Annual subscription for solo artists, offering global music
               <br />
               distribution to top platforms. Simple, transparent, and hassle-free.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px]">
+            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
                 View Plan Details
               </div>
             </div>
@@ -38,16 +38,16 @@ export default function Pricing() {
         <div className="w-full h-auto relative flex flex-col justify-start items-start">
           <div className="font-bold text-white text-2xl flex justify-between w-full">
             <span> Duo Plan</span>
-            <span className="mr-10 text-4xl">₹ 2001 / Year</span>
+            <span className="mr-10 text-[34px]">₹ 2001 / Year</span>
           </div>
           <div className="flex justify-between items-start w-full mt-5">
-            <span className="text-[#a6a6a6] text-xl font-normal leading-relaxed w-3/4">
+            <span className="text-white text-xl font-normal leading-relaxed w-3/4">
               Annual subscription for 2 artists, offering global music
               <br />
               distribution to top platforms. Simple, transparent, and hassle-free.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px]">
+            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
                 View Plan Details
               </div>
             </div>
@@ -59,16 +59,16 @@ export default function Pricing() {
         <div className="w-full h-auto relative flex flex-col justify-start items-start">
           <div className="font-bold text-white text-2xl flex justify-between w-full">
             <span> Independent Label Plan</span>
-            <span className=" mr-6 text-4xl">₹ 4899 / Year</span>
+            <span className=" mr-7 text-[34px]">₹ 4899 / Year</span>
           </div>
           <div className="flex justify-between items-start w-full mt-5">
-            <span className="text-[#a6a6a6] text-xl font-normal leading-relaxed w-3/4">
+            <span className="text-white text-xl font-normal leading-relaxed w-3/4">
               Annual subscription for multiple artists, <span className="text-[#e97f18]"> Pricing adjusts based on the number of </span>
               <br />
                <span className="text-[#e97f18]">artists</span>--currently shown for 5 artists. Distribute globally with ease and flexibility.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px]">
+            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
                 View Plan Details
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Pricing() {
         <div className="w-full h-auto relative flex flex-col justify-start items-start">
           <div className="font-bold text-white text-2xl flex justify-between w-full">
             <span> Distribute a single track</span>
-            <span className="mr-12 text-4xl mt-5">₹ 399 / Track</span>
+            <span className="mr-7 text-4xl mt-5">₹ 399 / Track</span>
           </div>
           <div className="flex justify-between items-start w-full mt-[6px]">
             <span className="text-[#a6a6a6] text-xl font-normal leading-relaxed w-3/4">
@@ -93,18 +93,17 @@ export default function Pricing() {
 
             </span>
            
-            <div className=" mt-5 h-14 px-8 py-[2px] rounded-lg border border-[#e97f18] inline-flex items-center">
-              <div className="w-[260px] text-center text-[#e97f18] text-xl font-normal leading-[46px]">
-                Distribute Your Track
+            <div className=" mt-5 h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+            <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white ">
+                View Plan Details
               </div>
             </div>
           </div>
         </div>
       </div>
    
-      <div className="w-auto text-center p-28 text-[#e97f18] text-3xl italic"> <span className="font-semibold"> "Music is the divine way to tell beautiful </span> <span className="font-semibold"> <br/> poetic things to the heart."</span> <span className="text-white text-normal text-2xl"> <br/> – Pablo Casals </span></div>
-     
-
+      <div className="w-auto text-center p-28 text-[#e97f18] text-3xl italic"> <span className="font-medium"> "Music is the divine way to tell beautiful </span> <span className="font-medium"> <br/> poetic things to the heart."</span> 
+      <span className="text-white text-normal text-2xl"> <br/> – Pablo Casals </span> </div>
     </div>
   );
 }

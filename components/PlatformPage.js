@@ -1,17 +1,4 @@
 
-// 'use client';
-// import Image from "next/image";
-
-
-// export default function Platform() {
-
-//   return (
-//     <div className="bg-black font-poppins">
-//        <div className="h-9 p-10 pb-10 text-center"><span className="text-white text-2xl font-normal font-['Poppins']">We Distribute your music worldwide</span><span className="text-[#e97f18] text-2xl font-bold font-['Poppins']">  </span><span className="text-[#e97f18] text-2xl font-bold font-['Poppins'] underline">120+ Streaming Platforms</span></div>
-//     </div>
-   
-//   );
-// }
 
 'use client';
 import Image from "next/image";

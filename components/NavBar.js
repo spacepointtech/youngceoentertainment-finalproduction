@@ -77,7 +77,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black  text-white p-10 fixed w-full z-10">
+    <nav className="bg-black bg-opacity-[30%] text-white p-10 fixed w-full z-10">
       <div className="absolute bottom-0 w-full px-6 py-4 bg-transparent flex justify-start items-center z-10 font-poppins gap-[60px]">
         {/* Logo Placeholder */}
         <Link href="/">
@@ -100,7 +100,7 @@ export default function Navbar() {
             { name: "Pricing", path: "/pricing" },
             { name: "Services", path: "/services" },
             { name: "Support", path: "/support" },
-            { name: "Contact Us", path: "/contact" },
+            { name: "About Us", path: "/About" },
           ].map((item) => (
             <Link key={item.name} href={item.path}>
               <div className="relative group">

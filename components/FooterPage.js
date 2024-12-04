@@ -30,10 +30,10 @@ export default function Footer() {
               Feedback
             </div>
             <div className="self-stretch">
-              <span className="text-white text-[28px] font-light leading-9">
+              <span className="text-white text-[28px] font-extralightß leading-9">
                 Have Any Questions?
               </span>
-              <span className="text-white text-[28px] font-semibold leading-9">
+              <span className="text-white text-[28px] font-medium leading-9">
                 Request a Call from the YCE Team
               </span>
             </div>
@@ -72,8 +72,8 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="px-8 py-2.5  border border-white rounded-[50px] justify-center items-center gap-2.5 inline-flex">
-            <div className="text-white text-sm font-medium leading-tight">
+          <div className="px-8 py-2.5  border border-white rounded-[50px] justify-center items-center gap-2.5 inline-flex hover:bg-[#e97f18] hover:border-[#e97f18]">
+            <div className="text-white text-sm font-medium leading-tight ">
               Send a request
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
       <div className="w-[601px] pt-2.5 left-[733px] top-[64px] absolute justify-center items-center inline-flex">
         <div className="w-[601px] h-[605.66px] relative flex-col justify-start items-start flex">
-          <div className="w-[340px] justify-start items-start gap-[31px] inline-flex">
+          <div className="w-[340px] justify-start items-start gap-[31px] inline-flex ">
             <div className="w-44 flex-col justify-start items-start gap-6 inline-flex">
               <div className="self-stretch text-[#e97f18] text-base font-medium uppercase leading-snug tracking-wide">
                 Company
@@ -136,7 +136,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="h-[116px] flex-col justify-start items-start gap-6 inline-flex">
+          <div className="h-[116px] flex-col justify-start mt-12 items-start gap-6 inline-flex">
             <div className="self-stretch text-[#e97f18] text-base font-medium font-['Poppins'] uppercase leading-snug tracking-wide">
               Contact us
             </div>
@@ -178,7 +178,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="h-12 w-[500px] pl-5 pr-6 py-3.5 rounded-xl border border-white/10 justify-between items-center flex">
+            <div className="h-12 w-[555px] pl-5 pr-6 py-3.5 rounded-xl border border-white/10 justify-between items-center flex">
               <input
                 type="email"
                 name="email"
