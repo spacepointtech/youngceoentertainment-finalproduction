@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,3 +20,230 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+/* Login/Signup Page */
+
+/* Container and Background */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('/login.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.login-wrappers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('/signup.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 50%;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.login-form-container {
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 443px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.login-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.login-form-container input::placeholder {
+  color: #2F2F33;
+}
+
+
+
+/* reset-password.css */
+
+
+.reset-password-box {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  width: 95%; /* Increased box width by 5% */
+  max-width: 450px; /* Adjusted max-width for responsiveness */
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.reset-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  margin-bottom: 1rem; /* Adjust margin as needed */
+  height: 80px; /* Set a fixed height for icon container */
+}
+
+.reset-icon {
+  font-size: 3rem; /* Increased icon size */
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.reset-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #333; /* Text color */
+  background-color: #eee; /* Light background color */
+}
+
+.reset-input::placeholder {
+  color: #666; /* Placeholder text color */
+}
+
+.reset-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #444;
+}
+
+.reset-text {
+  margin-top: 1rem; /* Added margin to separate from the button */
+}
+
+.reset-link {
+  color: #0d6efd; /* Bootstrap primary color */
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-content {
+    width: 100%;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .logo-container {
+    align-self: center;
+  }
+
+  .login-form-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+@layer utilities {
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 15s linear infinite;
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+  }
+}
+
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 15s linear infinite;
+    white-space: nowrap;
+  }
