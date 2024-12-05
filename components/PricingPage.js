@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Pricing() {
   return (
@@ -25,10 +25,10 @@ export default function Pricing() {
               <br />
               distribution to top platforms. Simple, transparent, and hassle-free.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
-                View Plan Details
-              </div>
+            <div className="h-14 px-12 text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+             
+               <Link href="/pricing">  View Plan Details </Link>
+             
             </div>
           </div>
         </div>
@@ -46,10 +46,10 @@ export default function Pricing() {
               <br />
               distribution to top platforms. Simple, transparent, and hassle-free.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
-                View Plan Details
-              </div>
+            <div className="h-14 text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+              
+              <Link href="/pricing">  View Plan Details </Link>
+           
             </div>
           </div>
         </div>
@@ -67,10 +67,10 @@ export default function Pricing() {
               <br />
                <span className="text-[#e97f18]">artists</span>--currently shown for 5 artists. Distribute globally with ease and flexibility.
             </span>
-            <div className="h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
-              <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white">
-                View Plan Details
-              </div>
+            <div className="h-14 px-12 py-[5px] text-center text-xl text-[#e97f18] font-normal hover:text-white rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+              
+              <Link href="/pricing">  View Plan Details </Link>
+              
             </div>
           </div>
         </div>
@@ -93,10 +93,10 @@ export default function Pricing() {
 
             </span>
            
-            <div className=" mt-5 h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
-            <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white ">
-                View Plan Details
-              </div>
+            <div className="text-center text-[#e97f18] text-xl font-normal leading-[46px] hover:text-white  mt-5 h-14 px-12 py-[5px] rounded-lg border border-[#e97f18] inline-flex items-center hover:bg-[#e97f18]">
+            
+            <Link href="/pricing">   View Plan Details </Link>
+          
             </div>
           </div>
         </div>

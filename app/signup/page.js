@@ -9,11 +9,18 @@ import { FiEye, FiEyeOff } from 'react-icons/fi'; // Import eye icons // Import 
 
 export default function SignPage() {
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [isPasswordTyped, setIsPasswordTyped] = useState(false);
 
   // Toggle password visibility
   const togglePasswordVisibility = () => {
     setPasswordVisible((prevState) => !prevState);
   };
+
+    // Handle password typing detection
+    const handlePasswordChange = (e) => {
+      setIsPasswordTyped(e.target.value.length > 0);
+    };
+  
   return (
     <div className="login-wrappers">
       <div className="background-image"></div>
@@ -39,7 +46,7 @@ export default function SignPage() {
               id="artistname"
               type="artistname"
               placeholder="Artist Name"
-              className="bg-[#0B0B0D] mb-5  w-[393px] h-[40px] text-white px-3 py-2 text-sm rounded-md"
+              className="bg-[#0B0B0D] mb-5  w-[393px] h-[40px] text-white px-3 py-2 text-sm rounded-md  focus:outline-none focus:ring-2 focus:ring-[#e97f18]"
 
               required
             />
@@ -53,7 +60,7 @@ export default function SignPage() {
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              className="bg-[#0B0B0D]  w-[393px] h-[40px] text-white text-sm px-3 py-2 rounded-md"
+              className="bg-[#0B0B0D]  w-[393px] h-[40px] text-white text-sm px-3 py-2 rounded-md  focus:outline-none focus:ring-2 focus:ring-[#e97f18]"
               required
             />
             <p className="text-[#999999] w-full text-[10px] text-left ml-2 mt-1">(This email will be used as Official Company Communication channel.)</p>
@@ -66,27 +73,28 @@ export default function SignPage() {
     Password
   </label>
   <input
-    id="password"
-    type={passwordVisible ? 'text' : 'password'}
-    placeholder="Enter Your Password"
-    className="bg-[#0B0B0D] w-[393px] h-[40px] text-white px-3 py-2 text-sm rounded-md"
-    required
-  />
+              id="password"
+              type={passwordVisible ? 'text' : 'password'}
+              placeholder="Enter Your Password"
+              className="bg-[#0B0B0D] w-[393px] h-[40px] text-white px-3 py-2 text-sm rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-[#e97f18]"
+              required
+              onChange={handlePasswordChange}
+            />
     <p className="text-[#999999] w-full text-[10px] text-left ml-2 mt-1">(Password must be at least 8 characters long, including 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.)</p>
   <div
     onClick={togglePasswordVisibility}
-    className="absolute right-3 top-11 transform -translate-y-1/2 cursor-pointer"
-    style={{ color: '#2F2F33' }} // Eye icon color
+    className={`absolute right-3 top-11 transform -translate-y-1/2 cursor-pointer ${
+      isPasswordTyped ? 'text-white' : 'text-[#2F2F33]'
+    }`}// Eye icon color
   >
     {passwordVisible ? (
-      <FiEyeOff className="text-lg" />
-    ) : (
       <FiEye className="text-lg" />
+    ) : (
+      <FiEyeOff className="text-lg" />
     )}
   </div>
 </div>
-
-           
+       
           <button
             type="submit"
             className="bg-[#343439] w-full mt-7 h-11 py-3 px-3 rounded-lg text-white mb-5 hover:bg-[#e97f18] hover:text-white transition duration-300"

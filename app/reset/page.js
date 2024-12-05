@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import '@/app/globals.css';
 
 export default function ResetPasswordPage() {
   return (
@@ -13,7 +14,7 @@ export default function ResetPasswordPage() {
       }}
     >
       <div className="h-[352px] p-5 left-[493px] top-[169px] absolute bg-[#141416] rounded-2xl border border-[#9f9fa1] flex-col justify-start items-start gap-2.5 inline-flex">
-        <div className="self-stretch h-[312px] flex-col justify-start items-center gap-7 flex">
+        <div className="home-form self-stretch h-[312px] flex-col justify-start items-center gap-7 flex">
           <div className="w-[342px] h-24 relative">
             <div className="left-[37px] top-0 absolute text-white text-[32px] font-medium font-['Poppins']">
               Forgot Password
@@ -23,14 +24,14 @@ export default function ResetPasswordPage() {
             </div>
           </div>
           <div className="self-stretch h-[68px] flex-col mt-7 justify-start items-start gap-2 flex">
-            <div className="ml-1 self-stretch text-[#999999] text-sm mb-1 font-normal leading-tight">
+            <div className=" ml-1 self-stretch text-[#999999] text-sm mb-1 font-normal leading-tight">
               Email
             </div>
             <input
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              className="bg-[#0B0B0D]  w-[413px] h-[40px] text-sm text-white px-3 py-2 mr-1 rounded-md"
+              className="bg-[#0B0B0D] w-[413px] h-[40px] text-sm text-white px-3 py-2 mr-1 rounded-md focus:outline-none focus:ring-2 focus:ring-[#e97f18]"
               required
             />
           </div>

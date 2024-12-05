@@ -100,7 +100,7 @@ export default function Navbar() {
             { name: "Pricing", path: "/pricing" },
             { name: "Services", path: "/services" },
             { name: "Support", path: "/support" },
-            { name: "About Us", path: "/About" },
+            { name: "About Us", path: "/about" },
           ].map((item) => (
             <Link key={item.name} href={item.path}>
               <div className="relative group">

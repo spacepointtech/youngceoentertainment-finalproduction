@@ -54,7 +54,7 @@ export default function Pricing() {
         <div className="left-[428px] top-[366px] absolute text-[#a6a6a6] text-xl font-normal">This plan is only available on an annual subscription basis.</div>
           <div className="left-[109px] top-[436px] absolute justify-start items-center gap-[29px] inline-flex">
             {/* Plan - 1 */}
-            <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1]">
+            <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mt-5 ">
               <div className="left-[27px] top-[20px] absolute text-[#e97f18] text-[28px] font-bold leading-[35px]">
                 Independent Artist Plan
               </div>
@@ -85,7 +85,8 @@ export default function Pricing() {
 
                    {/* Plan - 2 */}
         
-        <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1]">
+        <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mt-5">
+
             <div className="left-[133px] top-[20px] absolute text-[#e97f18] text-[28px] font-bold leading-[35px]">Duo Plan</div>
             <div className="left-[78px] top-[115px] absolute justify-start items-center gap-2.5 inline-flex">
                 <div className="text-[#e97f18] text-[40px] font-bold leading-[66px]">₹ 2001/ Year</div>
@@ -112,10 +113,10 @@ export default function Pricing() {
           
           {/* Plan - 3 Box */}
         
-        <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1]">
+        <div className="w-[394px] h-[1014px] relative bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mt-5">
             <div className="left-[133px] top-[20px] absolute text-[#e97f18] text-[28px] font-bold leading-[35px]">Duo Plan</div>
             <div className="left-[78px] top-[115px] absolute justify-start items-center gap-2.5 inline-flex">
-                <div className="text-[#e97f18] text-[40px] font-bold leading-[66px]">₹ 1001/ Year</div>
+                <div className="text-[#e97f18] text-[40px] font-bold leading-[66px]">₹ 4899/ Year</div>
             </div>
             <div className="left-[139px] top-[75px] absolute text-white text-base font-normal leading-tight">₹ 83.41/ Month</div>
             <div className="h-[586px] left-[31px] top-[295.53px] absolute flex-col justify-start items-start gap-4 inline-flex">
@@ -162,7 +163,7 @@ export default function Pricing() {
      <div>
     <div className="w-[1240px] h-[252px] justify-center items-center inline-flex">
      </div>
-    <div className="w-[1240px] ml-20 mt-[120px] h-[252px] px-10 pt-5 pb-[22px] relative bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] justify-center inline-flex">
+    <div className="w-[1240px] ml-20 mt-[120px] h-[252px] px-10 pt-5 pb-[22px] relative bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] justify-center inline-flex transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mr-10">
     <div className="grow shrink basis-0 self-stretch pl-px py-[3px] justify-center items-center inline-flex">
 <div className="grow shrink basis-0 self-stretch justify-between items-center inline-flex">
 <div className="w-[689px] flex-col justify-start items-start gap-4 inline-flex">
@@ -185,3 +186,4 @@ export default function Pricing() {
     </div>
   );
 }
+

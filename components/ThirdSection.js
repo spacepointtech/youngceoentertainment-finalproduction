@@ -4,7 +4,17 @@ import Link from "next/link";
 export default function Third() {
   return (
 
-    <div className="h-[1022px] relative bg-gradient-to-b from-[#141416] via-[#261300] to-[#301800]">
+    <div 
+    className="h-[1022px] relative"
+           style={{
+         backgroundImage: `
+           url('/images/group.png'), 
+           linear-gradient(to bottom, #141416, #261300, #301800)`,
+         backgroundPosition: "left 385px top 220px, center", // Image first, gradient second
+         backgroundRepeat: "no-repeat, no-repeat",
+         backgroundSize: "auto 800px, cover", // Image first, gradient second
+       }}
+    >
       <div className="text-center p-20">
         <span className="text-white text-[40px] font-bold">Why </span><span className="text-[#e97f18] text-[40px] font-bold">Artists</span><span className="text-white text-[40px] font-bold"> </span><span className="text-[#e97f18] text-[40px] font-bold">Trust</span><span className="text-white text-[40px] font-bold"> Young CEO Entertainment</span>
         <div className="text-center text-white text-2xl font-normal">More than distribution—your partner in success.</div>  
