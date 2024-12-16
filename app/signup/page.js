@@ -32,7 +32,7 @@ export default function SignPage() {
       <div className="login-form-container p-5 bg-[#141416] rounded-2xl border border-[#9fa9fa] justify-start items-center gap-2.5 font-poppins">
         <h2 className="text-white text-3xl font-medium">Register</h2>
         <p className="w-[299px] text-center ml-14 text-[#d9d9d9] text-base font-normal mb-[28px]">
-        Easy registeration to connect with Young CEO Entertainment
+        Easy registration to connect with Young CEO Entertainment
         </p>
         <form className="w-full">
           <div className="mb-5">

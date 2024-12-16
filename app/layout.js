@@ -45,7 +45,7 @@ export default function Layout({ children }) {
     <html lang="en">
       <head>
         <title>Young CEO Entertainment</title>
-        <meta name="Designed & Developed by YCE Tech Team" content="YCE MUSIC DISTRIBUTION" />
+        <meta name="google-site-verification" content="ayoezX55fg8h20CEHvVJ8FgDGElkr1Np89LvdTLhxQI" />
       </head>
       <body>
         {!hideNavbar && <Navbar />}

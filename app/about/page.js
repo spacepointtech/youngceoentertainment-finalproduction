@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -52,7 +53,7 @@ export default function About() {
           />
         </div>
 
-        <div className="text-center mt-5 text-white text-xl font-bold">Deepesh Vanjani</div>
+        <div className="text-center mt-5 text-white text-xl font-bold hover:scale-110 transition-transform duration-500 ease-in-out"> <Link href="https://www.linkedin.com/in/deepesh-vanjani-b3a46018a/">Deepesh Vanjani</Link> </div>
         <div className="text-center text-white text-xl font-light">Founder & CEO</div>
       </div>
     </div>

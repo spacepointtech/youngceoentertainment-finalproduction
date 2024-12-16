@@ -5,7 +5,6 @@
 // export default function ServicesPage() {
 //   return (
 //     <div className="bg-black min-h-screen w-full text-white font-poppins">
-//       {/* Background Image */}
 //       <div className="relative w-full top-100 h-[400px] pt-16">
 //         <Image
 //           src="/images/orangevector.png"
@@ -23,59 +22,66 @@
 //           At Young CEO Entertainment, we are dedicated to empowering artists by providing top-tier music distribution and promotional services. Our mission is to help you reach global audiences through innovative solutions and partnerships with major streaming platforms.
 //         </p>
 //       </div>
-
-//       {/* Content Section */}
-//       <div className="pt-40 space-y-24 px-10">
-//         {/* Global Music Distribution */}
-//         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-//           <div className="md:w-1/2">
-               
-//             <h2 className="text-3xl font-semibold"> <span className="text-[#e97f18]"> Global </span> Music Distribution</h2>
-//             <p className="mt-4 text-lg text-justify">
-//               We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.
-//             </p>
-//           </div>
-//           <div className="bg-[#0F0F0F] rounded-lg h-[338px] w-[599px]">
-//           <Image
+//    <div className="w-[1440px] h-[3304px] pl-24 pr-[97px] pt-[285px] pb-[533.60px] bg-black flex-col justify-start items-start gap-[168px] inline-flex">
+//     <div className="h-[1952.40px] flex-col justify-center items-start gap-20 inline-flex">
+//         <div className="self-stretch h-[338px] justify-start items-start gap-[104px] inline-flex">
+//             <div className="w-[526px] flex-col justify-start items-start gap-2 inline-flex">
+//                 <div className="self-stretch h-[248px] flex-col justify-start items-start gap-2 flex">
+//                     <div className="self-stretch"><span className="text-[#e97f18] text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Global</span><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight"> Music Distribution</span></div>
+//                     <div className="self-stretch text-white text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.</div>
+//                 </div>
+//                 <div className="w-[338.67px] justify-between items-center inline-flex">
+//                     <div className="w-[41.67px] h-[41.67px] relative">
+//                     </div>
+//                     <div className="w-[45px] h-[45px] relative" />
+//                     <div className="w-[49px] h-[49px] relative" />
+//                     <div className="w-[74px] h-[74px] relative" />
+//                     <div className="text-[#e97f18] text-xl font-normal font-['Poppins'] leading-[29.16px] tracking-tight">+ 120</div>
+//                 </div>
+//             </div>
+//             <Image
 //               src="/images/globe.png"
 //               alt="globe"
 //               width={599}
 //               height={338}
 //               className=" w-[599px] h-[338px]"
 //             />
-//           </div>
-//         </div>
 
-//         {/* Artist Dashboard */}
-//         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-//           <div className="bg-[#0F0F0F] rounded-lg h-[575px] w-[599px]">
-            
-//             <Image
+//         </div>
+//         <div className="self-stretch h-[575px] justify-start items-start gap-[100px] inline-flex">
+//         <Image
 //               src="/images/Dashboard.png"
 //               alt="Artist Dashboard"
 //               width={599}
 //               height={575}
 //               className="rounded-lg w-[599px] h-[575px]"
 //             />
-//           </div>
-//           <div className="md:w-1/2">
-//             <h2 className="text-3xl font-semibold"> Artist <span className="text-[#e97f18]">  Dashboard </span>  </h2>
-//             <p className="mt-4 text-lg text-justify">
-//             Our artist dashboard is all-in-one platform that gives artists complete control over their music distribution, performance analytics, and promotion. With a user-friendly interface, artists can easily upload and organize their music, manage metadata, and schedule releases across major streaming platforms. It provides real-time insights into listener demographics, geographical data, and streaming performance, helping artists understand their audience and make informed decisions. The dashboard also offers transparent revenue and royalty tracking, ensuring artists can monitor their earnings efficiently.
-//             </p>
-//           </div>
+//             <div className="w-[548px] flex-col justify-start items-center gap-3 inline-flex">
+//                 <div className="h-[458px] flex-col justify-start items-start gap-2 flex">
+//                     <div className="self-stretch"><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Artist </span><span className="text-[#e97f18] text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Dashboard</span></div>
+//                     <div className="self-stretch text-white text-xl font-normal  leading-[30px] tracking-tight">Our artist dashboard is all-in-one platform that gives artists complete control over their music distribution, performance analytics, and promotion. With a user-friendly interface, artists can easily upload and organize their music, manage metadata, and schedule releases across major streaming platforms. It provides real-time insights into listener demographics, geographical data, and streaming performance, helping artists understand their audience and make informed decisions. The dashboard also offers transparent revenue and royalty tracking, ensuring artists can monitor their earnings efficiently.</div>
+//                 </div>
+//                 <div className="self-stretch justify-start items-center inline-flex">
+//                     <div className="w-[95px] text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Smart Link</div>
+//                     <div className="text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Pre-save Link</div>
+//                     <div className="text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Performance analytics</div>
+//                     <div className="text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight"> Premium Features</div>
+//                 </div>
+//             </div>
 //         </div>
-
-//         {/* Revenue Tracking */}
-//         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-//           <div className="md:w-1/2">
-//             <h2 className="text-3xl font-semibold"> <span className="text-[#e97f18]">  Revenue  </span>Tracking</h2>
-//             <p className="mt-4 text-lg text-justify">
-//               We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.
-//             </p>
-//           </div>
-//           <div className="bg-[#0F0F0F] rounded-lg w-[599px] h-[457px]">
-            
+//         <div className="self-stretch justify-start items-start gap-[50px] inline-flex">
+//             <div className="w-[572px] flex-col justify-start items-center gap-3 inline-flex">
+//                 <div className="self-stretch h-[248px] flex-col justify-start items-start gap-2 flex">
+//                     <div className="self-stretch"><span className="text-[#e97f18] text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Revenue</span><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight"> Tracking</span></div>
+//                     <div className="self-stretch text-white text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.</div>
+//                 </div>
+//                 <div className="self-stretch justify-start items-center inline-flex">
+//                     <div className="w-[167px] text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Real Time Insights</div>
+//                     <div className="w-[137px] text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Active Audience</div>
+//                     <div className="w-[167px] text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Geographical data</div>
+//                     <div className="w-[101px] text-[#e97f18] text-sm font-normal font-['Poppins'] leading-[14.81px] tracking-tight">Many More</div>
+//                 </div>
+//             </div>
 //             <Image
 //               src="/images/revenue.png"
 //               alt="Revenue Tracking"
@@ -83,10 +89,8 @@
 //               height={457}
 //               className="rounded-lg w-[599px] h-[457px]"
 //             />
-//           </div>
 //         </div>
 
-//         {/* 24/7 Artist Support */}
 //         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
 //           <div className=" w-[599px] h-[500px]">
 //           <Image
@@ -97,41 +101,49 @@
 //               className="rounded-lg"
 //             />
 //           </div>
-//           <div className="md:w-1/2">
+//           <div className="md:w-1/2 ">
 //             <h2 className="text-3xl font-semibold">24/7 Artist <span className="text-[#e97f18]"> Support </span> </h2>
-//             <p className="mt-4 text-lg text-justify">
+//             <p className="mt-4 text-lg text-justify w-[550px]">
 //               Our dedicated team is always here to support you throughout your musical journey. Whether you need assistance with distribution, marketing, or anything in between, we are just a message away to provide the help you need.
 //             </p>
 //           </div>
 //         </div>
+//     </div>
 
-//         <div className="h-[365px] w-[1310px] px-11 py-2.5 bg-[#0b0b0d] rounded-2xl border border-[#757575] flex-col justify-start items-start gap-2.5 inline-flex">
-//     <div className="w-[1157px] px-[15px] justify-between items-center inline-flex">
-//         <div className="w-[630px] flex-col justify-start items-start gap-5 inline-flex">
-//             <div className="self-stretch h-[164px] flex-col justify-start items-start gap-5 flex">
-//                 <div className="self-stretch"><span className="text-white text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight">Track Your</span><span className="text-[#e97f18] text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight"> Success </span><span className="text-white text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight">in</span><span className="text-[#e97f18] text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight"> Real-Time!</span></div>
-//                 <div className="w-[499px] text-[#e0e0e0] text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">Gain insights into your streams and earnings effortlessly and Join us and take control of your music career!</div>
-//             </div>
-//             <div className="w-[269px] justify-start items-start gap-[41.20px] inline-flex">
-//                 <div className="grow shrink basis-0 h-[62px] px-[74px] py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex  text-[#e97f18] text-xl font-semibold hover:bg-[#e97f18] hover:text-white">
-//                    <Link href="/signup">  Join Now </Link> 
+//       {/* Track Success Box */}
+//     <div className="self-stretch px-11 py-2.5 bg-[#0b0b0d] rounded-2xl border border-[#757575] flex-col justify-start items-start gap-2.5 inline-flex">
+      
+//         <div className="w-[1157px] px-[15px] justify-between items-center inline-flex">
+          
+//             <div className="w-[630px] flex-col justify-start items-start gap-5 inline-flex">
+              
+//                 <div className="self-stretch h-[164px] flex-col justify-start items-start gap-5 flex">
+                  
+//                     <div className="self-stretch"><span className="text-white text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight">Track Your</span><span className="text-[#e97f18] text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight"> Success </span><span className="text-white text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight">in</span><span className="text-[#e97f18] text-4xl font-bold font-['Poppins'] leading-[54px] tracking-tight"> Real-Time!</span></div>
+//                     <div className="w-[499px] text-[#e0e0e0] text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">Gain insights into your streams and earnings effortlessly and Join us and take control of your music career!</div>
+                    
+//                 </div>
+               
+              
+            
+//                 <div className="w-[269px] justify-start items-start gap-[41.20px] inline-flex">
+                  
+//                     <div className="grow shrink basis-0 h-[62px] px-[74px] py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex">
+                      
+//                         <div className="w-[94px] text-[#e97f18] text-xl font-semibold font-['Poppins']">Join Now</div>
+//                     </div>
 //                 </div>
 //             </div>
+//             <div className="w-[484px] h-[345px]" />
 //         </div>
-//         <div className="w-[484px] h-[345px]" />
 //     </div>
 // </div>
-
-//         <div className="h-20"></div>
-//       </div>
 //     </div>
 //   )
 // }
 
 
-
 import Image from 'next/image'
-import Link from 'next/link'
 import { FaAmazon, FaItunes, FaLocationArrow, FaMailBulk, FaMap, FaPhone, FaSearchLocation, FaSpotify, FaWhatsapp, FaYoutube, FaYoutubeSquare } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 
@@ -150,9 +162,9 @@ export default function ServicesPage() {
       </div>
 
       {/* Our Services Section */}
-      <div className="absolute top-1/4  transform -translate-y-1/2 w-full p-10"> 
-        <h1 className="text-5xl font-bold ml-[59px]"> <span className="text-[#e97f18]"> Our   </span>Services</h1>
-        <p className="mt-4 text-white text-lg text-justify ml-[59px]">
+      <div className="absolute top-1/4 left-0 transform -translate-y-1/2 w-full p-10"> 
+        <h1 className="text-4xl font-bold"> <span className="text-[#e97f18]"> Our   </span>Services</h1>
+        <p className="mt-4 text-white text-lg text-justify">
           At Young CEO Entertainment, we are dedicated to empowering artists by providing top-tier music distribution and promotional services. Our mission is to help you reach global audiences through innovative solutions and partnerships with major streaming platforms.
         </p>
       </div>
@@ -161,7 +173,7 @@ export default function ServicesPage() {
         <div className="self-stretch h-[338px] justify-start items-start gap-[104px] inline-flex">
             <div className="w-[526px] flex-col justify-start items-start gap-2 inline-flex">
                 <div className="self-stretch h-[248px] flex-col justify-start items-start gap-2 flex">
-                    <div className="self-stretch"><span className="text-[#e97f18] text-4xl font-bold font-['Poppins'] leading-[60px] tracking-tight">Global</span><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight"> Music Distribution</span></div>
+                    <div className="self-stretch"><span className="text-[#e97f18] text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Global</span><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight"> Music Distribution</span></div>
                     <div className="self-stretch text-white text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.</div>
                 </div>
                 <div className="w-[338.67px] justify-start items-start inline-flex">
@@ -271,8 +283,8 @@ export default function ServicesPage() {
         </div>
       </div>
       <div className="w-[269px] justify-start items-start gap-[41.20px] inline-flex">
-        <div className="grow shrink basis-0 h-[62px] px-[74px] w-[94px] text-[#e97f18] text-xl font-semibold py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex hover:bg-[#e97f18] hover:text-white">
-          <Link href="/signup">  Join Now  </Link>
+        <div className="grow shrink basis-0 h-[62px] px-[74px] py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex">
+          <div className="w-[94px] text-[#e97f18] text-xl font-semibold font-['Poppins']">Join Now</div>
         </div>
       </div>
     </div>
