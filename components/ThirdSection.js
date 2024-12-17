@@ -121,14 +121,14 @@ export default function Third() {
         <div className="w-[268px] h-[52px] left-0 top-[464.28px] absolute">
         <div className="absolute top-[26px] left-[212px] w-[58px] h-[1px] border-separate border-t border-white"></div>
             <div className="w-[210px] h-[52px] left-0 top-0 absolute rounded-lg border border-[#ebebeb]" />
-            <div className="left-[14px] top-[11px] absolute text-center text-white text-xl font-normal ">Powerful Analytics</div>
+            <div className="left-[14px] top-[11px] absolute text-center text-white text-xl font-normal ">Royalty Collection</div>
         </div>
         <div className="left-[310px] top-[114.97px] absolute text-center text-white text-xl font-normal ">Upload once, distribute everywhere in minutes.</div>
         <div className="left-[310px] top-[186.97px] absolute text-center text-white text-xl font-normal ">Tailored pricing for independent artists and labels.</div>
         <div className="left-[310px] top-[258.97px] absolute text-center text-white text-xl font-normal ">Track performance and audience insights with ease</div>
         <div className="left-[310px] top-[330.97px] absolute text-center text-white text-xl font-normal ">Share your music with one link across all platforms.</div>
         <div className="left-[310px] top-[402.97px] absolute text-center text-white text-xl font-normal ">24/7 assistance to help you every step of the way.</div>
-        <div className="left-[310px] top-[474.97px] absolute text-center text-white text-xl font-normal ">Track performance and audience insights with ease</div>
+        <div className="left-[310px] top-[474.97px] absolute text-center text-white text-xl font-normal ">Earn and manage 100% of your royalties hassle-free.</div>
         <div className="left-[310px]  top-[43.28px] absolute text-center text-white text-xl font-normal ">Get your music on 150+ platforms, including Spotify, Apple Music, and Amazon.</div>
     </div>
 </div>

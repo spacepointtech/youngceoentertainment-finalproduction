@@ -183,12 +183,12 @@ const SupportPage = () => {
           <h1 className="text-4xl font-semibold mb-9 mt-10 text-left ml-10">How Can We <span className='text-[#e97f18]'> help? </span> </h1>
  
           {/* Search Bar */}
-          <div className="relative search-container mx-10 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] font-poppins">
+          <div className="relative search-container mx-10 hover:shadow-[0_0_20px_#e97f18] w-[1215px] hover:border-[#e97f18] font-poppins">
             <FaSearch className="absolute left-1rem top-1/2 transform -translate-y-1/2 w-5 h-5  text-white search-icon" />
             <input
               type="text"
               placeholder="Search for articles..."
-               className="search-input placeholder-opacity-30 placeholder:text-white w-[1240px] h-[84px] text-white pl-12 py-3 border border-white rounded-lg  focus:outline-none"
+               className="search-input placeholder-opacity-30 placeholder:text-white w-[1215px] h-[84px] text-white pl-12 py-3 border border-white rounded-lg  focus:outline-none"
               onChange={handleSearch}
             />
           </div>
