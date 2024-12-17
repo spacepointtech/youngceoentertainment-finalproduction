@@ -610,9 +610,9 @@ export default function Footer() {
       </div>
       <div 
         onClick={scrollToTop} 
-        className="w-[50px] h-[50px] left-[696px] top-[706px] absolute origin-top-left -rotate-90 cursor-pointer"
+        className="w-[50px] h-[50px] left-[696px]  top-[706px] absolute origin-top-left -rotate-90 cursor-pointer"
       >
-        <div className="w-[50px] h-[50px] left-0 top-0 absolute bg-white rounded-[50px] flex justify-center items-center">
+        <div className="w-[50px] h-[50px] left-0 top-0 hover:bg-opacity-40 absolute bg-white rounded-[50px] flex justify-center items-center">
           <FaArrowRight className="text-black text-xl" />
         </div>
       </div>

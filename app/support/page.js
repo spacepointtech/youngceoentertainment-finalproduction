@@ -183,7 +183,7 @@ const SupportPage = () => {
           <h1 className="text-4xl font-semibold mb-9 mt-10 text-left ml-10">How Can We <span className='text-[#e97f18]'> help? </span> </h1>
  
           {/* Search Bar */}
-          <div className="relative search-container mx-10 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18]">
+          <div className="relative search-container mx-10 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] font-poppins">
             <FaSearch className="absolute left-1rem top-1/2 transform -translate-y-1/2 w-5 h-5  text-white search-icon" />
             <input
               type="text"
@@ -196,7 +196,7 @@ const SupportPage = () => {
       </div>
 
       {/* Support Categories */}
-      <div className="container mx-auto px-6 pt-8 pb-16">
+      <div className="container mx-auto px-6 pt-8 pb-16 font-poppins">
         <div className="flex flex-col space-y-6">
           {/* Categories */}
           {filteredCategories.map((category, index) => (

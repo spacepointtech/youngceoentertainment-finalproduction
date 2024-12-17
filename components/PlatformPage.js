@@ -97,7 +97,7 @@ export default function Platform() {
             className="text-white" // Ensure it's white
           />   
            <Image
-            src="/images/tunedglobal.png" // Replace with actual path to your custom icon
+            src="/images/kkbox.png" // Replace with actual path to your custom icon
             alt="Custom Icon"
             width={100}
             height={100}
@@ -196,7 +196,7 @@ export default function Platform() {
             className="text-white" // Ensure it's white
           />   
            <Image
-            src="/images/tunedglobal.png" // Replace with actual path to your custom icon
+            src="/images/kkbox.png" // Replace with actual path to your custom icon
             alt="Custom Icon"
             width={100}
             height={100}

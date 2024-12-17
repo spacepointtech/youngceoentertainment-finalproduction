@@ -61,7 +61,7 @@ export default function Home() {
             Your Gateway to Seamless Music Distribution and Artist Growth.
           </p>
         </div>
-        <div className="h-[62px] px-[74px] ml-10 py-4 mt-10 bg-[#e97f18] rounded-lg justify-center items-center gap-2.5 inline-flex hover:scale-105 transition-transform duration-300 ease-in-out">
+        <div className="h-[62px] px-[74px] ml-10 hover:bg-[#A35911] py-4 mt-10 bg-[#e97f18] rounded-lg justify-center items-center gap-2.5 inline-flex hover:scale-105 transition-transform duration-300 ease-in-out">
           <div className="w-[120px] text-white text-xl font-semibold ">
             <Link href="/signup"> Get Started </Link>
           </div>

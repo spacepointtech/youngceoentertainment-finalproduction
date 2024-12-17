@@ -17,8 +17,8 @@ export default function About() {
         alignItems: "center",
       }}
     >
-      <div>
-        <h1 className="text-semibold text-center text-[40px]">
+      <div >
+        <h1 className="font-bold mt-10 text-center text-[40px] font-poppins">
           <span className="text-white text-bold">About</span> <span className="text-[#E97F18]">Us</span>
         </h1>
 
