@@ -35,15 +35,15 @@ export default function Platform() {
           <Image
             src="/images/apple.png" // Replace with actual path to your custom icon
             alt="Custom Icon"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             className="text-white" // Ensure it's white
           /> 
           <Image
-            src="/images/amazon.png" // Replace with actual path to your custom icon
+            src="/images/amazon.svg" // Replace with actual path to your custom icon
             alt="Custom Icon"
-            width={120}
-            height={120}
+            width={140}
+            height={140}
             className="text-white" // Ensure it's white
           /> 
          
@@ -134,15 +134,15 @@ export default function Platform() {
           <Image
             src="/images/apple.png" // Replace with actual path to your custom icon
             alt="Custom Icon"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             className="text-white" // Ensure it's white
           /> 
           <Image
-            src="/images/amazon.png" // Replace with actual path to your custom icon
+            src="/images/amazon.svg" // Replace with actual path to your custom icon
             alt="Custom Icon"
-            width={120}
-            height={120}
+            width={140}
+            height={140}
             className="text-white" // Ensure it's white
           /> 
      

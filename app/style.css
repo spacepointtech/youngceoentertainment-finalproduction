@@ -175,3 +175,43 @@ h2 {
   border-radius: 4px;
   z-index: 15;
 }
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider:active::-webkit-slider-thumb {
+  background: #e97f18;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider:active::-moz-range-thumb {
+  background: #e97f18;
+}
+
+.slider::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider:active::-ms-thumb {
+  background: #e97f18;
+}

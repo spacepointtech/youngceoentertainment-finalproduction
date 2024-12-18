@@ -116,14 +116,12 @@ export default function Pricing() {
   return (
     <div className="bg-black font-poppins">
       <div className="text-center p-10 md:p-20">
-        <span className="text-[#e97f18] text-[30px] md:text-[40px] font-bold">Affordable</span>
+        <span className="text-[#e97f18] text-[30px]  md:text-[40px] font-bold">Affordable</span>
         <span className="text-white text-[30px] md:text-[40px] font-bold"> Music Distribution for Every Artist</span>
-        <div className="text-center text-white text-xl md:text-2xl font-normal mt-4">
+        <div className="text-center text-white text-xl md:text-2xl font-normal mt-1">
           Click below to explore all pricing options!
-        </div>
-      </div>
-
-      <div className="max-w-[90%] lg:max-w-[1250px] mx-auto grid gap-10">
+        </div> 
+        <div className="max-w-[90%] mt-10 lg:max-w-[1250px] mx-auto grid gap-5">
         {[
           {
             plan: "Independent Artist Plan",
@@ -147,11 +145,11 @@ export default function Pricing() {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10"
+            className="bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10"
           >
             <div className="flex-1">
-              <div className="text-white text-2xl font-bold">{item.plan}</div>
-              <div className="text-white mt-4 text-xl font-normal">{item.description}</div>
+              <div className="text-white text-left text-2xl font-bold">{item.plan}</div>
+              <div className="text-white text-left mt-4 text-xl font-normal">{item.description}</div>
             </div>
             <div className="text-right md:text-left">
               <div className="text-white text-[34px] font-semibold">{item.price}</div>
@@ -165,7 +163,6 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-
       <div className="text-center mt-20 pb-10">
         <span className="text-white text-[30px] md:text-[40px] font-bold">Release a Single Song, </span>
         <span className="text-[#e97f18] text-[30px] md:text-[40px] font-bold">No Subscription</span>
@@ -186,9 +183,9 @@ export default function Pricing() {
           >
             
             <div className="flex-1">
-              <div className="text-white text-2xl font-bold">{item.plan}</div>
-              <div className="text-white mt-4 text-xl font-normal">{item.description}</div>
-              <div className="text-white items font-bold pt-8"> Note:  This plan does not include dashboard access. </div>
+              <div className="text-white text-left text-2xl font-bold">{item.plan}</div>
+              <div className="text-white mt-4 text-left text-xl font-normal">{item.description}</div>
+              <div className="text-white text-left items font-bold pt-8"> Note:  This plan does not include dashboard access. </div>
             </div>
             
             <div className="text-right md:text-left">
@@ -205,16 +202,23 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-
-      <div className="w-auto text-center py-10 text-[#e97f18] text-xl md:text-3xl italic">
+      <div className="w-auto text-center mt-24 text-[#e97f18] text-xl md:text-3xl italic">
         <span className="font-medium">"Music is the divine way to tell beautiful</span>
         <span className="font-medium">
           <br /> poetic things to the heart."
         </span>
-        <span className="text-white text-normal mb-20 text-lg  md:text-2xl">
-          <br /> – Pablo Casals
-        </span>
+        <div className="flex justify-center mt-2 items-center">
+  <span className="text-white text-normal pb-10 text-lg md:text-2xl">
+    – Pablo Casals
+  </span>
+</div>
+        </div>
       </div>
+      
+      
+
+     
+     
     </div>
   );
 }

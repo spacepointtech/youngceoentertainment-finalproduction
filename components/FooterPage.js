@@ -455,7 +455,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="self-stretch h-32 flex-col justify-start items-start gap-4 flex">
-            <div className="self-stretch h-14 px-3 py-[9px] rounded-xl border border-white/60 flex-col justify-start items-start gap-1 flex">
+            <div className="self-stretch h-14 px-3 py-[9px] rounded-xl hover:border hover:border-white/60 border border-white/25 flex-col justify-start items-start gap-1 flex">
               <label
                 htmlFor="name"
                 className="absolute opacity-40 text-white text-[12px] font-medium uppercase leading-[14px] tracking-tight"
@@ -471,7 +471,7 @@ export default function Footer() {
                 className="bg-transparent text-white text-sm font-normal focus:outline-none w-full mt-4"
               />
             </div>
-            <div className="self-stretch h-14 px-3 py-2 rounded-xl border border-white/25 flex-col justify-start items-start gap-2 flex">
+            <div className="self-stretch h-14 px-3 py-2 rounded-xl hover:border hover:border-white/60  border border-white/25 flex-col justify-start items-start gap-2 flex">
               <label
                 htmlFor="phone"
                 className="absolute opacity-40 text-white text-[12px] font-medium uppercase leading-[14px] tracking-tight"
@@ -494,8 +494,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="self-stretch opacity-40 text-white text-xs font-normal font-['Poppins'] leading-none">
-          <Link href="/privacy-policy"> Privacy </Link> | <Link href="/terms"> Terms & Conditions </Link>
+        <div className="self-stretch opacity-40   text-white text-xs font-normal leading-none">
+          <Link href="/privacy-policy" className="hover:text-[#e97f18]"> Privacy </Link> | <Link href="/terms" className="hover:text-[#e97f18]"> Terms & Conditions </Link>
         </div>
       </div>
       <div className="w-[601px] pt-2.5 left-[733px] top-[64px] absolute justify-center items-center inline-flex">
@@ -506,38 +506,39 @@ export default function Footer() {
                 Company
               </div>
               <div className="self-stretch h-[120px] flex-col justify-start items-start gap-[5px] flex">
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/login">Login</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/signup">Signup</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/support">Support</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/pricing">Pricing</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/aboutus">About Us</Link>
                 </div>
               </div>
             </div>
-            <div className="w-32 flex-col justify-start items-start gap-6 inline-flex relative">
+            <div className="w-32 flex-col  justify-start items-start gap-6 inline-flex relative">
               <div className="self-stretch text-[#e97f18] text-base font-medium uppercase leading-snug tracking-wide">
                 Extras
               </div>
-              <div className="self-stretch h-[95px] flex-col justify-start items-start gap-[5px] flex">
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+              <div className="self-stretch  h-[95px] flex-col justify-start items-start gap-[5px] flex">
+               
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/publishing">Music Publishing</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/promotion">Music Promotion</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/services">Artist Services</Link>
                 </div>
-                <div className="self-stretch text-white text-sm font-normal leading-tight">
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/news">News room</Link>
                 </div>
               </div>
@@ -566,20 +567,20 @@ export default function Footer() {
                     connectwithus@youngceoentertainment.com
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-[50px] h-[50px] rounded-[50px] border border-white/10 justify-center items-center flex">
+                    <div className="w-[50px] h-[50px] rounded-[50px] hover:border hover:border-white border border-white/10 justify-center items-center flex">
                       <FaFacebookF className="text-white text-xl" />
                     </div>
-                    <div className="w-[50px] h-[50px] rounded-[50px] border border-white/10 justify-center items-center flex">
+                    <div className="w-[50px] h-[50px] rounded-[50px] hover:border hover:border-white  border border-white/10 justify-center items-center flex">
                       <Link href="https://www.instagram.com/youngceoentertainment_" target="_blank">
                         <FaInstagram className="text-white text-xl" />
                       </Link>
                     </div>
-                    <div className="w-[50px] h-[50px] rounded-[50px] border border-white/10 justify-center items-center flex">
+                    <div className="w-[50px] h-[50px] rounded-[50px] hover:border hover:border-white border border-white/10 justify-center items-center flex">
                       <Link href="https://www.linkedin.com" target="_blank">
                         <FaLinkedin className="text-white text-xl" />
                       </Link>
                     </div>
-                    <div className="w-[50px] h-[50px] rounded-[50px] border border-white/10 justify-center items-center flex">
+                    <div className="w-[50px] h-[50px] rounded-[50px] hover:border hover:border-white border border-white/10 justify-center items-center flex">
                       <Link href="https://wa.me/8788969278" target="_blank">
                         <FaWhatsapp className="text-white text-xl" />
                       </Link>
@@ -594,7 +595,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="h-12 w-[555px] pl-5 pr-6 py-3.5 rounded-xl border border-white/10 justify-between items-center flex">
+            <div className="h-12 w-[555px] hover:border hover:border-white/60 pl-5 pr-6 py-3.5 rounded-xl border border-white/10 justify-between items-center flex">
               <input
                 type="email"
                 name="email"

@@ -76,7 +76,7 @@ export default function Third() {
     >
     <div className="text-center p-20">
          <span className="text-white text-[40px] font-bold">Why </span><span className="text-[#e97f18] text-[40px] font-bold">Artists</span><span className="text-white text-[40px] font-bold"> </span><span className="text-[#e97f18] text-[40px] font-bold">Trust</span><span className="text-white text-[40px] font-bold"> Young CEO Entertainment</span>
-         <div className="text-center text-white text-2xl font-normal">More than distribution—your partner in success.</div>  
+         <div className="text-center text-white text-2xl font-normal mt-1">More than distribution—your partner in success.</div>  
          </div>  
         
          

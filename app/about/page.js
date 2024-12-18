@@ -18,7 +18,7 @@ export default function About() {
       }}
     >
       <div >
-        <h1 className="font-bold mt-10 text-center text-[40px] font-poppins">
+        <h1 className="font-bold mt-16  text-center text-[40px] font-poppins">
           <span className="text-white text-bold">About</span> <span className="text-[#E97F18]">Us</span>
         </h1>
 

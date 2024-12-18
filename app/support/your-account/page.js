@@ -200,68 +200,68 @@ const AccountSupport = () => {
 const faqItems = [
     {
         question: 'What is Young Ceo Entertainment?',
-        url: '/support/subscription-renewal'
+        url: '/support/your-account/query1'
       },
       {
         question: 'How much does music distribution cost with Young Ceo Entertainment?',
-        url: '/support/subscription-renewal'
+        url: '/support/your-account/query2'
       },
   {
     question: 'Can I release music for multiple artists from one account ?',
     answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-    url: '/support/subscription-renewal'
+    url: '/support/your-account/query3'
   },
   {
     question: 'Can I release music for multiple artists from one account ?',
-    url: '/support/orders-history'
+    url: '/support/your-account/query4'
   },
   {
     question: 'Who owns the rights to my music when I distribute with YCE ?',
-    url: '/support/support-query-response'
+    url: '/support/your-account/query5'
   },
   {
     question: "What does 'In Review', 'Scheduled' and 'Sent To Stores' mean on my releases ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query6'
   },
   {
     question: "Can I release music in specific countries ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query7'
   },
   {
     question: "Can I view my music analytics in more detail ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query8'
   },
   {
     question: "How does Pre-Release work ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query9'
   },
   {
     question: "What is Pre-Order Instant Gratification ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query10'
   },
   {
     question: "Can I set the price of my music ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query11'
   },
   {
     question: "Can I release someone else's music from my account ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query12'
   },
   {
     question: "Can I choose where my music is released ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query13'
   },
   {
     question: "How many tracks are on a single, EP and album ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query14'
   },
     {
     question: "When will my YCE Merch arrive ?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query15'
   },
   {
     question: "Does YCE Music offer a free trial?",
-    url: '/support/support-query-response'
+    url: '/support/your-account/query2'
   },
 
 

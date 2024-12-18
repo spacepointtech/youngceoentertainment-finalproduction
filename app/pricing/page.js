@@ -192,6 +192,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import '@/app/style.css'
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState('subscription');
@@ -285,7 +286,7 @@ export default function Pricing() {
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium">Track Status Monitoring</div>
               </div>
               <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
-                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[20px] bg-[#e97f18] rounded-[96px] justify-center items-center gap-1.5 flex">
+                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[20px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex">
                 <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
                 </div>
               </div>
@@ -313,7 +314,7 @@ export default function Pricing() {
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium">Custom Itune  pricing</div>
             </div>
             <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
-                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] rounded-[96px] justify-center items-center gap-1.5 flex ">
+                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex ">
                 <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
                 </div>
             </div>
@@ -353,8 +354,16 @@ export default function Pricing() {
                 step="1"
                 value={artistOptions.indexOf(artistCount)}
                 onChange={handleSliderChange}
-                className="slider w-full bg-[#e97f18] "
-                style={{  background: `#e97f18`, }}
+                className="slider w-full bg-white  "
+                style={{
+                  appearance: 'none',
+                  width: '100%',
+                  height: '8px',
+                  background: `linear-gradient(to right, #e97f18 ${(artistOptions.indexOf(artistCount) / 5) * 100}%, #ffffff ${(artistOptions.indexOf(artistCount) / 5) * 100}%)`,
+                  borderRadius: '4px',
+                  outline: 'none',
+                  transition: 'background 0.3s',
+                }}
               />
                     
                 </div>
@@ -365,7 +374,7 @@ export default function Pricing() {
             </div>
 
             <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
-                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] rounded-[96px] justify-center items-center gap-1.5 flex">
+                <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex">
              <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
                 </div>
             </div>
@@ -389,7 +398,7 @@ export default function Pricing() {
 </div>
 <div className="w-[275px] flex-col justify-start items-end gap-5 inline-flex">
 <div className="self-stretch text-center text-white text-[32px] ml-10 font-semibold ">₹ 399 / Track</div>
-<div className="h-14 px-16 py-[5px] bg-[#e97f18] rounded-[96px] justify-start items-center gap-2.5 inline-flex">
+<div className="h-14 px-16 py-[5px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-start items-center gap-2.5 inline-flex">
 <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
 </div>
 </div>
