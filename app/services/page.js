@@ -10,7 +10,9 @@ export default function ServicesPage() {
       <div className="hero-section relative h-[400px] bg-cover bg-center" style={{ backgroundImage: 'url(/images/support.png)' }}>
         <div className="container mx-auto text-left pt-24 pb-16">
           <h1 className="text-4xl font-semibold mb-2 mt-16 text-left ml-6"> Our <span className='text-[#e97f18]'> Services </span> </h1>
-          <p className='ml-6'> At Young CEO Entertainment, we are dedicated to empowering artists by providing top-tier music distribution and promotional services. Our mission is to help you reach global audiences through innovative solutions and partnerships with major streaming platforms. </p>
+          <p className='ml-6'> At Young CEO Entertainment, we are dedicated to empowering artists by providing top-tier music distribution and promotional services. Our mission is to help you reach global audiences through innovative solutions and partnerships with major streaming platforms
+            (Spotify, Apple Music and 120+ more).
+             </p>
          
         </div>
       </div>
@@ -44,9 +46,9 @@ export default function ServicesPage() {
         </div>
         <div className="self-stretch h-[575px] justify-start items-start gap-[100px] inline-flex">
         <Image
-              src="/images/Dashboard.png"
+              src="/images/Dashboard.svg"
               alt="Artist Dashboard"
-              width={599}
+              width={799}
               height={575}
               className="rounded-lg w-[599px] h-[575px]"
             />
@@ -69,7 +71,7 @@ export default function ServicesPage() {
             <div className="w-[572px] flex-col justify-start items-center gap-3 inline-flex">
                 <div className="self-stretch h-[248px] flex-col justify-start items-start gap-2 flex">
                     <div className="self-stretch"><span className="text-[#e97f18] text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight">Revenue</span><span className="text-white text-[40px] font-bold font-['Poppins'] leading-[60px] tracking-tight"> Tracking</span></div>
-                    <div className="self-stretch text-white text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms, including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.</div>
+                    <div className="self-stretch text-white text-xl font-normal font-['Poppins'] leading-[30px] tracking-tight">We ensure your music reaches every corner of the world by distributing your tracks to major streaming platforms including Spotify, Apple Music, YouTube Music, and more. Our seamless process guarantees that your songs are available to fans worldwide with just a few clicks.</div>
                 </div>
                 <div className="self-stretch justify-start items-center inline-flex">
                    
@@ -105,10 +107,10 @@ export default function ServicesPage() {
             <p className="mt-4 text-lg text-justify w-[550px] ml-20">
               Our dedicated team is always here to support you throughout your musical journey. Whether you need assistance with distribution, marketing, or anything in between, we are just a message away to provide the help you need.
             </p>
-            <span className="inline-flex text-[#e97f18] mt-5 ml-20">   <Icon icon="duo-icons:location" className='w-[41px] h-[41px] mr-4'/>
-            <Icon icon="ic:baseline-whatsapp" className='w-[41px] h-[41px] mr-4'/>
-            <Icon icon="material-symbols:mail-outline" className='w-[41px] h-[41px] mr-4'/>
-            <Icon icon="material-symbols:call-outline" className='w-[41px] h-[41px] mr-4'/>
+            <span className="inline-flex text-[#e97f18] mt-5 ml-20">   <Icon icon="duo-icons:location" className='w-[39.5px] h-[39.5px] mr-4'/>
+            <Icon icon="ic:baseline-whatsapp" className='w-[39.5px] h-[39.5px] mr-4'/>
+            <Icon icon="material-symbols:mail-outline" className='w-[39.5px] h-[39.5px] mr-4'/>
+            <Icon icon="material-symbols:call-outline" className='w-[39.5px] h-[39.5px] mr-4'/>
                     
                      </span>
           </div>

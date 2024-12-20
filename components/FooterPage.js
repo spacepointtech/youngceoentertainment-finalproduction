@@ -419,6 +419,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaArrowRight, FaFacebookF, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import '@/app/style.css'
 
 export default function Footer() {
   const [formData, setFormData] = useState({

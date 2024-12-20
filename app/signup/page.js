@@ -63,7 +63,7 @@ export default function SignPage() {
               className="bg-[#0B0B0D]  w-[393px] h-[40px] text-white text-sm px-3 py-2 rounded-md  focus:outline-none focus:ring-2 focus:ring-[#e97f18]"
               required
             />
-            <p className="text-[#999999] w-full text-[10px] text-left ml-2 mt-1">(This email will be used as Official Company Communication channel.)</p>
+            <p className="text-[#999999] w-full text-[10px] text-left ml-2 mt-1">(This email will be used as Official Company Communication channel)</p>
           </div>
           <div className="mb-5 relative">
   <label

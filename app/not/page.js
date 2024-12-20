@@ -36,6 +36,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowLeft, FaChevronCircleLeft, FaChevronLeft, FaStepBackward } from 'react-icons/fa';
+import { Icon } from "@iconify/react";
 
 export default function ErrorPage() {
   return (
@@ -58,8 +59,9 @@ export default function ErrorPage() {
       </div>
 
       {/* Back to Home Link */}
-      <Link href="/" className="mt-10 flex items-center text-[#e97f18] text-lg sm:text-xl capitalize underline">
-        <FaChevronCircleLeft className="h-6 w-6 mr-2" />
+      <Link href="/" className="mt-10 flex items-center text-[#e97f18] text-lg sm:text-xl capitalize underline hover:text-[#A35911]">
+        
+        <Icon icon="ri:arrow-go-back-line" className='w-6 h-6 mr-2'/>
         Go to Home
       </Link>
     </div>

@@ -198,7 +198,7 @@ export default function Navbar() {
   const pathname = usePathname(); // Get current route
 
   return (
-    <nav className="bg-black bg-opacity-[30%] text-white fixed w-full z-10">
+    <nav className="text-white fixed w-full z-10">
       <div className="flex justify-between items-center px-6 sm:px-10 md:px-16 lg:px-[100px] py-4">
         {/* Logo */}
         <Link href="/">
@@ -247,7 +247,7 @@ export default function Navbar() {
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center gap-4 ">
           <Link href="/login">
-            <button className="px-6 py-2.5 rounded-[10px] text-white font-semibold hover:scale-108 transition-transform duration-400 ease-in-out hover:border border-[#E97f18] hover:text-[#e97f18]">
+            <button className="px-6 text-[17px] py-2.5 rounded-[10px] text-white font-semibold hover:scale-108 transition-transform duration-400 ease-in-out hover:border border-[#E97f18] hover:text-[#e97f18]">
               Log In
             </button>
           </Link>
