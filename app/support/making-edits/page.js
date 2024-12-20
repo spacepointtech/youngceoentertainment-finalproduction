@@ -90,23 +90,23 @@ const faqItems = [
   
       {
         question: "Can I edit my release after it's been completed but still in review?",
-          url: '/support/support-query-response'
+          url: '/support/making-edits/query1'
       },
       {
         question: "If I remove a release from stores, edit and re-upload it, will the same Spotify or iTunes links work?",
-          url: '/support/support-query-response'
+          url: '/support/making-edits/query2'
     },
       {
         question: "Can I add more stores to an existing release?",
-         url: '/support/support-query-response'
+         url: '/support/making-edits/query3'
       },
       {
         question: "Can I change my release date?",
-          url: '/support/support-query-response'
+          url: '/support/making-edits/query4'
       },
       {
         question: "How do I change my artist or band name?",
-          url: '/support/support-query-response'
+         url: '/support/making-edits/query5'
       },
 ];
 

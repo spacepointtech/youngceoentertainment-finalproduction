@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Making <span className='text-[#e97f18]'>  Making </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,11 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I edit my release after it's been completed but still in review?</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
+    Yes, you can typically edit your release while it’s still under review, but it depends on the platform or distributor you're using. Most music distribution platforms allow limited edits during the review process, such as correcting metadata or uploading updated files. However, significant changes might reset the review timeline.
          </span>
 
         
@@ -127,20 +127,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
+  {
+    question: "If I remove a release from stores, edit and re-upload it, will the same Spotify or iTunes links work?",
+      url: '/support/making-edits/query2'
 },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
-
+  {
+    question: "Can I add more stores to an existing release?",
+     url: '/support/making-edits/query3'
+  },
+  {
+    question: "Can I change my release date?",
+      url: '/support/making-edits/query4'
+  },
 
 
 ];

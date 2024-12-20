@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Making <span className='text-[#e97f18]'>  Making </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,11 +64,12 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I release music for multiple artist from one account </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> If I remove release from the stores, edit and reupload it will the same spoitify and itunes links work ? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Yes, with Young CEO Entertainment's Duo Plan, you can release for two artists and with Label Plan, you can release music for multiple artists from a single account. This plan is designed to support labels and managers handling multiple artists, providing flexibility and convenience.
+   
+No, removing a release and reuploading it will generate new Spotify and iTunes links, as these platforms assign unique links to each release.
          </span>
 
         
@@ -127,20 +128,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'Who owns the rights to my music artists from one account',
-      url: '/support/your-account/query5'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
- 
-  url: '/support/your-account/query6'
-},
-{
-  question: "what does 'In Review' 'Scheduled' and 'Sent to Stores' mean on My releases?",
-  url: '/support/your-account/query7'
-},
-
+  {
+    question: "Can I add more stores to an existing release?",
+     url: '/support/making-edits/query3'
+  },
+  {
+    question: "Can I change my release date?",
+      url: '/support/making-edits/query4'
+  },
+  {
+    question: "How do I change my artist or band name?",
+     url: '/support/making-edits/query5'
+  },
 
 
 ];
