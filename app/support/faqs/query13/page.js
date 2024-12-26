@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Frequently Asked <span className='text-[#e97f18]'>  Questions </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -63,12 +63,61 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+        <div className="w-[1240px] h-[700px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold ">When will royalties be paid into my account?</div>
     <div className="self-stretch h-5" />
+
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
+        <p> At Young CEO Entertainment, we make sure you get your earnings on time! Here’s what you need to know about royalty payments:
+      
+        </p>
+        <ul className='list-inside list-decimal text-[#EBEBEB]'>
+          <li>  Payment Frequency 📅<br/> 
+              
+            <ul className=' list-inside ml-3'> 
+               
+               <li> Royalties are paid on a monthly basis, as long as your balance meets the minimum payout threshold of ₹1,000.</li>
+              
+            </ul>
+           </li>
+
+           <li> Processing Time ⏳ <br/> 
+       
+            <ul className='list-inside ml-3'> 
+               <li>After the end of the month, payments are processed and typically transferred within 7–10 business days. </li>
+              
+            </ul>
+           </li>
+
+           
+           <li> Payment Methods 💳 <br/> 
+       
+       <ul className='list-inside ml-3'> 
+          <li> You can choose your preferred payment method (e.g., UPI, Bank Transfer, PayPal), and the funds will be sent directly to your account.
+
+          </li>
+
+          
+         
+       </ul>
+      </li>
+           
+
+      <li>Pending Royalties 📊<br/> 
+       
+       <ul className='list-inside ml-3'> 
+          <li> Royalties may take a little time to accumulate, depending on your streams and sales. For new releases, it may take a few days to reflect on the platforms.
+
+          </li>
+
+          
+         
+       </ul>
+      </li>
+
+               </ul>
+     <p> Tip: Keep an eye on your YCE Dashboard for updates on your earnings and payment status!
+     If you have any questions or concerns, feel free to reach out to our support team.</p>
          </span>
 
         
@@ -79,8 +128,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-px bg-black/5" />
     <div className="self-stretch h-10" />
     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
-        <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
-        <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+        <div className="text-[#e97f18] text-base font-medium mt-10">Is this article helpful?</div>
+        <span className='text-[#a6a6a6] inline-flex mb-10'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
         <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="w-6 h-6 relative" />
             <div className="w-6 h-6 relative" />
@@ -96,7 +145,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -128,20 +177,28 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'How many tracks are on Single, EP and Album?',
-     url: '/support/your-account/query14'
-  },
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
+    },
 {
-  question: 'When will my YCE merch Arrive',
-   url: '/support/your-account/query15'
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
-
-
 {
-  question: 'Does YCE Music Offer a free trail?',
-   url: '/support/your-account/query16'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
 },
 
 ];
 
 export default FaqComponent;
+``

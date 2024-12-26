@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Frequently Asked <span className='text-[#e97f18]'>  Questions </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -63,12 +63,40 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+        <div className="w-[1240px] h-[700px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold ">How long will it take to review and approve my release?</div>
     <div className="self-stretch h-5" />
+
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
+        <p> Once you submit your release, Young CEO Entertainment will review and approve it before it’s sent to platforms. Here’s the typical timeline:
+      
+        </p>
+        <ul className='list-inside list-decimal text-[#EBEBEB]'>
+          <li>  Review Time 📝 <br/> 
+              
+            <ul className='list-disc list-inside ml-3'> 
+               
+               <li> 
+               The review process usually takes 2–5 business days. During this time, we check your release for any issues, such as missing metadata or incorrect file formats.
+               </li>
+              
+            </ul>
+           </li>
+
+           <li> Platform Processing 🕒 <br/> 
+       
+            <ul className='list-inside ml-3'> 
+               <li>
+               After approval, your release will be sent to the platforms. It typically takes 5–7 business days for the platforms to process and make your music available to the public.
+               </li>
+              
+            </ul>
+           </li>
+
+               </ul>
+               <p> Pro Tip: Upload your release at least 7–14 days before your intended release date to avoid any delays and ensure your music is live on time! 🎶</p>
+     <p> Tip: Keep an eye on your YCE Dashboard for updates on your earnings and payment status!
+     If you need any assistance, don’t hesitate to contact our support team via your YCE dashboard.</p>
          </span>
 
         
@@ -79,8 +107,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-px bg-black/5" />
     <div className="self-stretch h-10" />
     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
-        <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
-        <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+        <div className="text-[#e97f18] text-base font-medium mt-10">Is this article helpful?</div>
+        <span className='text-[#a6a6a6] inline-flex mb-10'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
         <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="w-6 h-6 relative" />
             <div className="w-6 h-6 relative" />
@@ -96,7 +124,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -127,22 +155,29 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
+  {
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'What payment methods does YCE accept ?',
   answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
+  url: '/support/faqs/query3'
 },
 {
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
 },
-
-
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 
 ];
 
 export default FaqComponent;
+``

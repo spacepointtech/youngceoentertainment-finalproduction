@@ -122,27 +122,18 @@ const faqItems = [
         url: '/support/faqs/query11'   
     },
       { question: 'Can I choose where my music is released?', 
-        url: '/support/support-query-response'    
+        url: '/support/faqs/query12'   
     },
       { question: 'When will royalties be paid into my account?', 
-        url: '/support/support-query-response'    
+        url: '/support/faqs/query13'  
     },
       { question: 'How long will it take to review and approve my release?', 
-        url: '/support/support-query-response'   
+        url: '/support/faqs/query14'   
     },
       { question: 'How can I find my Spotify URI?',
         
-        url: '/support/support-query-response'
+       url: '/support/faqs/query15'
      },
-      { question: 'How does the affiliates program work?',
-        url: '/support/support-query-response'  
-    },
-      { question: 'How to enter the Press Your Sound competition?',
-        url: '/support/support-query-response'   
-    },
-      { question: 'How does YCE Music Mastering work?', 
-        url: '/support/support-query-response'   
-    },
 ];
 
 export default AccountSupport;
