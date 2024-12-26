@@ -63,50 +63,22 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[900px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold "> How do I create a new release ? </div>
+        <div className="w-[1240px] h-[590px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold "> Will YCE promote my music ? </div>
     <div className="self-stretch h-5" />
 
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        <p>Yes, at Young CEO Entertainment, you can make changes to your release even after it’s been sent to stores. Here’s how:
-        <br/>  Editing Your Release ✏️</p>
+        <p> At Young CEO Entertainment, our primary focus is to help you get your music distributed across all major platforms. 🌐 However, we also offer additional promotional tools to help your music reach a wider audience:</p>
         <ul className='list-inside list-decimal text-[#EBEBEB]'>
-          <li> Log in to Your YCE Dashboard 🖥️ <br/> 
-           <p className='ml-2'> Access your account and navigate to the Releases section.</p></li>
-           <li> Select the Release You Want to Edit <br/> 
-           <p className='ml-2'> Choose the release you want to update. </p></li>
-           <li> Make Changes <br/> 
-           <p className='ml-2'> 
-            <ul className='list-disc list-inside'>
-              <li> You can update metadata like the track title, artist name, or cover art. </li>
-              <li> Note: Some changes may require a review and could take 5–10 business days to reflect on platforms. </li>
-               </ul>
-            </p></li>
-           <li> Submit for Review ✅ <br/> 
-           <p className='ml-2'> Save your changes and submit them for approval. </p></li>
+          <li> Pre-Save Links 🎯 <br/> 
+           <p className='ml-2'> Build excitement for your upcoming releases with customized pre-save links, making it easier for fans to access your music as soon as it’s live. </p></li>
+           <li>Social Media Templates 📱 <br/> 
+           <p className='ml-2'> Use our ready-made social media assets to create buzz around your tracks and build engagement. </p></li>
+           <li> Analytics Dashboard 📊 <br/> 
+           <p className='ml-2'> Track your performance, understand your audience, and plan better promotions using real-time insights.</p></li>
+          
            </ul>
-            <p> Note <br/> Removing Your Release 🚫 </p>
-            <ul className='list-inside list-decimal'>
-              <li> Go to the Release Details 
-              <p className='ml-2'> Select the release you want to remove. </p>
-              </li>
-
-              <li> Request Removal
-              <p className='ml-2'> Use the Remove from Stores option and confirm your request. </p>
-              </li>
-
-              <li> Processing Time 🕒
-              <p className='ml-2'> Removal requests usually take 7–14 business days to be processed by all platforms. </p>
-              </li>
-               </ul>
-      
-              <p> Important Notes:</p>
-                 <ul className='list-inside list-disc'> 
-                  <li> Once a release is removed, it will no longer be available on any platform.</li>
-                  <li> For edits, ensure all changes comply with platform guidelines to avoid delays. </li>
-                 </ul>
-                 <p> If you need assistance, contact our support team via the dashboard. </p>
- 
+            
          </span>
 
         

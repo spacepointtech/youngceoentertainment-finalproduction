@@ -89,37 +89,37 @@ const AccountSupport = () => {
 const faqItems = [
     {
         question: 'What do I need to start releasing music?',
-           url: '/support/support-query-response'
+           url: '/support/faqs/query1'
       },
       { question: 'How much does music distribution cost with Young CEO Entertainment?', 
-        url: '/support/support-query-response' 
+        url: '/support/faqs/query2'
     },
       { question: 'How do I remove a release from stores?',
-            url: '/support/support-query-response'
+            url: '/support/faqs/query3'
          },
       { question: 'What payment methods does YCE accept?',
-           url: '/support/support-query-response'
+          url: '/support/faqs/query4'
         },
       { question: 'Will YCE promote my music?',
-        url: '/support/support-query-response'
+          url: '/support/faqs/query5'
      },
       { question: 'How much will I get paid?',
-        url: '/support/support-query-response'
+        url: '/support/faqs/query6'
     },
       { question: 'How do I create a new release?',
-        url: '/support/support-query-response'    
+       url: '/support/faqs/query7' 
     },
-      { question: 'Do I need to renew my subscription?',
-        url: '/support/support-query-response'   
+      { question: "Can I edit or remove my release after it's been sent to stores ?",
+        url: '/support/faqs/query8' 
     },
-      { question: 'Can I edit or remove my release after it’s been sent to stores?', 
-        url: '/support/support-query-response'   
+      { question: 'Do I need to renew my subscription ?', 
+        url: '/support/faqs/query9' 
     },
       { question: 'Will YCE take any of my royalties?', 
-        url: '/support/support-query-response'    
+        url: '/support/faqs/query10'   
     },
       { question: 'How long before my release date should I upload my music?', 
-        url: '/support/support-query-response'    
+        url: '/support/faqs/query11'   
     },
       { question: 'Can I choose where my music is released?', 
         url: '/support/support-query-response'    

@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import '@/app/globals.css';
+import Image from 'next/image';
 
 export default function ResetPasswordPage() {
   return (
@@ -13,6 +14,11 @@ export default function ResetPasswordPage() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <div className="logo-container">
+        <Link href="/">
+          <Image src="/logo.png" alt="YCE Logo" width={100} height={100} />
+        </Link>
+      </div>
       <div className="h-[352px] p-5 left-[493px] top-[169px] absolute bg-[#141416] rounded-2xl border border-[#9f9fa1] flex-col justify-start items-start gap-2.5 inline-flex">
         <div className="home-form self-stretch h-[312px] flex-col justify-start items-center gap-7 flex">
           <div className="w-[342px] h-24 relative">

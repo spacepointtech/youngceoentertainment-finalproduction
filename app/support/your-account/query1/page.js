@@ -64,9 +64,9 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold"> What is Young Ceo Entertainment? </div>
     <div className="self-stretch h-5" />
-    <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
+    <div className="self-stretch text-[16px]"><span className="text-[#ebebeb] text-base font-normal  leading-normal">  
         
     Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
          </span>

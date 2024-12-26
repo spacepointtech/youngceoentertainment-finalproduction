@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Frequently Asked <span className='text-[#e97f18]'>  Questions </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -63,19 +63,47 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> How Does Pre-Release Work? </div>
+        <div className="w-[1240px] h-[700px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold "> Do I need to renew my subscription? </div>
     <div className="self-stretch h-5" />
+
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
+        <p>Yes, to continue enjoying all the benefits of Young CEO Entertainment, you’ll need to renew your subscription annually. Here’s how it works:
+        </p>
+        <ul className='list-inside list-decimal text-[#EBEBEB]'>
+          <li> Automatic Renewal Option ⚡ <br/> 
+           <p className='ml-2'> 
+            <ul className='list-disc list-inside ml-2'> 
+               <li> If you’ve enabled auto-renewal, your subscription will renew automatically on the due date. You’ll receive a notification before the renewal happens.</li>
+               <li> Ensure your payment method is up-to-date to avoid interruptions.</li>
+            </ul>
+            </p></li>
+           
+            <li> Manual Renewal 🔧 <br/> 
+           <p className='ml-2'> 
+            <ul className='list-disc list-inside ml-2'> 
+               <li> If auto-renewal is not enabled, you can renew manually via the Account Overview section in your YCE Dashboard. </li>
+               <li> You’ll receive reminders leading up to your subscription expiry date. </li>
+            </ul>
+            </p></li>
+
+            <li> What Happens If You Don’t Renew? 🚫 <br/> 
+           <p className='ml-2'> 
+            <ul className='list-disc list-inside ml-2'> 
+               <li> Your releases will remain active on music platforms. </li>
+               <li> However, you won’t be able to withdraw royalties or upload new music until your subscription is renewed. </li>
+            </ul>
+            </p></li>
+           
+
+               </ul>
+      
         
-    <p> The Pre-Release feature allows you to upload and set your music for distribution ahead of its official release date. Here’s how it works:</p>
-       <ul className='mt-2 list-inside list-decimal'> </ul>
-       <li> <span className='font-bold'>Upload Your Music: </span> Submit your tracks, artwork, and metadata before your desired release date. </li>
-       <li><span className='font-bold'> Set Release Date: </span>  Choose your official release date, typically allowing a 2-4 week lead time for stores to process your music. </li>
-       <li><span className='font-bold'> Approval Process: </span> Your release goes through a review process to ensure it meets platform guidelines. </li>
-       <li><span className='font-bold'> Distribution: </span>  Once approved, your music will be sent to stores and scheduled for release on your chosen date.
-       </li>
-       <p className='mt-2'> This gives you time to promote your release while ensuring it’s available on major platforms as soon as it’s live!</p>
+               
+                 <p> Tip: Renew on time to ensure uninterrupted access to all features and benefits! 😊 <br/> 
+                 For assistance, contact our support team through the Help & Support section in your dashboard.
+                  </p>
+ 
          </span>
 
         
@@ -86,8 +114,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-px bg-black/5" />
     <div className="self-stretch h-10" />
     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
-        <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
-        <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+        <div className="text-[#e97f18] text-base font-medium mt-10">Is this article helpful?</div>
+        <span className='text-[#a6a6a6] inline-flex mb-10'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
         <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="w-6 h-6 relative" />
             <div className="w-6 h-6 relative" />
@@ -100,8 +128,10 @@ const FaqComponent = () => {
   
         <div className="text-white text-4xl font-medium mt-20 mb-7">Related Articles</div>
   
+
+        {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -133,16 +163,25 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'What is pre-order Gratification?',
-    url: '/support/your-account/query10'
-  },
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
+    },
 {
-  question: 'Can I set the price of my Music',
-  url: '/support/your-account/query11'
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
 {
-  question: 'Can I release someone else music from my accou',
-  url: 'support/your-account/query12'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
 },
 
 ];

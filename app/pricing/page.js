@@ -285,11 +285,13 @@ export default function Pricing() {
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium ">Release Dashboard</div>
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium">Track Status Monitoring</div>
               </div>
+              <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">
               <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
                 <div className="grow shrink basis-0 h-[72px] px-[38px] py-[20px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex">
-                <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
-                </div>
+               Get started
+                </div> 
               </div>
+              </Link>
             </div>
 
                    {/* Plan - 2 */}
@@ -313,11 +315,13 @@ export default function Pricing() {
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium">Customized Release Date</div>
                 <div className="self-stretch text-center text-[#e1e6f0] text-lg font-medium">Custom Itune  pricing</div>
             </div>
+            <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">
             <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
                 <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex ">
-                <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
+              Get started
                 </div>
             </div>
+            </Link>
         </div>
           
           {/* Plan - 3 Box */}
@@ -372,12 +376,13 @@ export default function Pricing() {
                     <div className="w-[11px] h-[19px] text-center text-white text-base font-medium "> {artistCount} </div>
                 </div>
             </div>
-
+            <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">
             <div className="w-[308px] left-[43px] top-[921.53px] absolute justify-start items-start inline-flex">
                 <div className="grow shrink basis-0 h-[72px] px-[38px] py-[26px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-center items-center gap-1.5 flex">
-             <Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
+                Get started
                 </div>
             </div>
+            </Link>
         </div>
     </div>
         
@@ -398,9 +403,11 @@ export default function Pricing() {
 </div>
 <div className="w-[275px] flex-col justify-start items-end gap-5 inline-flex">
 <div className="self-stretch text-center text-white text-[32px] ml-10 font-semibold ">₹ 399 / Track</div>
+<Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">
 <div className="h-14 px-16 py-[5px] bg-[#e97f18] hover:bg-[#A35911] rounded-[96px] justify-start items-center gap-2.5 inline-flex">
-<Link href="/signup" className="text-center text-white text-xl font-bold leading-tight">Get started</Link>
+Get started
 </div>
+</Link>
 </div>
 </div>
 </div>

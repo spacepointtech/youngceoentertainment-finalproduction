@@ -64,7 +64,7 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']">  Can I release someone else music from my account? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">  Can I choose where my music is released ? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         

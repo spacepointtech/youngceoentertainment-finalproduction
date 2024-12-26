@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Frequently Asked <span className='text-[#e97f18]'>  Questions </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -63,11 +63,49 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I release music for specific Countries ? </div>
+        <div className="w-[1240px] h-[1000px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold "> How do I create a new release ? </div>
     <div className="self-stretch h-5" />
+
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-    Currently, Young CEO Entertainment does not support country-specific releases. Your music will be distributed globally to all available platforms and regions. We aim to maximize your reach and audience worldwide. Stay tuned for updates as we continue to enhance our services!
+        <p> Follow these simple steps to distribute your music to all major platforms:</p>
+        <ul className='list-inside list-decimal text-[#EBEBEB]'>
+          <li> Log in to Your YCE Dashboard 🖥️ <br/> 
+           <p className='ml-2'> Use your registered account credentials to access the dashboard.</p></li>
+           <li> Click on ‘Create New Release’ 🎶 <br/> 
+           <p className='ml-2'> Navigate to the Releases section and select the option to create a new release. </p></li>
+           <li> Enter Release Details 📝 <br/> 
+           <p className='ml-2'> Fill in all the required information, such as:
+            <ul className='list-disc list-inside'>
+              <li> Track Title </li>
+              <li> Artist Name </li>
+              <li> Release Date </li>
+
+               </ul>
+            </p></li>
+           <li> Payment Methods: <br/> 
+           <p className='ml-2'> Choose from multiple payment options, including bank transfer, UPI, or PayPal. </p></li>
+           </ul>
+            <p> Note <br/> The amount you earn depends on factors like: </p>
+            <ul className='list-inside list-disc'>
+              <li> The number of streams/downloads 📈. </li>
+              <li> The platform&apos;s payout rates. </li>
+              <li> Your audience's location (rates vary by region 🌍). </li>
+               </ul>
+             
+               <li> Upload Your Audio File 🎵 <br/> 
+               <p className='ml-2'> Ensure your file meets the required format (e.g., WAV or MP3) and quality standards.</p></li>
+               
+               <li> Add Cover Art 🎨 <br/> 
+               <p className='ml-2'> Upload eye-catching cover art that follows platform guidelines (minimum 3000 x 3000 pixels). </p></li>
+
+               <li> Select Platforms 🌍 <br/> 
+               <p className='ml-2'> Choose the platforms where you want your music to be distributed (e.g., Spotify, Apple Music, Amazon Music). </p></li>
+                
+               <li> Review and Submit ✅<br/> 
+               <p className='ml-2'> Double-check your details, then click Submit to finalize your release. </p></li>
+  
+ 
          </span>
 
         
@@ -78,8 +116,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-px bg-black/5" />
     <div className="self-stretch h-10" />
     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
-        <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
-        <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+        <div className="text-[#e97f18] text-base font-medium mt-10">Is this article helpful?</div>
+        <span className='text-[#a6a6a6] inline-flex mb-10'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
         <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="w-6 h-6 relative" />
             <div className="w-6 h-6 relative" />
@@ -95,7 +133,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -127,19 +165,26 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'Can I view music analytics in more detail ?',
-    url: '/support/your-account/query8'
-  },
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
+    },
 {
-  question: 'How Does Pre-Release Work?',
-  url: '/support/your-account/query9'
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
 {
-  question: 'What is pre-order Gratification?',
-  url: '/support/your-account/query10'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
 },
-
-
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 
 ];
 

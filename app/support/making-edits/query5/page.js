@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Making <span className='text-[#e97f18]'> Edit </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,11 +64,12 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Who owns the rights to my Music when I distribute with YCE? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I add more stores to an existing release? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    When you distribute your music with Young CEO Entertainment, you retain full ownership of your music rights. We believe in empowering artists by ensuring you stay in control of your creations.
+    Yes, most music distributors allow you to add more stores to an existing release. You can usually update the distribution settings in your dashboard and select additional stores, and the release will be delivered to them. However, this might not be available on all platforms, so check with your distributor.
+
          </span>
 
         
@@ -127,20 +128,19 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: "What does 'In Review', 'Scheduled' and 'Sent to Stores' mean on my releases ",
-      url: '/support/your-account/query6'
-    },
-{
-  question: 'Can I release music for specific Countries ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query7'
-},
-{
-  question: 'Can I view music analytics in more detail ?',
-  url: '/support/your-account/query8'
-},
 
+  {
+    question: "Can I change my release date?",
+      url: '/support/making-edits/query4'
+  },
+  {
+    question: "How do I change my artist or band name?",
+     url: '/support/making-edits/query5'
+  },
+  {
+    question: "Can I edit my release after it's been completed but still in review?",
+      url: '/support/making-edits/query1'
+  },
 
 
 ];

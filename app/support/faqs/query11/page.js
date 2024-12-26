@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Frequently Asked <span className='text-[#e97f18]'>  Questions </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -63,14 +63,54 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I set the price of my Music? </div>
+        <div className="w-[1240px] h-[650px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold ">How long before my release date should I upload my music ?</div>
     <div className="self-stretch h-5" />
-    <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Yes, you can set the price of your music with Young CEO Entertainment. However, pricing options may vary depending on the platform or store you're distributing to. You’ll be able to choose your price for each release or album, allowing you to control how much you want to charge your audience.
 
-           </span>
+    <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
+        <p>To ensure your music goes live on all platforms on your desired release date, we recommend uploading your music at least 7–14 days  <br/>
+         before the release date.
+       <br/>   Here’s why:
+        </p>
+        <ul className='list-inside list-decimal text-[#EBEBEB]'>
+          <li>  Platform Review Time 📝 <br/> 
+       
+            <ul className=' list-inside ml-3'> 
+               <li> Some platforms may take a few days to review and approve your release. Uploading in advance gives you a buffer in case of delays.</li>
+              
+            </ul>
+           </li>
+
+           <li> Processing Time 🕒<br/> 
+       
+            <ul className='list-inside ml-3'> 
+               <li> Once uploaded, it typically takes 2–7 business days for your release to appear on streaming platforms, depending on the platform’s processing time.</li>
+              
+            </ul>
+           </li>
+
+           
+           <li> Pre-Save Links & Promotion 📣<br/> 
+       
+       <ul className='list-inside ml-3'> 
+          <li> Uploading early also gives you time to set up pre-save links and promote your music before it drops, building anticipation among your fans.</li>
+         
+       </ul>
+      </li>
+           
+            
+           
+
+               </ul>
+      
+        
+               
+                 <p>Pro Tip: Upload your music as soon as it’s ready, so you can focus on promoting and tracking your performance! 🚀
+                <br/>  If you need help, feel free to contact our support team via the dashboard.
+
+                  </p>
+ 
+         </span>
 
         
 
@@ -80,8 +120,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-px bg-black/5" />
     <div className="self-stretch h-10" />
     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
-        <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
-        <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+        <div className="text-[#e97f18] text-base font-medium mt-10">Is this article helpful?</div>
+        <span className='text-[#a6a6a6] inline-flex mb-10'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
         <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="w-6 h-6 relative" />
             <div className="w-6 h-6 relative" />
@@ -97,7 +137,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -129,19 +169,26 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'Can I release someone else music from my account?',
-    url: '/support/your-account/query12'
-  },
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
+    },
 {
-  question: 'Can I Choose where my music is released ?',
-  url: '/support/your-account/query13'
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
 {
-  question: 'when will my YCE Merch arrive?',
-   url: '/support/your-account/query14'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
 },
-
-
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 
 ];
 

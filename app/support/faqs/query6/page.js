@@ -63,50 +63,28 @@ const FaqComponent = () => {
           </div>
         </div>
        
-        <div className="w-[1240px] h-[900px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold "> How do I create a new release ? </div>
+        <div className="w-[1240px] h-[660px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+    <div className="text-white text-4xl font-bold "> How much will I get paid? </div>
     <div className="self-stretch h-5" />
 
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        <p>Yes, at Young CEO Entertainment, you can make changes to your release even after it’s been sent to stores. Here’s how:
-        <br/>  Editing Your Release ✏️</p>
+        <p> At Young CEO Entertainment, we ensure you receive 100% of the royalties earned from your music. Here's how it works:</p>
         <ul className='list-inside list-decimal text-[#EBEBEB]'>
-          <li> Log in to Your YCE Dashboard 🖥️ <br/> 
-           <p className='ml-2'> Access your account and navigate to the Releases section.</p></li>
-           <li> Select the Release You Want to Edit <br/> 
-           <p className='ml-2'> Choose the release you want to update. </p></li>
-           <li> Make Changes <br/> 
-           <p className='ml-2'> 
-            <ul className='list-disc list-inside'>
-              <li> You can update metadata like the track title, artist name, or cover art. </li>
-              <li> Note: Some changes may require a review and could take 5–10 business days to reflect on platforms. </li>
-               </ul>
-            </p></li>
-           <li> Submit for Review ✅ <br/> 
-           <p className='ml-2'> Save your changes and submit them for approval. </p></li>
+          <li> Royalty Collection: <br/> 
+           <p className='ml-2'> Royalty Collection: We collect royalties from all the platforms where your music is streamed or purchased, including Spotify, Apple Music, Amazon Music, and more. 🎧</p></li>
+           <li> Transparent Earnings: <br/> 
+           <p className='ml-2'> You can view your earnings in real-time through our YCE Dashboard 📊. </p></li>
+           <li> Payment Frequency: <br/> 
+           <p className='ml-2'> Payments are made on a monthly basis, provided your balance meets the minimum payout threshold of ₹1,000.</p></li>
+           <li> Payment Methods: <br/> 
+           <p className='ml-2'> Choose from multiple payment options, including bank transfer, UPI, or PayPal. </p></li>
            </ul>
-            <p> Note <br/> Removing Your Release 🚫 </p>
-            <ul className='list-inside list-decimal'>
-              <li> Go to the Release Details 
-              <p className='ml-2'> Select the release you want to remove. </p>
-              </li>
-
-              <li> Request Removal
-              <p className='ml-2'> Use the Remove from Stores option and confirm your request. </p>
-              </li>
-
-              <li> Processing Time 🕒
-              <p className='ml-2'> Removal requests usually take 7–14 business days to be processed by all platforms. </p>
-              </li>
+            <p> Note <br/> The amount you earn depends on factors like: </p>
+            <ul className='list-inside list-disc'>
+              <li> The number of streams/downloads 📈. </li>
+              <li> The platform&apos;s payout rates. </li>
+              <li> Your audience's location (rates vary by region 🌍). </li>
                </ul>
-      
-              <p> Important Notes:</p>
-                 <ul className='list-inside list-disc'> 
-                  <li> Once a release is removed, it will no longer be available on any platform.</li>
-                  <li> For edits, ensure all changes comply with platform guidelines to avoid delays. </li>
-                 </ul>
-                 <p> If you need assistance, contact our support team via the dashboard. </p>
- 
          </span>
 
         
