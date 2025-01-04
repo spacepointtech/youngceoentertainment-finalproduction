@@ -59,10 +59,10 @@ export default function ServicesPage() {
                 </div>
                 <div className="self-stretch justify-start items-center inline-flex">
                 <ul className="text-[12px] inline-flex list-inside list-disc font-normal text-[#e97f18]">
-                      <li className="text-[#e97f18] mr-6"> Smart Link </li>
-                      <li className="text-[#e97f18]  mr-6 "> Pre-save Link </li>
-                      <li className="text-[#e97f18] mr-6  "> Performance analytics </li>
-                      <li className="text-[#e97f18] mr-6 ">  Premium Features </li>
+                      <li className="text-[#e97f18] mr-4"> Smart Link </li>
+                      <li className="text-[#e97f18]  mr-4 "> Pre-save Link </li>
+                      <li className="text-[#e97f18] mr-4  "> Performance analytics </li>
+                      <li className="text-[#e97f18] mr-4 ">  Premium Features </li>
                     </ul>
                 </div>
             </div>

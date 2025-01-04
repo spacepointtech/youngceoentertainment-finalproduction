@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCheck } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container md:mx-7 px-6 py-4">
+        <Link href="/support" className="back-link  text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaCheck className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">What is <span className='text-[#e97f18]'>  Young Ceo Entertainment?</span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -64,17 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is pre-order Gratification? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Pre-Order Instant Gratification? 🎁 </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        <p> 
-        Pre-order Gratification refers to giving your fans access to your music before its official release when they pre-order it. Here’s how it works:</p>
-        
-        <ul className='mt-2 list-inside list-disc'> 
-         <li> Fans who pre-order your album or track can receive early access to a specific part of the content, such as a single or exclusive bonus material, before the full release date.</li>
-          <li> It incentivizes early support from your audience while building excitement for the official release.</li>
-        </ul>
-        
+         
+    Pre-Order Instant Gratification allows fans to <span className='font-bold'>  pre-order </span> your album or single, and in return, they immediately get a bonus track or an early release from the album. This is a great way to reward your supporters while building excitement! 🥳   
          </span>
 
         
@@ -102,7 +96,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -132,21 +126,27 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
+  
   {
-    question: 'Can I set the price of my Music',
-    url: '/support/your-account/query11'
-  },
-  {
-    question: 'Can I release someone else music from my accou',
-    url: '/support/your-account/query12'
-  },
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
+    },
 {
-  question: 'Can I Choose where my music is released ?',
-  url: '/support/your-account/query13'
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
-
-
-
+{
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 ];
-
 export default FaqComponent;

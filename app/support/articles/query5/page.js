@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCheck } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container md:mx-7 px-6 py-4">
+        <Link href="/support" className="back-link  text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,9 +52,9 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
+            <FaCheck className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">What is <span className='text-[#e97f18]'>  Young Ceo Entertainment?</span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -64,11 +64,18 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Who owns the rights to my Music when I distribute with YCE? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> What does 'In Review', 'Scheduled', and 'Sent To Stores' mean on my releases? 📅  </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    When you distribute your music with Young CEO Entertainment, you retain full ownership of your music rights. We believe in empowering artists by ensuring you stay in control of your creations.
+         
+              <ul className='list-inside list-disc'>
+
+                <li><span className='font-bold'>In Review: </span>Your release is being reviewed by our team to ensure it meets platform guidelines and requirements.</li>
+                <li><span className='font-bold'>Scheduled:  </span>Your release has been scheduled for a specific date, and it will be sent to stores on that date.</li>
+                <li><span className='font-bold'>Sent to Stores: </span>Your release has been successfully sent to distribution platforms like Spotify, Apple Music, etc. It’s now in the process of being published, and it will be live soon! 
+</li>
+              </ul>
+   
          </span>
 
         
@@ -96,7 +103,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -127,22 +134,26 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: "What does 'In Review', 'Scheduled' and 'Sent to Stores' mean on my releases ",
-      url: '/support/your-account/query6'
+  {
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
     },
 {
-  question: 'Can I release music for specific Countries ?',
+  question: 'What payment methods does YCE accept ?',
   answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query7'
+  url: '/support/faqs/query3'
 },
 {
-  question: 'Can I view music analytics in more detail ?',
-  url: '/support/your-account/query8'
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
 },
-
-
-
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 ];
-
 export default FaqComponent;

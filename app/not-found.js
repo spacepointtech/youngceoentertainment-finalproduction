@@ -40,9 +40,9 @@ import { Icon } from "@iconify/react";
 
 export default function ErrorPage() {
   return (
-    <div className="bg-black w-full min-h-screen text-white font-poppins flex flex-col items-center justify-center px-4">
+    <div className="bg-black w-full mb-2 min-h-screen text-white font-poppins flex flex-col items-center justify-center px-4">
       {/* Header Section */}
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center">Oops!</h1>
+      <h1 className="text-4xl  sm:text-5xl lg:text-6xl font-bold text-center">Oops!</h1>
       <p className="mt-2 text-lg sm:text-xl lg:text-2xl text-center text-[#A6A6A6]">
         We&apos;re working on it!
       </p>

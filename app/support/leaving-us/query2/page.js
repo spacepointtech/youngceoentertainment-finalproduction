@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaRegSadTear } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaRegSadTear className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Leaving <span className='text-[#e97f18]'>  Us </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,17 +64,12 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> How much does music distribution cost with Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> How do I delete my Ditto Music account & cancel my subscription? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-     <p className='mb-2'> Young CEO Entertainment offers flexible music distribution plans to suit every artist&apos;s needs:</p>
-         <ul className='list-disc  list-inside '> 
-          <li> Independent Artists: Ideal for solo musicians, priced at ₹1001. </li>
-          <li> Duo Plan: Perfect for collaborations, available at ₹2001. </li>
-          <li> Label Plan: Tailored for music labels, starting at ₹4899.
-          </li>
-         </ul>
+    To cancel your YCE Music subscription, email connectwithus@youngceoentertainment.com with your release details and the stores for removal. We'll process the takedown and pay any owed royalties.
+
+Note: Some royalties may take up to a year to be reported, so consider keeping your account open until all are collected. Cancellation is free and can be done anytime.
          </span>
 
         
@@ -134,17 +129,17 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: 'what is Young Ceo Entertainment',
-      url: '/support/your-account/query1'
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
     },
 {
   question: 'Can I release music for multiple artists from one account ?',
   answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query3'
+  url: '/support/subscription-renewal'
 },
 {
   question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/your-account/query4'
+  url: '/support/orders-history'
 },
 
 

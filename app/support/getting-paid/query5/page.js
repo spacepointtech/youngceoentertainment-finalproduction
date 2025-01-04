@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDollarSign } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaDollarSign className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Getting <span className='text-[#e97f18]'>  Paid </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,11 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Who owns the rights to my Music when I distribute with YCE? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> What is the minimum amount I can withdraw? 💵 </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    When you distribute your music with Young CEO Entertainment, you retain full ownership of your music rights. We believe in empowering artists by ensuring you stay in control of your creations.
+
+    The minimum withdrawal amount for royalties varies depending on the payout method. For PayPal, the minimum is generally $10 or equivalent. For Payoneer, the minimum is also around $10. Check your payout settings for more specific details. 📊
          </span>
 
         
@@ -128,17 +128,17 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: "What does 'In Review', 'Scheduled' and 'Sent to Stores' mean on my releases ",
-      url: '/support/your-account/query6'
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
     },
 {
-  question: 'Can I release music for specific Countries ?',
+  question: 'Can I release music for multiple artists from one account ?',
   answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query7'
+  url: '/support/subscription-renewal'
 },
 {
-  question: 'Can I view music analytics in more detail ?',
-  url: '/support/your-account/query8'
+  question: 'Can I release music for multiple artists from one account ?',
+  url: '/support/orders-history'
 },
 
 

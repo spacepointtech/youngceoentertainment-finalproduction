@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -68,8 +68,7 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
          
-Yes, you can usually change your release date if your music hasn't gone live yet. However, this depends on your distributor's policies. Some platforms allow you to adjust the release date directly in your dashboard, while others require you to contact support. Keep in mind that changing the release date may reset the review process.
-         </span>
+    Yes, you can change your release date before the release goes live. If your release is still in the review process or has not been sent to stores yet, you can modify the date through the Young CEO Entertainment dashboard. Be sure to make the changes well ahead of time to avoid any delays. ⏳         </span>
 
         
 

@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -68,8 +68,7 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Yes, most music distributors allow you to add more stores to an existing release. You can usually update the distribution settings in your dashboard and select additional stores, and the release will be delivered to them. However, this might not be available on all platforms, so check with your distributor.
-
+    Changing your artist or band name is not a straightforward process and requires careful consideration. If you wish to update your artist name, contact Young CEO Entertainment support, and we’ll assist you with the steps needed. If you've already distributed music under a different name, it may require re-uploading with the new name, and your old music may need to be taken down from the platforms. Make sure to update all related metadata and social media handles as well! 💡
          </span>
 
         

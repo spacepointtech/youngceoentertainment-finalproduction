@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -68,7 +68,7 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Yes, most music distributors allow you to add more stores to an existing release. You can usually update the distribution settings in your dashboard and select additional stores, and the release will be delivered to them. However, this might not be available on all platforms, so check with your distributor.
+    Unfortunately, you cannot add more stores to an already published release after it's been submitted. However, you can re-upload your release and choose to distribute it to additional stores during the upload process. If you need any assistance with this, feel free to reach out to our support team! 📈
 
          </span>
 

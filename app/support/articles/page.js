@@ -1,3 +1,158 @@
+// 'use client';
+// import '@/app/style.css';
+// import React, { useState } from 'react';
+// import Image from 'next/image';
+// import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCheck } from 'react-icons/fa';
+// import Link from 'next/link';
+// const FaqComponent = () => {
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [openIndex, setOpenIndex] = useState(null);
+
+//     const handleSearch = (e) => {
+//     setSearchTerm(e.target.value.toLowerCase());
+//   };
+
+//   const toggleDropdown = (index) => {
+//     setOpenIndex(openIndex === index ? null : index);
+//   };
+
+//   const filteredFaqItems = faqItems.filter(item =>
+//     item.question.toLowerCase().includes(searchTerm.toLowerCase())
+//   );
+
+//   return (
+//     <div className="support-page bg-black text-white font-poppins">
+//        <div className="hero-section relative h-[400px] bg-cover bg-center" style={{ backgroundImage: 'url(/images/support.png)' }}>
+//         <div className="container mx-auto text-left pt-24 pb-16">
+//           <h1 className="text-4xl font-semibold mb-9 mt-10 text-left mx-4 ">How Can We <span className='text-[#e97f18]'> help? </span> </h1>
+ 
+//           {/* Search Bar */}
+//           <div className="relative search-container mx-5 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18]">
+//             <FaSearch className="absolute left-1rem top-1/2 transform -translate-y-1/2 w-5 h-5  text-white search-icon" />
+//             <input
+//               type="text"
+//               placeholder="Search for articles..."
+//                className="search-input placeholder-opacity-30 placeholder:text-white w-[1240px] h-[84px] text-white pl-12 py-3 border border-white rounded-lg  focus:outline-none"
+//               onChange={handleSearch}
+//             />
+//           </div>
+//         </div>
+//       </div>
+
+
+
+//       {/* Back Link */}
+//       <div className="container md:mx-7 px-6 py-4">
+//         <Link href="/support" className="back-link  text-white text-lg">
+//           &lt; Back
+//         </Link>
+//       </div>
+
+//       {/* Support Categories */}
+//       <div className="container mx-auto px-6 pb-16">
+//         <div className="faq-header flex items-center justify-between mb-6">
+//           <div className="flex flex-col">
+//             <FaCheck className="text-4xl mb-4 text-[#A6A6A6]" />
+//             <h2 className="text-4xl font-semibold">What is <span className='text-[#e97f18]'>  Young Ceo Entertainment?</span></h2>
+//             <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
+//         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
+
+//           </div>
+//           <div className="faq-logo">
+//             <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+//           </div>
+//         </div>
+       
+//         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+//     <div className="text-white text-4xl font-bold font-['Poppins']">When will my Young CEO Entertainment Merch arrive? 📦 </div>
+//     <div className="self-stretch h-5" />
+//     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
+         
+//     Merch items from Young CEO Entertainment will typically arrive within 7-10 business days after your order is placed. You’ll receive a tracking number to monitor your order’s progress until it arrives at your doorstep. 🚚
+  
+//          </span>
+
+        
+
+// </div>
+
+//     <div className="self-stretch h-10" />
+//     <div className="self-stretch h-px bg-black/5" />
+//     <div className="self-stretch h-10" />
+//     <div className="self-stretch h-[72px] p-2 flex-col justify-start items-center gap-2 flex">
+//         <div className="text-[#e97f18] text-base font-medium ">Is this article helpful?</div>
+//         <span className='text-[#a6a6a6] inline-flex'> <FaThumbsUp className='mr-3 w-6 h-6 hover:text-white'/> <FaThumbsDown className='w-6 h-6 hover:text-white' />  </span>
+//         <div className="justify-start items-start gap-2.5 inline-flex">
+//             <div className="w-6 h-6 relative" />
+//             <div className="w-6 h-6 relative" />
+//         </div>
+//     </div>
+// </div>
+
+
+//       <div className="w-[1240px] h-[0px] mt-20 border border-[#757575]"></div>
+  
+//         <div className="text-white text-4xl font-medium mt-20 mb-7">Related Articles</div>
+  
+
+//         {/* FAQ Container */}
+//           {/* FAQ Container */}
+//           <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
+//           <div className="faq-list">
+//             {filteredFaqItems.length > 0 ? (
+//               filteredFaqItems.map((item, index) => (
+//                 <Link
+//                   key={index}
+//                   href={item.url}
+//                   className="faq-item block py-4 border-b border-gray-700  transition-colors duration-200"
+//                 >
+//                   <div className="flex justify-between text-xl ml-5 items-center mt-5">
+//                     <p>{item.question}</p>
+//                     <FaChevronRight className='mr-10 w-4 h-4' />
+//                   </div>
+//                 </Link>
+//               ))
+//             ) : (
+//               <p className="text-center text-gray-400">No articles found</p>
+//             )}
+//           </div>
+//         </div>
+        
+//       </div>
+//     </div>
+//   );
+// };
+
+
+
+// // FAQ Items
+// const faqItems = [
+  
+//   {
+//       question: 'How do I remove a release from stores ?',
+//       url: '/support/faqs/query2'
+//     },
+// {
+//   question: 'What payment methods does YCE accept ?',
+//   answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+//   url: '/support/faqs/query3'
+// },
+// {
+//   question: 'Will YCE promote my music ?',
+//   url: '/support/faqs/query4'
+// },
+// {
+//   question: 'How much will I get paid ?',
+//   url: '/support/faqs/query4'
+// },
+// {
+//   question: 'How do I create a new release ?',
+//   url: '/support/faqs/query4'
+// },
+// ];
+// export default FaqComponent;
+
+
 'use client';
 import '@/app/style.css';
 import Image from 'next/image';
@@ -5,10 +160,10 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaSearch, FaChevronRight, FaUserAlt, FaCheck } from 'react-icons/fa';
 
-const AccountSupport = () => {
+const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredFaqItems = faqItems.filter(item =>
+  const filteredFaqItems = faqItems.filter((item) =>
     item.question.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -18,61 +173,64 @@ const AccountSupport = () => {
 
   return (
     <div className="support-page bg-black text-white font-poppins">
-      <div className="hero-section relative h-[400px] bg-cover bg-center" style={{ backgroundImage: 'url(/images/support.png)' }}>
-        <div className="container mx-auto text-left pt-24 pb-16">
-          <h1 className="text-4xl font-semibold mb-9 mt-10 text-left mx-4 ">How Can We <span className='text-[#e97f18]'> help? </span> </h1>
- 
+      {/* Hero Section */}
+      <div className="hero-section relative h-[300px] md:h-[400px] bg-cover bg-center" style={{ backgroundImage: 'url(/images/support.png)' }}>
+        <div className="container mx-auto text-left pt-16 md:pt-24 pb-8 md:pb-16">
+          <h1 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-9 mt-8 md:mt-16 text-left px-4 md:ml-6">
+            How Can We <span className='text-[#e97f18]'> help? </span>
+          </h1>
+
           {/* Search Bar */}
-          <div className="relative search-container mx-5 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18]">
-            <FaSearch className="absolute left-1rem top-1/2 transform -translate-y-1/2 w-5 h-5  text-white search-icon" />
-            <input
-              type="text"
-              placeholder="Search for articles..."
-               className="search-input placeholder-opacity-30 placeholder:text-white w-[1240px] h-[84px] text-white pl-12 py-3 border border-white rounded-lg  focus:outline-none"
-              onChange={handleSearch}
-            />
-          </div>
-        </div>
-      </div>
-
-
+         {/* Search Bar */}
+                   <div className="relative px-4 md:ml-6 search-container mx-auto md:mx-10  font-poppins">
+                     <FaSearch className="absolute left-1 ml-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white search-icon" />
+                     <input
+                       type="text"
+                       placeholder="Search for articles..."
+                       className="search-input placeholder-opacity-30 hover:shadow-[0_0_20px_#e97f18] placeholder:text-white w-full h-14 md:h-[96px] text-white pl-12 py-3 border border-white rounded-lg focus:outline-none"
+                       onChange={handleSearch}
+                     />
+                   </div>
+                 </div>
+               </div>
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support" className="back-link text-white text-sm md:text-lg">
           &lt; Back
         </Link>
       </div>
 
       {/* Support Categories */}
-      <div className="container mx-auto px-6 pb-16">
-        <div className="faq-header flex items-center justify-between mb-6">
+      <div className="container mx-auto px-4 md:px-6 pb-16">
+        <div className="faq-header flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaCheck className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold font-poppins"> What is <span className='text-[#e97f18]'> Young Ceo Entertainment? </span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
-        <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
-
+            <FaCheck className="text-2xl md:text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-2xl md:text-4xl font-semibold">
+             What is  <span className='text-[#e97f18]'> YCE ? </span>
+            </h2>
+            <p className="text-lg md:text-xl text-[#EBEBEB] mb-4 md:mb-6">How to get Started releasing music</p>
+            <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
 
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={200} width={200} />
+          <div className="faq-logo mt-6 md:mt-0">
+            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
           </div>
         </div>
-      
+
         {/* FAQ Container */}
-        <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
+        <div className="faq-container bg-[#484848] bg-opacity-[24%] w-full max-w-full border border-[#A6A6A6] rounded-lg p-4 md:p-6">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
                 <Link
                   key={index}
                   href={item.url}
-                  className="faq-item block py-4 border-b border-gray-700  transition-colors duration-200"
+                  className="faq-item block py-2 md:py-4 border-b border-gray-700 transition-colors duration-200"
                 >
-                  <div className="flex justify-between text-xl ml-5 items-center mt-5">
+                  <div className="flex justify-between text-sm md:text-xl ml-2 md:ml-5 items-center mt-2 md:mt-5">
                     <p>{item.question}</p>
-                    <FaChevronRight className='mr-10 w-4 h-4' />
+                    <FaChevronRight className="mr-4 md:mr-10 w-3 md:w-4 h-3 md:h-4" />
                   </div>
                 </Link>
               ))
@@ -86,75 +244,30 @@ const AccountSupport = () => {
   );
 };
 
+
+// FAQ Items
 const faqItems = [
-      { question: 'What is Young Ceo Entertainment', 
-           url: '/support/support-query-response'
+  
+  {
+      question: 'How do I remove a release from stores ?',
+      url: '/support/faqs/query2'
     },
-  { 
-    question: 'How much does music distribution cost with Young CEO Entertainment?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I release music for multiple artists from one account?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Who owns the rights to my music when I distribute with YCE?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'What does (In Review), (Scheduled) and (Sent To Stores) mean on my releases?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I release music in specific countries?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I view my music analytics in more detail?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'How does Pre-Release work?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I edit or remove my release after it\'s been sent to stores?', 
-       url: '/support/support-query-response'
-
+{
+  question: 'What payment methods does YCE accept ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/faqs/query3'
 },
-  { 
-    question: 'What is Pre-Order Instant Gratification?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I set the price of my music?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I release someone else\'s music from my account?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Can I choose where my music is released?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'How many tracks are on a single, EP, and album?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'When will my YCE Merch arrive?', 
-       url: '/support/support-query-response'
-  },
-  { 
-    question: 'Does YCE Music offer a free trial?', 
-       url: '/support/support-query-response'
-  },
-
-
-
-
+{
+  question: 'Will YCE promote my music ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How much will I get paid ?',
+  url: '/support/faqs/query4'
+},
+{
+  question: 'How do I create a new release ?',
+  url: '/support/faqs/query4'
+},
 ];
-
-export default AccountSupport;
+export default FaqComponent;

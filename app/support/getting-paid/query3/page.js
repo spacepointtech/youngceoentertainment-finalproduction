@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDollarSign } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaDollarSign className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Getting <span className='text-[#e97f18]'>  Paid </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,11 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I release music for multiple artist from one account </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> My payments aren't working. Can I change my royalty payout method? 🔄 </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Yes, with Young CEO Entertainment's Duo Plan, you can release for two artists and with Label Plan, you can release music for multiple artists from a single account. This plan is designed to support labels and managers handling multiple artists, providing flexibility and convenience.
+    Yes, if you're facing issues with your payments, you can easily change your royalty payout method in the Payout Settings section of your Young CEO Entertainment dashboard. Make sure the new method is properly set up to avoid any delays in receiving payments. 📲
          </span>
 
         
@@ -128,17 +128,17 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: 'Who owns the rights to my music artists from one account',
-      url: '/support/your-account/query5'
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
     },
 {
   question: 'Can I release music for multiple artists from one account ?',
- 
-  url: '/support/your-account/query6'
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/subscription-renewal'
 },
 {
-  question: "what does 'In Review' 'Scheduled' and 'Sent to Stores' mean on My releases?",
-  url: '/support/your-account/query7'
+  question: 'Can I release music for multiple artists from one account ?',
+  url: '/support/orders-history'
 },
 
 

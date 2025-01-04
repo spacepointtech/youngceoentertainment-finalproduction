@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-10 px-6 py-4">
+        <Link href="/support" className="back-link  text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -68,7 +68,7 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-   
+               
          </span>
 
         

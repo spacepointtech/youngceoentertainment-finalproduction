@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-8 px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -68,8 +68,7 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-   
-No, removing a release and reuploading it will generate new Spotify and iTunes links, as these platforms assign unique links to each release.
+    No, if you remove a release from the stores and then re-upload it, the Spotify and iTunes links will change. A new ISRC code and release will be generated, so the links will be different. If you want to maintain the same links, it’s best to make any edits to the original release instead of removing and re-uploading it. 🔗
          </span>
 
         
