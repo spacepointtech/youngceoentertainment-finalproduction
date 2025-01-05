@@ -46,9 +46,9 @@ export default function ServicesPage() {
         </div>
         <div className="self-stretch h-[575px] justify-start items-start gap-[100px] inline-flex">
         <Image
-              src="/images/Dashboard.svg"
+              src="/images/artistsdashboard.png"
               alt="Artist Dashboard"
-              width={799}
+              width={820}
               height={575}
               className="rounded-lg w-[599px] h-[575px]"
             />

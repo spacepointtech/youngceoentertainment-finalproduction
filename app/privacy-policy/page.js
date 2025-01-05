@@ -479,7 +479,7 @@ export default function PrivacyPolicy() {
         {/* Footer */}
         <footer className="border-t border-gray-200 pt-4 mt-6">
           <p className="text-sm text-white">
-            © 2024 Young CEO Entertainment. All rights reserved.
+            © 2024 Young Ceo Entertainment. All rights reserved.
           </p>
         </footer>
       </div>

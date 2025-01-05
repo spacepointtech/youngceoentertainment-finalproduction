@@ -75,12 +75,15 @@ export default function Footer() {
               />
             </div>
           </div>
+          <Link href="#"> 
           <div className="px-8 py-2.5  border border-white rounded-[50px] justify-center items-center gap-2.5 inline-flex hover:bg-[#e97f18] hover:border-[#e97f18]">
             <div className="text-white text-sm font-medium leading-tight ">
               Send a request
             </div>
           </div>
+          </Link>
         </div>
+        
         <div className="self-stretch opacity-40   text-white text-xs font-normal leading-none">
           <Link href="/privacy-policy" className="hover:text-[#e97f18]"> Privacy </Link> | <Link href="/terms" className="hover:text-[#e97f18]"> Terms & Conditions </Link>
         </div>
@@ -100,13 +103,16 @@ export default function Footer() {
                   <Link href="/signup">Signup</Link>
                 </div>
                 <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
-                  <Link href="/support">Support</Link>
-                </div>
-                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/pricing">Pricing</Link>
                 </div>
                 <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
-                  <Link href="/aboutus">About Us</Link>
+                  <Link href="/services">Services</Link>
+                </div>
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
+                  <Link href="/support">Support</Link>
+                </div>
+                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
+                  <Link href="/about-us">About Us</Link>
                 </div>
               </div>
             </div>
@@ -115,20 +121,17 @@ export default function Footer() {
                 Extras
               </div>
               <div className="self-stretch  h-[95px] flex-col justify-start items-start gap-[5px] flex">
-               
-                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
-                  <Link href="/publishing">Music Publishing</Link>
+                <div className="self-stretch  text-white text-sm font-normal leading-tight">
+                  <Link href="/publishing" className="hover:text-[#e97f18]">Music Publishing</Link>
                 </div>
                 <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/promotion">Music Promotion</Link>
                 </div>
                 <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
-                  <Link href="/services">Artist Services</Link>
-                </div>
-                <div className="self-stretch hover:text-[#e97f18] text-white text-sm font-normal leading-tight">
                   <Link href="/news">News room</Link>
                 </div>
               </div>
+              <Link href={"/"}>
               <div className="absolute top-[-15px] right-[-130px]">
                 <Image
                   src="/logo.png"
@@ -138,6 +141,7 @@ export default function Footer() {
                   className="ml-60 w-[117px] h-[96px]"
                 />
               </div>
+              </Link>
             </div>
           </div>
           <div className="h-[116px] flex-col justify-start mt-12 items-start gap-6 inline-flex">
@@ -191,7 +195,8 @@ export default function Footer() {
                 placeholder="E-mail"
                 className="bg-transparent text-white text-sm font-normal focus:outline-none w-full"
               />
-              <span className="text-[#e97f18] text-lg font-medium">{">"}</span>
+              <Link href={"#"}>
+              <span className="text-[#e97f18] text-lg font-medium">{">"}</span></Link>
             </div>
           </div>
         </div>

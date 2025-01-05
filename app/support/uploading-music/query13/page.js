@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCloudUploadAlt } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaCloudUploadAlt  className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">uploading <span className='text-[#e97f18]'>  Music </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,12 +64,13 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">What format does my audio need to be in? 🎧</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
-         </span>
+          
+      
+    Your audio files must be in WAV or FLAC format for high-quality distribution. Ensure the bit rate is high (preferably 16-bit or 24-bit) to ensure your music sounds great across all platforms. 🎶          
+        </span>
 
         
 
@@ -127,20 +128,21 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-  {
-    question: 'How many tracks are on Single, EP and Album?',
-     url: '/support/your-account/query14'
-  },
+    {
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
+    },
 {
-  question: 'When will my YCE merch Arrive',
-   url: '/support/your-account/query15'
+  question: 'Can I release music for multiple artists from one account ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/subscription-renewal'
+},
+{
+  question: 'Can I release music for multiple artists from one account ?',
+  url: '/support/orders-history'
 },
 
 
-{
-  question: 'Does YCE Music Offer a free trail?',
-   url: '/support/your-account/query16'
-},
 
 ];
 

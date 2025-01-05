@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCloudUploadAlt } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaCloudUploadAlt  className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">uploading <span className='text-[#e97f18]'>  Music </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,19 +64,14 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> How Does Pre-Release Work? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">Can I use an existing ISRC code? 🔑</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    <p> The Pre-Release feature allows you to upload and set your music for distribution ahead of its official release date. Here’s how it works:</p>
-       <ul className='mt-2 list-inside list-decimal'> </ul>
-       <li> <span className='font-bold'>Upload Your Music: </span> Submit your tracks, artwork, and metadata before your desired release date. </li>
-       <li><span className='font-bold'> Set Release Date: </span>  Choose your official release date, typically allowing a 2-4 week lead time for stores to process your music. </li>
-       <li><span className='font-bold'> Approval Process: </span> Your release goes through a review process to ensure it meets platform guidelines. </li>
-       <li><span className='font-bold'> Distribution: </span>  Once approved, your music will be sent to stores and scheduled for release on your chosen date.
-       </li>
-       <p className='mt-2'> This gives you time to promote your release while ensuring it’s available on major platforms as soon as it’s live!</p>
-         </span>
+          
+          
+    Yes, you can use an existing ISRC (International Standard Recording Code) if you already have one. Make sure the code matches the track you are releasing. If you don't have an ISRC code, we can assign one to your release through Young CEO Entertainment. 📲
+
+        </span>
 
         
 
@@ -100,6 +95,8 @@ const FaqComponent = () => {
   
         <div className="text-white text-4xl font-medium mt-20 mb-7">Related Articles</div>
   
+
+        {/* FAQ Container */}
           {/* FAQ Container */}
           <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
           <div className="faq-list">
@@ -132,18 +129,21 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-  {
-    question: 'What is pre-order Gratification?',
-    url: '/support/your-account/query10'
-  },
+    {
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
+    },
 {
-  question: 'Can I set the price of my Music',
-  url: '/support/your-account/query11'
+  question: 'Can I release music for multiple artists from one account ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/subscription-renewal'
 },
 {
-  question: 'Can I release someone else music from my accou',
-  url: 'support/your-account/query12'
+  question: 'Can I release music for multiple artists from one account ?',
+  url: '/support/orders-history'
 },
+
+
 
 ];
 

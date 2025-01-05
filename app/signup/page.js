@@ -145,7 +145,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="login-wrapper flex flex-col items-center justify-center min-h-screen bg-[#0B0B0D] px-4 sm:px-6 lg:px-8">
+    <div className="login-wrappers flex flex-col items-center justify-center min-h-screen bg-[#0B0B0D] px-4 sm:px-6 lg:px-8">
       <div className="background-image"></div>
       <div className="logo-container mb-8">
         <Link href="/">

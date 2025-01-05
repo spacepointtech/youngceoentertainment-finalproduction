@@ -91,92 +91,92 @@
     
 //  { 
 //   question: 'Why am I blocked from uploading my music to Soundcloud?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
   
 // },
 // { 
 //   question: 'How do I change the track order on my release?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Why isn\'t my artwork being accepted?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I leave my release\'s secondary genre blank?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What if my music\'s language isn\'t available on the Release Builder?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What if my genre isn\'t available on the Release Builder?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What should I put for my record label?',
-//   url: '/support/support-query-response' 
+//   url: '/support/uploading-music/query1' 
 // },
 // { 
 //   question: 'What should I put for the copyright holder & copyright year?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I use an existing ISRC code?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'How do I include featured artists on my release?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What if my music has explicit lyrics?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What format does my artwork need to be in?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'What format does my audio need to be in?',
-//   url: '/support/support-query-response' 
+//   url: '/support/uploading-music/query1' 
 // },
 // { 
 //   question: 'How do I choose a song snippet for TikTok and SmartLinks?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I add credits to my releases?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I add lyrics to my release?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I upload the same track on multiple releases?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I re-release music I\’ve already released with YCE?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'Can I add my lyrics to Instagram?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'How to send large files to YCE Music', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'How do I find my Amazon Music Artist ID?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 // { 
 //   question: 'How do I find my Audiomack Artist ID?', 
-//    url: '/support/support-query-response'
+//    url: '/support/uploading-music/query1'
 // },
 
 // ];
@@ -282,92 +282,92 @@ const faqItems = [
     
  { 
   question: 'Why am I blocked from uploading my music to Soundcloud?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query1'
   
 },
 { 
   question: 'How do I change the track order on my release?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query2'
 },
 { 
   question: 'Why isn\'t my artwork being accepted?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query3'
 },
 { 
   question: 'Can I leave my release\'s secondary genre blank?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query4'
 },
 { 
   question: 'What if my music\'s language isn\'t available on the Release Builder?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query5'
 },
 { 
   question: 'What if my genre isn\'t available on the Release Builder?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query6'
 },
 { 
   question: 'What should I put for my record label?',
-  url: '/support/support-query-response' 
+  url: '/support/uploading-music/query7' 
 },
 { 
   question: 'What should I put for the copyright holder & copyright year?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query8'
 },
 { 
   question: 'Can I use an existing ISRC code?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query9'
 },
 { 
   question: 'How do I include featured artists on my release?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query10'
 },
 { 
   question: 'What if my music has explicit lyrics?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query11'
 },
 { 
   question: 'What format does my artwork need to be in?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query12'
 },
 { 
   question: 'What format does my audio need to be in?',
-  url: '/support/support-query-response' 
+  url: '/support/uploading-music/query13' 
 },
 { 
   question: 'How do I choose a song snippet for TikTok and SmartLinks?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query14'
 },
 { 
   question: 'Can I add credits to my releases?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query15'
 },
 { 
   question: 'Can I add lyrics to my release?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query16'
 },
 { 
   question: 'Can I upload the same track on multiple releases?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query17'
 },
 { 
   question: 'Can I re-release music I\’ve already released with YCE?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query18'
 },
 { 
   question: 'Can I add my lyrics to Instagram?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query19'
 },
 { 
   question: 'How to send large files to YCE Music', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query19'
 },
 { 
   question: 'How do I find my Amazon Music Artist ID?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query20'
 },
 { 
   question: 'How do I find my Audiomack Artist ID?', 
-   url: '/support/support-query-response'
+   url: '/support/uploading-music/query21'
 },
 
 ];

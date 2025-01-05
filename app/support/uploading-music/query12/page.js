@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaCloudUploadAlt } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -52,8 +52,8 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaCloudUploadAlt  className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">uploading <span className='text-[#e97f18]'>  Music </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -64,12 +64,14 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']">  Can I release someone else music from my account? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">What format does my artwork need to be in? 🖼️</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Yes, you can release someone else's music from your account, but you'll need to ensure that you have the proper legal rights and permissions to distribute their music. This is typically relevant for music managers, labels, or distributors who are authorized to handle and release music on behalf of artists. Make sure you have the appropriate agreements in place to avoid any copyright issues.
-         </span>
+          
+      
+Your artwork must be in JPEG or PNG format. The recommended resolution is 3000x3000 pixels for high-quality display across platforms. Make sure the artwork is clear and fits within the platform’s guidelines. 🎨
+          
+        </span>
 
         
 
@@ -126,17 +128,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  {
-    question: 'Can I Choose where my music is released ?',
-    url: '/support/your-account/query13'
-  },
-  {
-    question: 'How many tracks are on Single, EP and Album?',
-     url: '/support/your-account/query14'
-  },
+  
+    {
+      question: 'How much does music distribution cost with Young Ceo Entertainment?',
+      url: '/support/subscription-renewal'
+    },
 {
-  question: 'When will my YCE merch Arrive',
-   url: '/support/your-account/query15'
+  question: 'Can I release music for multiple artists from one account ?',
+  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  url: '/support/subscription-renewal'
+},
+{
+  question: 'Can I release music for multiple artists from one account ?',
+  url: '/support/orders-history'
 },
 
 

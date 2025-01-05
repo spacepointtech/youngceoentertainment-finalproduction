@@ -234,13 +234,13 @@ export default function Platform() {
   return (
     <div className="bg-black font-poppins">
       {/* Heading Section */}
-      <div className="h-9 p-10 text-center">
-        <span className="text-white text-2xl font-normal">
-          We Distribute your music worldwide  
+      <div className="h-9 p-14 text-center">
+        <div className="text-white text-2xl font-normal">
+          We Distribute your music worldwide   
           <span className="text-[#e97f18] text-2xl font-bold underline">
-            120+ Streaming Platforms
+             120+ Streaming Platforms
           </span>
-        </span>
+        </div>
       </div>
 
       {/* Scrolling Icons Section */}
@@ -269,7 +269,7 @@ export default function Platform() {
           ))}
         </div>
       </div>
-      <div className="p-10"></div>
+      <div className="p-6"></div>
     </div>
   );
 }

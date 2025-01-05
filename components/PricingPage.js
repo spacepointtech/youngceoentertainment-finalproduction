@@ -121,7 +121,7 @@ export default function Pricing() {
         <div className="text-center text-white text-xl md:text-2xl font-normal mt-1">
           Click below to explore all pricing options!
         </div> 
-        <div className="max-w-[90%] mt-10 lg:max-w-[1250px] mx-auto grid gap-5">
+        <div className="max-w-[90%] mt-10 lg:max-w-[1250px] mx-auto grid gap-5 ">
         {[
           {
             plan: "Independent Artist Plan",
@@ -145,7 +145,7 @@ export default function Pricing() {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10"
+            className="bg-[#0b0b0d] hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10"
           >
             <div className="flex-1">
               <div className="text-white text-left text-2xl font-bold">{item.plan}</div>
@@ -179,7 +179,7 @@ export default function Pricing() {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10"
+            className="bg-[#0b0b0d] hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10"
           >
             
             <div className="flex-1">
