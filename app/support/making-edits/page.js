@@ -166,17 +166,17 @@ const AccountSupport = () => {
           <div className="flex flex-col">
             <FaEdit className="text-2xl md:text-4xl mb-4 text-[#A6A6A6]" />
             <h2 className="text-2xl md:text-4xl font-semibold">
-             Making  <span className='text-[#e97f18]'> Edits ? </span>
+             Making  <span className='text-[#e97f18]'> Edits </span>
             </h2>
             <p className="text-lg md:text-xl text-[#EBEBEB] mb-4 md:mb-6">How to make changes to your releases?</p>
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
 
-          <div className="faq-logo mt-6 md:mt-0">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
+        
+ <div className="faq-logo">
+            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
           </div>
         </div>
-
         {/* FAQ Container */}
         <div className="faq-container bg-[#484848] bg-opacity-[24%] w-full max-w-full border border-[#A6A6A6] rounded-lg p-4 md:p-6">
           <div className="faq-list">

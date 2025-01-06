@@ -127,19 +127,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: "What does 'In Review', 'Scheduled' and 'Sent to Stores' mean on my releases ",
-      url: '/support/your-account/query6'
-    },
-{
-  question: 'Can I release music for specific Countries ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query7'
-},
-{
-  question: 'Can I view music analytics in more detail ?',
-  url: '/support/your-account/query8'
-},
+  {
+    question: 'What is music publishing?',
+    url: '/support/music-publishing/query3'
+  },
+  {
+    question: 'Will YCE collect Neighbouring Rights royalties?',
+   url: '/support/music-publishing/query4'
+  },
+  {
+    question: 'How do I obtain an IPI/CAE Number?',
+   url: '/support/music-publishing/query6'
+  }
 
 
 

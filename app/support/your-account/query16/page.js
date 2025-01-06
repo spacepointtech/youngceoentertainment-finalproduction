@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -64,11 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> Does Young CEO Entertainment offer a free trial? 🎉 </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
+
+    We don’t offer a free trial, but you can distribute a single track at a minimal fee to test out our platform. However, please note that this option doesn’t give access to the full dashboard features. For complete access, you’ll need to select a subscription plan. 🎶        
          </span>
 
         

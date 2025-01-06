@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -137,12 +137,12 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'Can I release music for specific Countries ?',
+    question: 'Can I release music for specific Countries?',
    
     url: '/support/your-account/query7'
   },
   {
-    question: 'Can I view music analytics in more detail ?',
+    question: 'Can I view music analytics in more detail?',
     url: '/support/your-account/query8'
   },
 {

@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -64,7 +64,7 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> How do I delete my Ditto Music account & cancel my subscription? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> How do I delete my YCE Music account & cancel my subscription? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
     To cancel your YCE Music subscription, email connectwithus@youngceoentertainment.com with your release details and the stores for removal. We'll process the takedown and pay any owed royalties.
@@ -128,19 +128,16 @@ Note: Some royalties may take up to a year to be reported, so consider keeping y
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
+     
+  {
+    question: 'What happens if I stop paying my subscription?',
+    url: '/support/leaving-us/query1'
+  },
+ 
+  {
+    question: 'Can I withdraw royalties without an active subscription?',
+     url: '/support/leaving-us/query3'
+  },
 
 
 

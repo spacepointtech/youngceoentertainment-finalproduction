@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -127,20 +127,15 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
+  { question: 'How does YouTube Content ID work?',
+    url: '/support/music-videos/query2' 
 },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
+  { question: 'When and how do I get paid video royalties?', 
+    url: '/support/music-videos/query3' 
+ },
+  { question: 'Who owns the rights to my music when I distribute with YCE?',
+    url: '/support/music-videos/query4' 
 },
-
 
 
 ];

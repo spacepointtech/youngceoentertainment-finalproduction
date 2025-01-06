@@ -23,7 +23,11 @@ export default function Footer() {
       behavior: 'smooth'
     });
   };
+  const handleSubscribe = () => {
 
+    window.location.href =
+      "mailto:connectwithus@youngceoentertainment.com?subject=Get%20Details%20about%20distributing%20my%20track&body=Hello!%20I%20hope%20this%20email%20finds%20you%20well.%20I%20want%20to%20connect%20with%20the%20team%20to%20discuss%20about%20distributing%20my%20music.";
+  };
   return (
     <div className="h-[805px] relative bg-gradient-to-b from-[#0e0e10] to-[#2f1700] font-poppins">
       <div className="w-[417px] h-[472px] px-6 py-8 left-[108px] top-[74px] absolute bg-[#0b0b0d] rounded-2xl border border-[#9f9fa1] flex-col justify-between items-start inline-flex">
@@ -153,10 +157,14 @@ export default function Footer() {
                 <div className="self-stretch text-white text-sm font-normal leading-tight">
                   +91 878 896 9278
                 </div>
+               
                 <div className="flex items-center gap-4">
+                  
                   <div className="text-white text-sm font-normal leading-tight">
-                    connectwithus@youngceoentertainment.com
+                  <button 
+                   onClick={handleSubscribe}>   connectwithus@youngceoentertainment.com </button>
                   </div>
+                  
                   <div className="flex items-center gap-2">
                     <div className="w-[50px] h-[50px] rounded-[50px] hover:border hover:border-white border border-white/10 justify-center items-center flex">
                       <FaFacebookF className="text-white text-xl" />

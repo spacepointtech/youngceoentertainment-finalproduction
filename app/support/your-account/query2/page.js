@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-6 py-4">
+        <Link href="/your-account" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -68,13 +68,8 @@ const FaqComponent = () => {
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-     <p className='mb-2'> Young CEO Entertainment offers flexible music distribution plans to suit every artist&apos;s needs:</p>
-         <ul className='list-disc  list-inside '> 
-          <li> Independent Artists: Ideal for solo musicians, priced at ₹1001. </li>
-          <li> Duo Plan: Perfect for collaborations, available at ₹2001. </li>
-          <li> Label Plan: Tailored for music labels, starting at ₹4899.
-          </li>
-         </ul>
+    The cost to release music with Young CEO Entertainment depends on the subscription plan you choose. We offer affordable pricing, starting at ₹399/year for a basic plan. This allows you to distribute music to major platforms with no hidden fees. More advanced plans with additional features like analytics and promotional tools are available. You can find full details on the pricing page on your dashboard! 🚀
+        
          </span>
 
         
@@ -134,16 +129,16 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: 'what is Young Ceo Entertainment',
+      question: 'what is Young Ceo Entertainment?',
       url: '/support/your-account/query1'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  question: 'Can I release music for multiple artists from one account?',
+  
   url: '/support/your-account/query3'
 },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'Can I release music for multiple artists from one account?',
   url: '/support/your-account/query4'
 },
 

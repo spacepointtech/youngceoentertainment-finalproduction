@@ -127,19 +127,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'Who owns the rights to my music artists from one account',
-      url: '/support/your-account/query5'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
- 
-  url: '/support/your-account/query6'
-},
-{
-  question: "what does 'In Review' 'Scheduled' and 'Sent to Stores' mean on My releases?",
-  url: '/support/your-account/query7'
-},
+  {
+    question: 'Will YCE collect Neighbouring Rights royalties?',
+   url: '/support/music-publishing/query4'
+  },
+  {
+    question: 'I am the songwriter - how do I register my songs with YCE publishing?',
+    url: '/support/music-publishing/query5'
+  },
+  {
+    question: 'How do I obtain an IPI/CAE Number?',
+   url: '/support/music-publishing/query6'
+  }
 
 
 

@@ -43,7 +43,7 @@ const FaqComponent = () => {
 
       {/* Back Link */}
       <div className="container mx-auto px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+        <Link href="/your-account" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -129,15 +129,15 @@ const faqItems = [
   
     {
       question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
+      url: '/support/your-account/query2'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  question: 'Can I release music for multiple artists from one account?',
+ 
   url: '/support/subscription-renewal'
 },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'Can I release music for multiple artists from one account?',
   url: '/support/orders-history'
 },
 

@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -131,14 +131,13 @@ const faqItems = [
      url: '/support/making-edits/query3'
   },
   {
+    question: "If I remove a release from stores, edit and re-upload it, will the same Spotify or iTunes links work?",
+      url: '/support/making-edits/query2'
+},
+  {
     question: "How do I change my artist or band name?",
      url: '/support/making-edits/query5'
   },
-  {
-    question: "Can I edit my release after it's been completed but still in review?",
-      url: '/support/making-edits/query1'
-  },
-
 
 
 ];

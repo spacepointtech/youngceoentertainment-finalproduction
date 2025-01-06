@@ -135,20 +135,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  
+
   {
-    question: 'Can I release music for specific Countries ?',
-   
-    url: '/support/your-account/query7'
+    question: 'What is music publishing?',
+    url: '/support/music-publishing/query3'
   },
   {
-    question: 'Can I view music analytics in more detail ?',
-    url: '/support/your-account/query8'
+    question: 'Will YCE collect Neighbouring Rights royalties?',
+   url: '/support/music-publishing/query4'
   },
-{
-  question: 'How Does Pre-Release Work?',
-  url: '/support/your-account/query9'
-},
+  {
+    question: 'I am the songwriter - how do I register my songs with YCE publishing?',
+    url: '/support/music-publishing/query5'
+  },
 
 
 

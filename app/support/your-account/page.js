@@ -332,10 +332,10 @@ const AccountSupport = () => {
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
 
-          <div className="faq-logo mt-6 md:mt-0">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
-          </div>
-        </div>
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+                  </div>
 
         {/* FAQ Container */}
         <div className="faq-container bg-[#484848] bg-opacity-[24%] w-full max-w-full border border-[#A6A6A6] rounded-lg p-4 md:p-6">
@@ -382,43 +382,43 @@ const faqItems = [
   },
    
   {
-    question: "What does 'In Review', 'Scheduled' and 'Sent To Stores' mean on my releases ?",
+    question: "What does 'In Review', 'Scheduled' and 'Sent To Stores' mean on my releases?",
     url: '/support/your-account/query6'
   },
   {
-    question: "Can I release music in specific countries ?",
+    question: "Can I release music in specific countries?",
     url: '/support/your-account/query7'
   },
   {
-    question: "Can I view my music analytics in more detail ?",
+    question: "Can I view my music analytics in more detail?",
     url: '/support/your-account/query8'
   },
   {
-    question: "How does Pre-Release work ?",
+    question: "How does Pre-Release work?",
     url: '/support/your-account/query9'
   },
   {
-    question: "What is Pre-Order Instant Gratification ?",
+    question: "What is Pre-Order Instant Gratification?",
     url: '/support/your-account/query10'
   },
   {
-    question: "Can I set the price of my music ?",
+    question: "Can I set the price of my music?",
     url: '/support/your-account/query11'
   },
   {
-    question: "Can I release someone else's music from my account ?",
+    question: "Can I release someone else's music from my account?",
     url: '/support/your-account/query12'
   },
   {
-    question: "Can I choose where my music is released ?",
+    question: "Can I choose where my music is released?",
     url: '/support/your-account/query13'
   },
   {
-    question: "How many tracks are on a single, EP and album ?",
+    question: "How many tracks are on a single, EP and album?",
     url: '/support/your-account/query14'
   },
     {
-    question: "When will my YCE Merch arrive ?",
+    question: "When will my YCE Merch arrive?",
     url: '/support/your-account/query15'
   },
   {

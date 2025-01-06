@@ -126,21 +126,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
 
+  {
+    question: 'Do I need a YCE Music subscription to access Young Ceo Entertainment Music Publishing?',
+   url: '/support/music-publishing/query2'
+  },
+  {
+    question: 'What is music publishing?',
+    url: '/support/music-publishing/query3'
+  },
+  {
+    question: 'Will YCE collect Neighbouring Rights royalties?',
+   url: '/support/music-publishing/query4'
+  },
 
 
 ];

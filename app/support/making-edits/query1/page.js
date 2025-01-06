@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -53,7 +53,7 @@ const FaqComponent = () => {
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
             <FaEdit className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Making <span className='text-[#e97f18]'>  Making </span></h2>
+            <h2 className="text-4xl font-semibold">Making <span className='text-[#e97f18]'>  Edits </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
@@ -127,6 +127,7 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
+
   {
     question: "If I remove a release from stores, edit and re-upload it, will the same Spotify or iTunes links work?",
       url: '/support/making-edits/query2'
@@ -139,7 +140,6 @@ const faqItems = [
     question: "Can I change my release date?",
       url: '/support/making-edits/query4'
   },
-
 
 ];
 

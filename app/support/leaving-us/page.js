@@ -170,8 +170,9 @@ const ExitSupport = () => {
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
 
-          <div className="faq-logo mt-6 md:mt-0">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
+         
+ <div className="faq-logo">
+            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
           </div>
         </div>
 

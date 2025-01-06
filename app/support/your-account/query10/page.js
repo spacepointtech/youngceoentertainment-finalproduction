@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -133,15 +133,15 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   {
-    question: 'Can I set the price of my Music',
+    question: 'Can I set the price of my Music?',
     url: '/support/your-account/query11'
   },
   {
-    question: 'Can I release someone else music from my accou',
+    question: 'Can I release someone else music from my account?',
     url: '/support/your-account/query12'
   },
 {
-  question: 'Can I Choose where my music is released ?',
+  question: 'Can I Choose where my music is released?',
   url: '/support/your-account/query13'
 },
 

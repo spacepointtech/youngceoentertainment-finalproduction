@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -128,11 +128,11 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: 'Who owns the rights to my music artists from one account',
+      question: 'Who owns the rights to my music artists from one account?',
       url: '/support/your-account/query5'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'Can I release music for multiple artists from one account?',
  
   url: '/support/your-account/query6'
 },

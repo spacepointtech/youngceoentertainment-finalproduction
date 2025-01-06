@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
+      <div className="container mx-auto px-6 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -140,7 +140,7 @@ const faqItems = [
     url: '/support/your-account/query10'
   },
 {
-  question: 'Can I set the price of my Music',
+  question: 'Can I set the price of my Music?',
   url: '/support/your-account/query11'
 },
 

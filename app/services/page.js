@@ -108,7 +108,7 @@ export default function ServicesPage() {
               Our dedicated team is always here to support you throughout your musical journey. Whether you need assistance with distribution, marketing, or anything in between, we are just a message away to provide the help you need.
             </p>
             <span className="inline-flex text-[#e97f18] mt-5 ml-20">   <Icon icon="duo-icons:location" className='w-[39.5px] h-[39.5px] mr-4'/>
-            <Icon icon="ic:baseline-whatsapp" className='w-[39.5px] h-[39.5px] mr-4'/>
+            <Link href="https://wa.me/8788969278" target="_blank"> <Icon icon="ic:baseline-whatsapp" className='w-[39.5px] h-[39.5px] mr-4'/> </Link>
             <Icon icon="material-symbols:mail-outline" className='w-[39.5px] h-[39.5px] mr-4'/>
             <Icon icon="material-symbols:call-outline" className='w-[39.5px] h-[39.5px] mr-4'/>
                     
@@ -131,11 +131,13 @@ export default function ServicesPage() {
           Gain insights into your streams and earnings effortlessly and Join us and take control of your music career!
         </div>
       </div>
+      <Link href="/signup">
       <div className="w-[269px] justify-start items-start gap-[41.20px] inline-flex">
         <div className="grow shrink basis-0 h-[62px] px-[74px] w-[94px] text-[#e97f18] text-xl font-semibold py-4 rounded-lg border border-[#e97f18] justify-center items-center gap-2.5 flex hover:bg-[#e97f18] hover:text-white">
-          <Link href="/signup">  Join Now  </Link>
+            Join Now  
         </div>
       </div>
+      </Link>
     </div>
     <div className="w-[480px] h-[340px] mr-20">
       <Image

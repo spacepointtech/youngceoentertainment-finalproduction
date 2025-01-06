@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -126,20 +126,14 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
+  { question: 'How do I find my YouTube Topic Channel ID?', 
+    url: '/support/music-videos/query6' 
 },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
+  { question: 'How do I get an Official Artist Channel on YouTube?',
+    url: '/support/music-videos/query7' 
+ },
+  { question: 'I still haven’t received my Official Artist Channel - how long does this take?', 
+    url: '/support/music-videos/query8'  },
 
 
 
