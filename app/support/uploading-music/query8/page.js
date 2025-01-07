@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
@@ -58,9 +58,11 @@ const FaqComponent = () => {
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
@@ -130,20 +132,18 @@ The copyright holder should be your name (or the name of your label if applicabl
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
-
+  { 
+    question: 'Can I use an existing ISRC code?', 
+     url: '/support/uploading-music/query9'
+  },
+  { 
+    question: 'How do I include featured artists on my release?', 
+     url: '/support/uploading-music/query10'
+  },
+  { 
+    question: 'What if my music has explicit lyrics?', 
+     url: '/support/uploading-music/query11'
+  },
 
 
 ];

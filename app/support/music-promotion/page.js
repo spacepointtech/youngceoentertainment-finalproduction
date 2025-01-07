@@ -164,9 +164,11 @@ const PromotionSupport = () => {
           </div>
 
           
- <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
 
         {/* FAQ Container */}

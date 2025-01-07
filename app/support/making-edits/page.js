@@ -173,9 +173,11 @@ const AccountSupport = () => {
           </div>
 
         
- <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
         {/* FAQ Container */}
         <div className="faq-container bg-[#484848] bg-opacity-[24%] w-full max-w-full border border-[#A6A6A6] rounded-lg p-4 md:p-6">

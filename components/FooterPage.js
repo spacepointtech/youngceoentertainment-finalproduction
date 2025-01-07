@@ -155,7 +155,7 @@ export default function Footer() {
             <div className="self-stretch flex justify-between items-center gap-4">
               <div className="flex-col">
                 <div className="self-stretch text-white text-sm font-normal leading-tight">
-                  +91 878 896 9278
+                <Link href="tel:+918788969278">  +91 8788969278 </Link>
                 </div>
                
                 <div className="flex items-center gap-4">
@@ -187,7 +187,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="self-stretch text-white text-sm font-normal leading-tight">
-                  Pune
+                <Link href="https://g.co/kgs/TV1BF5E" target="_blank">      Pune </Link>
                 </div>
                 <div className="text-[#e97f18] mt-10 text-base font-medium uppercase leading-snug tracking-wide">
                   Subscription

@@ -154,10 +154,10 @@ export default function LoginPage() {
       </div>
       <div className="login-form-container w-full max-w-md p-6 bg-[#141416] rounded-2xl border border-[#9fa9fa] flex flex-col justify-start items-center gap-4 font-poppins">
         <h2 className="text-white text-2xl sm:text-3xl font-medium text-center">
-          Welcome back
+          Register
         </h2>
         <p className="w-full text-[#d9d9d9] text-sm sm:text-base font-normal text-center">
-          Login to connect with Young CEO Entertainment
+        Easy registration to connect with Young CEO Entertainment
         </p>
         <form className="w-full">
         <div className="mb-5">

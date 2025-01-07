@@ -40,9 +40,8 @@ const FaqComponent = () => {
       </div>
 
 
-
       {/* Back Link */}
-      <div className="container mx-10 px-6 py-4">
+      <div className="container mx-auto px-4 py-4">
         <Link href="/support" className="back-link  text-white text-lg">
           &lt; Back
         </Link>

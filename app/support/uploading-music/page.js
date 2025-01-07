@@ -244,10 +244,11 @@ const UploadSupport = () => {
             <p className="text-lg md:text-xl text-[#EBEBEB] mb-4 md:mb-6">Advice on using our release Builder</p>
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
-
-          <div className="faq-logo mt-6 md:mt-0">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
-          </div>
+           <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
 
         {/* FAQ Container */}
@@ -345,17 +346,14 @@ const faqItems = [
   question: 'Can I add lyrics to my release?', 
    url: '/support/uploading-music/query16'
 },
+
 { 
-  question: 'Can I upload the same track on multiple releases?', 
+  question: 'Can I re-release music I\’ve already released with YCE?', 
    url: '/support/uploading-music/query17'
 },
 { 
-  question: 'Can I re-release music I\’ve already released with YCE?', 
-   url: '/support/uploading-music/query18'
-},
-{ 
   question: 'Can I add my lyrics to Instagram?', 
-   url: '/support/uploading-music/query19'
+   url: '/support/uploading-music/query18'
 },
 { 
   question: 'How to send large files to YCE Music', 
