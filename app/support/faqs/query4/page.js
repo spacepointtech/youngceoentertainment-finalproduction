@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
       {/* Back Link */}
       <div className="container mx-auto px-4 py-4">
-        <Link href="/support" className="back-link  text-white text-lg">
+        <Link href="/support/faqs" className="back-link  text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -57,30 +57,68 @@ const FaqComponent = () => {
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
-        <div className="w-[1240px] h-[640px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
+        <div className="w-[1240px] h-auto p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
     <div className="text-white text-4xl font-bold "> What payment methods does YCE accept ? </div>
     <div className="self-stretch h-5" />
 
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-        <ul className='list-inside list-decimal text-[#EBEBEB]'>
-          <li> Log in to Your YCE Dashboard: <br/> 
-           <p className='ml-2'> Access your account using your login credentials. </p></li>
-           <li> Navigate to the Release Section: <br/> 
-           <p className='ml-2'> Go to the Releases tab in your dashboard to view all your distributed tracks. </p></li>
-           <li> Select the Release You Want to Remove: <br/> 
-           <p className='ml-2'> Click on the specific release you wish to remove from stores. </p></li>
-           <li> Request Removal: <br/> 
-           <p className='ml-2'> Use the Remove from Stores option and confirm your request. </p></li>
-           <li> Processing Time:<br/> 
-           <p className='ml-2'> Once you submit the request, it may take up to 7–14 business days for the release to be removed from all platforms. </p></li> 
+       <ul className="list-decimal list-inside"> 
+        <li> At Young CEO Entertainment, we aim to make payments convenient and accessible for all our users. We accept the following payment <br/> methods:
+      
+           <ul className="ml-2 list-item list-inside"> 
+           <li>   a.  Credit and Debit Cards </li>
+              <ul className='ml-4 list-inside list-disc'> 
+                <li> Visa </li>
+                <li> Mastercard </li>
+                <li> American Express </li>
+               
+              </ul>
            </ul>
-            <p> Note: If you have any issues or need assistance, feel free to contact our support team through the Help & Support section in your dashboard. </p>
+
+
+
+           <ul className="ml-2 mt-4 list-item list-inside"> 
+           <li>   b.  UPI (Unified Payments Interface) </li>
+              <ul className='ml-4 list-inside list-disc'> 
+                <li> GooglePay </li>
+                <li> Phonepe </li>
+                <li> Paytm </li>
+               
+              </ul>
+           </ul>
+
+
+           <ul className="ml-2 mt-4 list-item list-inside"> 
+           <li> c.  Digital Wallets </li>
+              <ul className='ml-4 list-inside list-disc'> 
+                <li> Paypal </li>
+              </ul>
+           </ul>
+
+           <ul className="ml-2 mt-4 list-item list-inside"> 
+           <li> d. Bank Transfers </li>
+              <ul className='ml-4 list-inside list-disc'> 
+                <li> Direct transfer options are available for certain regions. </li>
+              </ul>
+           </ul>
+           
+        </li>
+        
+        <li className="mt-3">
+        Note: All transactions are processed securely, and payment options may vary based on your location.
+        </li>
+        <li className="mt-3">
+        If you experience any issues with payments, please contact our Support Team through the Help & Support section in your dashboard.
+        </li>
+       </ul>
          </span>
 
         
@@ -139,26 +177,15 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-  {
-      question: 'How do I remove a release from stores ?',
-      url: '/support/faqs/query2'
-    },
-{
-  question: 'What payment methods does YCE accept ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/faqs/query3'
+ 
+{ question: 'Will YCE promote my music?',
+    url: '/support/faqs/query5'
 },
-{
-  question: 'Will YCE promote my music ?',
-  url: '/support/faqs/query4'
+{ question: 'How much will I get paid?',
+  url: '/support/faqs/query6'
 },
-{
-  question: 'How much will I get paid ?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How do I create a new release ?',
-  url: '/support/faqs/query4'
+{ question: 'How do I create a new release?',
+ url: '/support/faqs/query7' 
 },
 
 ];

@@ -43,7 +43,7 @@ const FaqComponent = () => {
 
       {/* Back Link */}
       <div className="container mx-auto px-4 py-4">
-        <Link href="/support" className="back-link  text-white text-lg">
+        <Link href="/support/faqs" className="back-link  text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -58,9 +58,11 @@ const FaqComponent = () => {
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[700px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
@@ -162,26 +164,14 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-  {
-      question: 'How do I remove a release from stores ?',
-      url: '/support/faqs/query2'
-    },
-{
-  question: 'What payment methods does YCE accept ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/faqs/query3'
+  { question: 'Will YCE take any of my royalties?', 
+    url: '/support/faqs/query10'   
 },
-{
-  question: 'Will YCE promote my music ?',
-  url: '/support/faqs/query4'
+  { question: 'How long before my release date should I upload my music?', 
+    url: '/support/faqs/query11'   
 },
-{
-  question: 'How much will I get paid ?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How do I create a new release ?',
-  url: '/support/faqs/query4'
+  { question: 'Can I choose where my music is released?', 
+    url: '/support/faqs/query12'   
 },
 
 ];

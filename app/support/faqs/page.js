@@ -202,9 +202,11 @@ const FaqComponent = () => {
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
 
-          <div className="faq-logo mt-6 md:mt-0">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={120} width={120} className="md:h-[200px] md:w-[200px]" />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
 
         {/* FAQ Container */}
@@ -239,7 +241,7 @@ const faqItems = [
         question: 'What do I need to start releasing music?',
            url: '/support/faqs/query1'
       },
-      { question: 'How much does music distribution cost with Young CEO Entertainment?', 
+      { question: 'How much does it cost with Young CEO Entertainment?', 
         url: '/support/faqs/query2'
     },
       { question: 'How do I remove a release from stores?',
@@ -257,9 +259,9 @@ const faqItems = [
       { question: 'How do I create a new release?',
        url: '/support/faqs/query7' 
     },
-      { question: "Can I edit or remove my release after it's been sent to stores ?",
-        url: '/support/faqs/query8' 
-    },
+    //   { question: "Can I edit or remove my release after it's been sent to stores ?",
+    //     url: '/support/faqs/query8' 
+    // },
       { question: 'Do I need to renew my subscription ?', 
         url: '/support/faqs/query9' 
     },

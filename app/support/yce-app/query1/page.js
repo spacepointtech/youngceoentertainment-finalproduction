@@ -43,7 +43,7 @@ const FaqComponent = () => {
 
       {/* Back Link */}
       <div className="container mx-auto px-4 py-4">
-        <Link href="/yce-app" className="back-link ml-1 text-white text-lg">
+        <Link href="/support/yce-app" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>

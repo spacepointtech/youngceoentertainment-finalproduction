@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-8 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/getting-paid" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -58,9 +58,11 @@ const FaqComponent = () => {
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
@@ -70,7 +72,7 @@ const FaqComponent = () => {
         
     To add a royalty payout method, go to the Payout Settings in your Young CEO Entertainment dashboard. You’ll be able to select your preferred payout method, such as PayPal or Payoneer, and enter the required details to set up the payment method. 🎯
          </span>
-
+  
         
 
 </div>
@@ -127,20 +129,21 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
-
+  {
+    question: 'My payments aren\'t working. Can I change my royalty payout method?',
+       url: '/support/getting-paid/query3'
+  
+  },
+  {
+    question: 'How do I withdraw royalties with payoneer?',
+       url: '/support/getting-paid/query4'
+    
+  },
+  {
+    question: 'What is the minimum amount I can withdraw?',
+       url: '/support/getting-paid/query5'
+   
+  },
 
 
 ];

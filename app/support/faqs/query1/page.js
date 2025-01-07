@@ -202,8 +202,8 @@ const FaqComponent = () => {
                         </div>
 
       {/* Back Link */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <Link href="/support" className="back-link text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/faqs" className="back-link text-white text-sm md:text-lg">
           &lt; Back
         </Link>
       </div>
@@ -219,12 +219,14 @@ const FaqComponent = () => {
             <p className="text-xl text-[#EBEBEB] mb-6">Answers to questions we are asked most often.</p>
             <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
 
-        <div className="w-full lg:w-[1240px] h-auto p-6 bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex flex-col items-start">
+        <div className="w-[1240px] h-auto p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
           <div className="text-white text-4xl font-bold font-['Poppins']">
             What do I need to start releasing music?
           </div>
@@ -359,11 +361,17 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  { question: 'How do I remove a release from stores?', url: '/support/faqs/query2' },
-  { question: 'What payment methods does YCE accept?', url: '/support/faqs/query3' },
-  { question: 'Will YCE promote my music?', url: '/support/faqs/query4' },
-  { question: 'How much will I get paid?', url: '/support/faqs/query4' },
-  { question: 'How do I create a new release?', url: '/support/faqs/query4' },
+ 
+  { question: 'How much does it cost with Young CEO Entertainment?', 
+    url: '/support/faqs/query2'
+},
+  { question: 'How do I remove a release from stores?',
+        url: '/support/faqs/query3'
+     },
+  { question: 'What payment methods does YCE accept?',
+      url: '/support/faqs/query4'
+    },
+    
 ];
 
 export default FaqComponent;
