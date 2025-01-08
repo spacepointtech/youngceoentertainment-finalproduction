@@ -145,7 +145,7 @@ export default function Pricing() {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-[#0b0b0d] hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10"
+            className="bg-[#0b0b0d]transition-all duration-300 hover:scale-105  hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] rounded-xl border border-[#9f9fa1] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10"
           >
             <div className="flex-1">
               <div className="text-white text-left text-2xl font-bold">{item.plan}</div>

@@ -131,7 +131,7 @@ const FaqComponent = () => {
 const faqItems = [
   
     {
-      question: 'what is Young Ceo Entertainment?',
+      question: 'What is Young Ceo Entertainment?',
       url: '/support/your-account/query1'
     },
 {
