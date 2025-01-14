@@ -371,7 +371,7 @@ export default function Dashboard() {
                 />
             
             <div className="mt-4">
-  <p className="mb-4 text-center">I am a:</p>
+  <p className="mb-4 text-center font-bold">I am a:</p>
   <div className="border border-[#e97f18] rounded-2xl flex items-center justify-center ">
     {['independent', 'label'].map((type) => (
       <div
