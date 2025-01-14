@@ -851,7 +851,13 @@ export default function AudiencePage() {
           </div>
 
           {/* Analytics Box */}
-          <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+          <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl"
+          style={{
+            backgroundImage: 'url(/images/support.png)',
+            backgroundSize: 'cover',  // Ensures the image covers the entire section
+            backgroundPosition: 'center',  // Centers the image
+          }}
+          >
             <div className="font-poppins text-white text-xl sm:text-3xl mb-6 sm:mb-10 font-bold">
               Welcome to your Analytics
             </div>
