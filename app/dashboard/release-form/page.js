@@ -150,23 +150,27 @@ export default function Dashboard() {
       {step === 1 && (
         <div>
          {/* Greetings Box */}
-         <div className="bg-[#1A1A1A] text-white p-6 rounded-lg flex justify-between items-center relative overflow-visible">
+         <div className="bg-[#1A1A1A] bottom-28 text-white p-6 rounded-lg flex justify-between items-center relative overflow-visible">
             <div>
-              <h1 className="text-2xl font-bold">Hello {session?.user?.name}</h1>
+              <h1 className="text-2xl font-bold">Hello </h1>
               <p className="mt-2 opacity-75">Launch your release today with Young CEO Entertainment!</p>
             </div>
-            <Image
+
+            {/* <Image
               src="/images/welc.svg"
               alt="Illustration"
               width={150}
               height={150}
               className="object-contain absolute right-8 bottom-10 translate-y-10"
-            />
+            /> */}
           </div>
-
+          <div className='bottom-32'> 
+          <h3 className="text-white text-2xl text-center">Essential Details for Your Next Big Release</h3>
+            </div>
+          
              {/* Essential Details text */}
-          <h3 className="text-white text-2xl text-center mb-6">Essential Details for Your Next Big Release</h3>
-          <div className="bg-[#1A1A1A] border border-[#262626] p-6 rounded-lg flex items-start relative">
+         
+          <div className="bg-black  right-32 w-[945px] h-[948px] border border-[#262626] p-6 rounded-lg flex items-start relative">
             {/* Background Image */}
             <Image
               src="/images/C1.png"
@@ -182,8 +186,8 @@ export default function Dashboard() {
               <p className="text-white text-xl text-left mb-4">Key Details of Your Release</p>
 
               {/* Progress Bar */}
-              <div className="bg-gray-700 rounded-full h-2 mb-8 ml-auto">
-                <div className="bg-white h-2 rounded-full" style={{ width: '25%' }}></div>
+              <div className="bg-white rounded-full h-2 mb-8 ml-auto">
+                <div className="bg-[#e97f18] h-2 rounded-full" style={{ width: '25%' }}></div>
               </div>
 
               {/* Form Fields */}
@@ -192,7 +196,7 @@ export default function Dashboard() {
                   <label className="text-white block mb-2">Write Your Song Title Here!<span className="text-red-500">*</span></label>
                   <input
                     type="text"
-                    className="w-full p-3 rounded bg-[#CDCDCD] text-black"
+                    className="w-[505px] p-3 rounded-lg bg-[#0B0B0D] text-white"
                     placeholder="Song Title"
                     required
                   />

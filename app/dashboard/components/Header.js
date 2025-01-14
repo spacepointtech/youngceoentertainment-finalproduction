@@ -105,7 +105,7 @@ export default function Header() {
   return (
     <div className="relative">
       <div className="flex justify-end items-center mb-4">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mr-10">
           <FontAwesomeIcon
             icon={faBell}
             className="text-white text-2xl cursor-pointer"

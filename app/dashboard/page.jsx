@@ -93,7 +93,7 @@ export default function Dashboard() {
         
         {/* Timer Section */}
         <section
-          className="p-4 sm:p-6 bg-[#1F1F1F] bg-[url('/dashboard/dashboards.png')] bg-cover bg-center rounded-2xl shadow-lg shadow-[#e97f18] border border-[#EBEBEB] mx-0 sm:mx-[20px] lg:mx-[80px] mb-6 lg:mb-0"
+          className="p-4 sm:p-6 bg-[#1F1F1F] bg-[url('/dashboard/dashboards.png')] bg-cover bg-center rounded-2xl shadow-lg shadow-[#e97f18] border border-[#EBEBEB] mx-0 sm:mx-[20px] lg:mx-[40px] mb-6 lg:mb-0"
         >
           <div className="flex flex-col">
             <div className="flex flex-col sm:flex-row justify-between items-center">
@@ -138,13 +138,13 @@ export default function Dashboard() {
         </section>
 
         {/* Catalog Section */}
-        <section className="p-4 sm:p-6 bg-[#1F1F1F] rounded-2xl shadow-lg mx-0 sm:mx-[20px] lg:mx-[80px] mb-6 lg:mb-0">
+        <section className="p-4 sm:p-6 bg-[#1F1F1F] rounded-2xl shadow-lg mx-0 sm:mx-[20px] lg:mx-[40px] mb-6 lg:mb-0">
           <h2 className="text-lg sm:text-xl font-bold text-[#e97f18]">Your Catalog</h2>
           <p className="mt-2 text-gray-400">No Recent Releases</p>
         </section>
 
         {/* Release Section */}
-        <section className="p-4 sm:p-6 border border-white bg-[#0B0B0D] rounded-3xl flex flex-col sm:flex-row justify-between items-center text-black mx-0 sm:mx-[20px] lg:mx-[80px] mb-6 lg:mb-0">
+        <section className="p-4 sm:p-6 border border-white bg-[#0B0B0D] rounded-3xl flex flex-col sm:flex-row justify-between items-center text-black mx-0 sm:mx-[20px] lg:mx-[40px] mb-6 lg:mb-0">
           <div>
             <h2 className="text-lg sm:text-xl text-white font-semibold">Release Today!</h2>
             <p className="mt-2 text-white text-sm sm:text-[16px] font-light">
@@ -161,7 +161,7 @@ export default function Dashboard() {
         </section>
 
         {/* Analytics Section */}
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4 mx-0 sm:mx-[20px] lg:mx-[80px]">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4 mx-0 sm:mx-[20px] lg:mx-[40px]">
           {/* Streams Chart */}
           <div className="lg:col-span-2 bg-[#191919] rounded-2xl p-6 shadow-lg">
             <div className="flex justify-between items-center mb-4">

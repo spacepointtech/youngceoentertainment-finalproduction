@@ -1,139 +1,909 @@
+
+ 
+ 
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex w-full h-[1742px] bg-[#0F0F0F]">
+//       <Sidebar progress={20} onLogout={handleLogout} />
+//       <main className="flex-1 p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex items-center justify-between">
+//           <div className="text-white text-4xl font-semibold font-['Inter'] leading-[54px]">
+//             Audience
+//           </div>
+//           <div className="flex gap-4">
+//             {['7 Days', '25 Days', '12 Months', 'Filters'].map((label) => (
+//               <div
+//                 key={label}
+//                 className="w-[106.54px] h-[26.64px] rounded-xl flex items-center justify-center bg-[#757575] hover:bg-[#e97f18] transition duration-300"
+//               >
+//                 <span className="text-white text-xs font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         <div className="flex items-center gap-10 mt-6">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-xl font-normal font-['Inter'] leading-snug cursor-pointer ${
+//                 selectedSection === section ? 'text-white' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline */}
+//         <div
+//           className="w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//           style={{ transform: `translateX(${underlineOffset}px)` }}
+//         ></div>
+
+//         {/* Separator Line */}
+//         <div className="w-full border-t border-neutral-800 mt-4"></div>
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-4xl font-semibold font-['Poppins'] leading-[45.51px]">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-[945px] h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-6 flex items-center gap-6">
+//                 <img
+//                   className="w-[139.41px] h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-sm font-normal font-['Poppins'] leading-[21px] underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-[163px] h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex w-full h-[1742px] bg-[#0F0F0F]">
+//       <Sidebar progress={20} onLogout={handleLogout} />
+//       <main className="flex-1 p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex items-center justify-between">
+//           <div className="text-white text-4xl font-semibold font-['Inter'] leading-[54px]">
+//             Audience
+//           </div>
+//           <div className="flex gap-4">
+//             {['7 Days', '25 Days', '12 Months', 'Filters'].map((label) => (
+//               <div
+//                 key={label}
+//                 className="w-[106.54px] h-[26.64px] rounded-xl flex items-center justify-center bg-[#757575] hover:bg-[#e97f18] transition duration-300"
+//               >
+//                 <span className="text-white text-xs font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         <div className="flex items-center gap-10 mt-6">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-xl font-normal font-['Inter'] leading-snug cursor-pointer ${
+//                 selectedSection === section ? 'text-white' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline and Separator Line */}
+//         <div className="relative mt-2">
+//           <div
+//             className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//             style={{ transform: `translateX(${underlineOffset}px)` }}
+//           ></div>
+//           <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+//         </div>
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-4xl font-semibold font-['Poppins'] leading-[45.51px]">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-[990px] h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-6 flex items-center gap-6">
+//                 <img
+//                   className="w-[139.41px] h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-sm font-normal font-['Poppins'] leading-[21px] underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-[163px] h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex w-full h-[1742px] bg-[#0F0F0F]">
+//       <Sidebar progress={20} onLogout={handleLogout} />
+//       <main className="flex-1 p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex items-center justify-between">
+//           <div className="text-white text-4xl font-semibold font-['Inter'] leading-[54px]">
+//             Audience
+//           </div>
+//           <div className="flex gap-4">
+//             {['7 Days', '25 Days', '12 Months', 'Filters'].map((label) => (
+//               <div
+//                 key={label}
+//                 className="w-[106.54px] h-[26.64px] rounded-xl flex items-center justify-center bg-[#757575] hover:bg-[#e97f18] transition duration-300"
+//               >
+//                 <span className="text-white text-xs font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         <div className="flex items-center gap-10 mt-6">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-xl font-normal font-['Inter'] leading-snug cursor-pointer ${
+//                 selectedSection === section ? 'text-white' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline and Separator Line */}
+//         <div className="relative mt-2">
+//           <div
+//             className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//             style={{ transform: `translateX(${underlineOffset}px) translateY(-2px)` }}
+//           ></div>
+//           <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+//         </div>
+         
+        
+//         <div className="mt-10 p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+//           <div className="text-white text-3xl  mb-10 mt-10 font-bold">Welcome to your Analytics</div>
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+//             {['Listeners', 'Streams', 'Average', 'Saves'].map((title, index) => (
+//               <div key={index} className="flex flex-col items-center">
+//                 <div className="bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] w-full h-40 rounded-lg flex flex-col justify-center items-center">
+//                 <div className="text-[# ] text-sm uppercase">{title}</div>
+//                   <div className="text-white text-2xl font-bold">112</div>
+                 
+//                 </div>
+//                 <div className="w-3/4 h-4 bg-[#616161] mt-2 rounded-lg"></div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-4xl font-semibold font-['Poppins'] leading-[45.51px]">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-[990px] h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-6 flex items-center gap-6">
+//                 <img
+//                   className="w-[139.41px] h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-sm font-normal font-['Poppins'] leading-[21px] underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-[163px] h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+//   const [selectedTimeFilter, setSelectedTimeFilter] = useState("7 Days"); // Default selection
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+//   const timeFilters = ["7 Days", "25 Days", "12 Months", "Filters"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex w-full h-[1742px] bg-[#0F0F0F]">
+//       <Sidebar progress={20} onLogout={handleLogout} />
+//       <main className="flex-1 p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex items-center justify-between">
+//           <div className="text-white text-4xl font-semibold font-['Inter'] leading-[54px]">
+//             Audience
+//           </div>
+//           <div className="flex gap-4">
+//             {timeFilters.map((label) => (
+//               <div
+//                 key={label}
+//                 onClick={() => setSelectedTimeFilter(label)}
+//                 className={`w-[106.54px] h-[26.64px] rounded-xl flex items-center justify-center transition duration-300 cursor-pointer ${
+//                   selectedTimeFilter === label
+//                     ? 'bg-[#e97f18]'
+//                     : 'bg-[#757575] hover:bg-[#e97f18]'
+//                 }`}
+//               >
+//                 <span className="text-white text-xs font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         <div className="flex items-center gap-10 mt-6">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-xl font-normal font-['Inter'] leading-snug cursor-pointer transition-colors duration-300 ${
+//                 selectedSection === section ? 'text-[#e97f18]' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline and Separator Line */}
+//         <div className="relative mt-2">
+//           <div
+//             className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//             style={{ transform: `translateX(${underlineOffset}px) translateY(-2px)` }}
+//           ></div>
+//           <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+//         </div>
+
+//         {/* Analytics Box */}
+//         <div className="mt-10 p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+//           <div className="text-white text-3xl mb-10 mt-10 font-bold">Welcome to your Analytics</div>
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+//             {['Listeners', 'Streams', 'Average', 'Saves'].map((title, index) => (
+//               <div key={index} className="flex flex-col items-center">
+//                 <div className="bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] w-full h-40 rounded-lg flex flex-col justify-center items-center">
+//                   <div className="text-sm uppercase">{title}</div>
+//                   <div className="text-white text-2xl font-bold">112</div>
+//                 </div>
+//                 <div className="w-3/4 h-4 bg-[#616161] mt-2 rounded-lg"></div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-4xl font-semibold font-['Poppins'] leading-[45.51px]">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-[990px] h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-6 flex items-center gap-6">
+//                 <img
+//                   className="w-[139.41px] h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-sm font-normal font-['Poppins'] leading-[21px] underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-[163px] h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+//   const [selectedTimeFilter, setSelectedTimeFilter] = useState("7 Days"); // Default selection
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+//   const timeFilters = ["7 Days", "25 Days", "12 Months", "Filters"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex flex-col lg:flex-row w-full min-h-screen bg-[#0F0F0F] font-poppins">
+//       <Sidebar progress={20} onLogout={handleLogout} />
+//       <main className="flex-1 p-4 sm:p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex flex-wrap items-center justify-between gap-4">
+//           <div className="text-white text-2xl sm:text-4xl font-semibold font-poppins leading-tight">
+//             Audience
+//           </div>
+//           <div className="flex gap-2 sm:gap-4 flex-wrap">
+//             {timeFilters.map((label) => (
+//               <div
+//                 key={label}
+//                 onClick={() => setSelectedTimeFilter(label)}
+//                 className={`w-auto px-4 py-2 rounded-xl flex items-center font-poppins justify-center transition duration-300 cursor-pointer ${
+//                   selectedTimeFilter === label
+//                     ? 'bg-[#e97f18]'
+//                     : 'bg-[#757575] hover:bg-[#e97f18]'
+//                 }`}
+//               >
+//                 <span className="text-white text-xs sm:text-sm font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* SECTION NAVIGATION */}
+//         <div className="flex items-center gap-4 sm:gap-10 mt-6 overflow-x-auto font-poppins">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-sm sm:text-xl font-poppins font-normal leading-snug cursor-pointer transition-colors duration-300 ${
+//                 selectedSection === section ? 'text-[#e97f18]' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline and Separator Line */}
+//         <div className="relative mt-2">
+//           <div
+//             className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//             style={{ transform: `translateX(${underlineOffset}px) translateY(-2px)` }}
+//           ></div>
+//           <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+//         </div>
+
+//         {/* Analytics Box */}
+//         <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+//           <div className="font-poppins text-white text-xl sm:text-3xl mb-6 sm:mb-10 font-bold">
+//             Welcome to your Analytics
+//           </div>
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-6">
+//             {['Listeners', 'Streams', 'Average', 'Saves'].map((title, index) => (
+//               <div key={index} className="flex flex-col items-center">
+//                 <div className="bg-gradient-to-tr from-black via-black to-black w-full h-32 sm:h-40 rounded-lg flex flex-col justify-center items-center">
+//                   <div className="text-sm uppercase">{title}</div>
+//                   <div className="text-white text-lg sm:text-2xl font-bold">112</div>
+//                 </div>
+//                 <div className="w-3/4 h-2 sm:h-4 bg-[#616161] mt-2 rounded-lg"></div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-2xl sm:text-4xl font-semibold font-['Poppins'] leading-tight">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-full max-w-6xl h-auto sm:h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+//                 <img
+//                   className="w-[100px] h-[100px] sm:w-[139.41px] sm:h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-xs sm:text-sm font-normal font-['Poppins'] leading-tight underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-sm sm:text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-full sm:w-[163px] h-[80px] sm:h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-xl sm:text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-base sm:text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+
+// 'use client';
+// import { useState } from 'react';
+// import Sidebar from '@/app/dashboard/components/Sidebar';
+// import Header from '@/app/dashboard/components/Header';
+// import { FaFilter } from 'react-icons/fa';
+// import { FaBars, FaTimes } from 'react-icons/fa';
+
+// export default function AudiencePage() {
+//   const [selectedSection, setSelectedSection] = useState("Smart Link");
+//   const [selectedTimeFilter, setSelectedTimeFilter] = useState("7 Days"); // Default selection
+//   const [isSidebarOpen, setSidebarOpen] = useState(true);
+//   const [progress, setProgress] = useState(20);
+
+//   const handleLogout = () => {
+//     console.log('Logged out');
+//   };
+
+//   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+//   const timeFilters = ["7 Days", "25 Days", "12 Months", "Filters"];
+
+//   // Calculate the left offset based on selected section index
+//   const underlineOffset = sections.indexOf(selectedSection) * 120;
+
+//   return (
+//     <div className="flex flex-col lg:flex-row w-full min-h-screen bg-[#0F0F0F] font-poppins">
+//         {/* Sidebar */}
+//             <button
+//               className="lg:hidden text-white p-4"
+//               onClick={() => setSidebarOpen(!isSidebarOpen)}
+//             >
+//               {isSidebarOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+//             </button>
+//             <div className={`${isSidebarOpen ? 'block' : 'hidden'} lg:block`}>
+//               <Sidebar progress={progress} />
+//             </div>
+//       <main className="flex-1 p-4 sm:p-6 flex flex-col gap-6 text-white">
+//         <Header />
+
+//         {/* TOP SECTION */}
+//         <div className="flex flex-wrap items-center justify-between gap-4">
+//           <div className="text-white text-2xl sm:text-4xl font-semibold font-poppins leading-tight">
+//             Audience
+//           </div>
+//           <div className="flex gap-2 sm:gap-4 flex-wrap">
+//             {timeFilters.map((label) => (
+//               <div
+//                 key={label}
+//                 onClick={() => setSelectedTimeFilter(label)}
+//                 className={`w-auto px-5 py-2 rounded-xl flex items-center justify-center font-poppins transition duration-300 cursor-pointer ${
+//                   label === "Filters"
+//                     ? selectedTimeFilter === label
+//                       ? 'bg-white text-[#e97f18] border border-[#e97f18]'
+//                       : 'bg-white text-black hover:bg-[#e97f18] hover:text-white hover:border-none'
+//                     : selectedTimeFilter === label
+//                     ? 'bg-[#e97f18] text-white'
+//                     : 'bg-[#757575] hover:bg-[#e97f18] text-black' 
+//                 }`}
+//               >
+//                 <span className="text-xs sm:text-sm font-normal font-['Poppins'] leading-[18.80px]">
+//                   {label}
+//                 </span>
+//                 {label === "Filters" && (
+//                   <FaFilter className="ml-2 text-sm sm:text-base" />
+//                 )}
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* SECTION NAVIGATION */}
+//         <div className="flex items-center gap-4 sm:gap-10 mt-6 overflow-x-auto font-poppins">
+//           {sections.map((section) => (
+//             <div
+//               key={section}
+//               onClick={() => setSelectedSection(section)}
+//               className={`text-sm sm:text-xl font-poppins font-normal leading-snug cursor-pointer transition-colors duration-300 ${
+//                 selectedSection === section ? 'text-[#e97f18]' : 'text-[#757575]'
+//               }`}
+//             >
+//               {section}
+//             </div>
+//           ))}
+//         </div>
+
+//         {/* Dynamic Underline and Separator Line */}
+//         <div className="relative mt-2">
+//           <div
+//             className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+//             style={{ transform: `translateX(${underlineOffset}px) translateY(-2px)` }}
+//           ></div>
+//           <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+//         </div>
+
+//         {/* Analytics Box */}
+//         <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+//           <div className="font-poppins text-white text-xl sm:text-3xl mb-6 sm:mb-10 font-bold">
+//             Welcome to your Analytics
+//           </div>
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-6">
+//             {['Listeners', 'Streams', 'Average', 'Saves'].map((title, index) => (
+//               <div key={index} className="flex flex-col items-center">
+//                 <div className="bg-gradient-to-tr from-black via-black to-black w-full h-32 sm:h-40 rounded-lg flex flex-col justify-center items-center">
+//                   <div className="text-sm uppercase">{title}</div>
+//                   <div className="text-white text-lg sm:text-2xl font-bold">112</div>
+//                 </div>
+//                 <div className="w-3/4 h-2 sm:h-4 bg-[#616161] mt-2 rounded-lg"></div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Section Content */}
+//         <div className="mt-10">
+//           {selectedSection === "Smart Link" && (
+//             <div>
+//               <div className="text-white text-2xl sm:text-4xl font-semibold font-['Poppins'] leading-tight">
+//                 Smart Link Traffic
+//               </div>
+
+//               <div className="w-full max-w-6xl h-auto sm:h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+//                 <img
+//                   className="w-[100px] h-[100px] sm:w-[139.41px] sm:h-[150.06px] rounded-2xl"
+//                   src="https://via.placeholder.com/139x150"
+//                   alt="Placeholder"
+//                 />
+//                 <div className="flex-1">
+//                   <div className="text-[#757575] text-xs sm:text-sm font-normal font-['Poppins'] leading-tight underline">
+//                     SMART LINK
+//                   </div>
+//                   <div className="text-[#ebebeb] text-sm sm:text-base font-semibold mt-2">
+//                     Mai Khush Hun, Meri Kya Galti
+//                   </div>
+//                   <div className="text-[#757575] text-xs font-normal mt-2">
+//                     Last updated 3 hours ago
+//                   </div>
+//                 </div>
+//                 <div className="w-full sm:w-[163px] h-[80px] sm:h-[107px] rounded-2xl border border-[#a6a6a6] flex flex-col items-center justify-center">
+//                   <div className="text-[#e97f18] text-xl sm:text-[28px] font-medium">6,420</div>
+//                   <div className="text-[#e97f18] text-base sm:text-xl font-normal">Clicks</div>
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//           {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+//           {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+//           {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+
 'use client';
 import { useState } from 'react';
 import Sidebar from '@/app/dashboard/components/Sidebar';
 import Header from '@/app/dashboard/components/Header';
+import { FaFilter } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function AudiencePage() {
   const [selectedSection, setSelectedSection] = useState("Smart Link");
+  const [selectedTimeFilter, setSelectedTimeFilter] = useState("7 Days"); // Default selection
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [progress, setProgress] = useState(20);
 
   const handleLogout = () => {
     console.log('Logged out');
   };
 
   const sections = ["Smart Link", "Overview", "Segments", "Location"];
+  const timeFilters = ["7 Days", "25 Days", "12 Months", "Filters"];
 
   // Calculate the left offset based on selected section index
-  const underlineOffset = 395 + sections.indexOf(selectedSection) * 120;
+  const underlineOffset = sections.indexOf(selectedSection) * 120;
 
   return (
-    <div className="flex w-full h-[1742px] bg-[#0F0F0F]">
-      <Sidebar progress={20} onLogout={handleLogout} />
-      <main className="flex-1 p-6 flex flex-col gap-6 text-white">
+    <div className="flex flex-col lg:flex-row w-full min-h-screen bg-[#0F0F0F] font-poppins">
+      {/* Sidebar */}
+      <button
+        className="lg:hidden text-white p-4"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}
+      >
+        {isSidebarOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+      </button>
+      <div className={`${isSidebarOpen ? 'block' : 'hidden'} lg:block`}>
+        <Sidebar progress={progress} />
+      </div>
+      <main className="flex-1 p-4 sm:p-6 flex flex-col gap-6 text-white">
         <Header />
 
-        {/* TOP SECTION */}
-        <div className="absolute left-[395px] top-[125px] text-white text-4xl font-semibold font-['Inter'] leading-[54px]">
-          Audience
-        </div>
-        <div className="absolute left-[395px] top-[200px] flex items-center gap-10">
-          {sections.map((section) => (
+        {/* Container for left and right margin */}
+        <div className="mx-5 lg:mx-10">   
+          {/* 20 */}
+          {/* TOP SECTION */}
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="text-white text-2xl sm:text-4xl font-semibold font-poppins leading-tight">
+              Audience
+            </div>
+            <div className="flex gap-2 sm:gap-4 flex-wrap">
+              {timeFilters.map((label) => (
+                <div
+                  key={label}
+                  onClick={() => setSelectedTimeFilter(label)}
+                  className={`w-auto px-5 py-2 rounded-xl flex items-center justify-center font-poppins transition duration-300 cursor-pointer ${
+                    label === "Filters"
+                      ? selectedTimeFilter === label
+                        ? 'bg-white text-[#e97f18] border border-[#e97f18]'
+                        : 'bg-white text-black hover:bg-[#e97f18] hover:text-white hover:border-none'
+                      : selectedTimeFilter === label
+                      ? 'bg-[#e97f18] text-white'
+                      : 'bg-[#757575] hover:bg-[#e97f18] text-black' 
+                  }`}
+                >
+                  <span className="text-xs sm:text-sm font-normal font-['Poppins'] leading-[18.80px]">
+                    {label}
+                  </span>
+                  {label === "Filters" && (
+                    <FaFilter className="ml-2 text-sm sm:text-base" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* SECTION NAVIGATION */}
+          <div className="flex items-center gap-4 sm:gap-10 mt-6 overflow-x-auto font-poppins">
+            {sections.map((section) => (
+              <div
+                key={section}
+                onClick={() => setSelectedSection(section)}
+                className={`text-sm sm:text-xl font-poppins font-normal leading-snug cursor-pointer transition-colors duration-300 ${
+                  selectedSection === section ? 'text-[#e97f18]' : 'text-[#757575]'
+                }`}
+              >
+                {section}
+              </div>
+            ))}
+          </div>
+
+          {/* Dynamic Underline and Separator Line */}
+          <div className="relative mt-2">
             <div
-              key={section}
-              onClick={() => setSelectedSection(section)}
-              className={`text-xl font-normal font-['Inter'] leading-snug cursor-pointer ${
-                selectedSection === section ? 'text-white' : 'text-[#757575]'
-              }`}
-            >
-              {section}
+              className="absolute w-[110px] border-2 border-[#e97f18] transition-all duration-300"
+              style={{ transform: `translateX(${underlineOffset}px) translateY(-2px)` }}
+            ></div>
+            <div className="absolute w-full border-t border-neutral-800 top-[2px]"></div>
+          </div>
+
+          {/* Analytics Box */}
+          <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl">
+            <div className="font-poppins text-white text-xl sm:text-3xl mb-6 sm:mb-10 font-bold">
+              Welcome to your Analytics
             </div>
-          ))}
-        </div>
-
-        {/* Dynamic Underline */}
-        <div
-          className="absolute top-[255px] w-[108px] border-2 border-white transition-all duration-300"
-          style={{ left: `${underlineOffset}px` }}
-        ></div>
-
-        {/* Separator Line */}
-        <div className="absolute left-[395px] top-[255px] w-[939px] border border-neutral-800"></div>
-
-        {/* Time Filters */}
-        <div className="absolute left-[869px] top-[158px] flex gap-4">
-          {['7 Days', '25 Days', '12 Months', 'Filters'].map((label, index) => (
-            <div
-              key={label}
-              className={`w-[106.54px] h-[26.64px] rounded-xl flex items-center justify-center ${
-                index % 2 === 0 ? 'bg-[#757575]' : 'bg-[#d9d9d9]'
-              }`}
-            >
-              <span className="text-black text-xs font-normal font-['Poppins'] leading-[18.80px]">
-                {label}
-              </span>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-6">
+              {['Listeners', 'Streams', 'Average', 'Saves'].map((title, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="bg-gradient-to-tr from-black via-black to-black w-full h-32 sm:h-40 rounded-lg flex flex-col justify-center items-center">
+                    <div className="text-sm uppercase">{title}</div>
+                    <div className="text-white text-lg sm:text-2xl font-bold">112</div>
+                  </div>
+                  <div className="w-3/4 h-2 sm:h-4 bg-[#616161] mt-2 rounded-lg"></div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-
-        {/* Common Analytics Section */}
-        <div className="w-[947px] h-[388px] left-[393px] top-[309px] absolute rounded-[32px]">
-          <div className="w-[939px] h-[422.55px] left-0 top-0 absolute bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-[17.18px]" />
-          
-          <div className="left-[54.12px] top-[55.52px] absolute text-white text-[32px] font-bold font-['Poppins'] leading-[45.51px]">Welcome to your Analytics</div>
-          <div className="w-[164.54px] h-[155.23px] left-[69px] top-[155px] absolute">
-            <div className="w-[145.67px] h-[23.11px] left-[9.69px] top-[132.12px] absolute bg-[#616161] rounded-[9.10px]" />
-            <div className="w-[164.54px] h-[143.68px] left-0 top-0 absolute bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] rounded-[9.10px] backdrop-blur-[16.98px]" />
-            <div className="left-[63.71px] top-[56.85px] absolute text-center text-white text-2xl font-bold font-['Poppins'] leading-[52.16px] tracking-[2.67px]">112</div>
-            <div className="left-[49.61px] top-[38.40px] absolute text-right text-[#b7b7b7] text-sm font-bold font-['Poppins'] uppercase leading-snug">Listeners</div>
           </div>
-          <div className="w-[164.54px] h-[155.23px] left-[265.82px] top-[155px] absolute">
-            <div className="w-[145.67px] h-[23.11px] left-[9.69px] top-[132.12px] absolute bg-[#616161] rounded-[9.10px]" />
-            <div className="w-[164.54px] h-[143.68px] left-0 top-0 absolute bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] rounded-[9.10px]" />
-            <div className="left-[63.71px] top-[56.85px] absolute text-center text-white text-2xl font-bold font-['Poppins'] leading-[52.16px] tracking-[2.67px]">112</div>
-            <div className="left-[55.92px] top-[35.02px] absolute text-right text-[#b7b7b7] text-sm font-bold font-['Poppins'] uppercase leading-snug">Streams</div>
+
+          {/* Section Content */}
+          <div className="mt-10">
+            {selectedSection === "Smart Link" && (
+              <div>
+                <div className="text-white text-2xl sm:text-4xl font-semibold font-['Poppins'] leading-tight">
+                  Smart Link Traffic
+                </div>
+
+                <div className="w-full max-w-6xl h-auto sm:h-[198px] mt-6 bg-[#191919] rounded-[36px] shadow border border-[#e97f18] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                  <img
+                    className="w-[100px] h-[100px] sm:w-[139.41px] sm:h-[150.06px] rounded-2xl"
+                    src="https://via.placeholder.com/139x150"
+                    alt="Placeholder"
+                  />
+                  <div className="flex-1">
+                    <div className="text-[#757575] text-xs sm:text-sm font-normal font-Poppins leading-tight underline">
+                      SMART LINK
+                    </div>
+                    <div className="text-[#ebebeb] text-sm sm:text-base font-semibold mt-2">
+                      Mai Khush Hun, Meri Kya Galti
+                    </div>
+                    <div className="text-[#757575] text-xs font-normal mt-2">
+                      Last updated 3 hours ago
+                    </div>
+                  </div>
+                  <div className="w-full sm:w-[163px] h-[80px] sm:h-[107px] rounded-2xl border border-dotted border-[#e97f18] flex flex-col items-center justify-center">
+                    <div className="text-[#e97f18] text-xl sm:text-[28px] font-medium">6,420</div>
+                    <div className="text-[#e97f18] text-base sm:text-xl font-normal">Clicks</div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
+            {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
+            {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
           </div>
-          <div className="w-[164.54px] h-[155.23px] left-[462.64px] top-[155px] absolute">
-            <div className="w-[145.67px] h-[23.11px] left-[9.69px] top-[132.12px] absolute bg-[#616161] rounded-[9.10px]" />
-            <div className="w-[164.54px] h-[143.68px] left-0 top-0 absolute bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] rounded-[9.10px]" />
-            <div className="left-[63.71px] top-[56.85px] absolute text-center text-white text-2xl font-bold font-['Poppins'] leading-[52.16px] tracking-[2.67px]">112</div>
-            <div className="left-[55.92px] top-[38.40px] absolute  text-[#b7b7b7] text-sm font-bold font-['Poppins'] uppercase leading-snug">Average</div>
-          </div>
-          <div className="w-[164.54px] h-[155.23px] left-[659.46px] top-[155px] absolute">
-            <div className="w-[145.67px] h-[23.11px] left-[9.69px] top-[132.12px] absolute bg-[#616161] rounded-[9.10px]" />
-            <div className="w-[164.54px] h-[143.68px] left-0 top-0 absolute bg-gradient-to-tr from-[#3d3d3d] via-[#2c2c2c] to-[#969696] rounded-[9.10px]" />
-            <div className="left-[63.71px] top-[56.85px] absolute text-center text-white text-2xl font-bold font-['Poppins'] leading-[52.16px] tracking-[2.67px]">112</div>
-            <div className="left-[56.81px] top-[29.31px] absolute text-right text-[#b7b7b7] text-sm font-bold font-['Poppins'] uppercase leading-snug">Saves</div>
-          </div>
-        </div>
-
-        {/* Section Content */}
-        <div className="mt-[320px] text-center">
-          {selectedSection === "Smart Link" && (
-            <div>
-              <div className="left-[395px] top-[737px] mt-2 absolute text-white text-4xl font-semibold font-['Poppins'] leading-[45.51px]">Smart Link Traffic</div>
-              
-              <div className="w-[945px] h-[198px] ml-12 mt-[390px] relative bg-[#191919] rounded-[36px] shadow border border-[#c7c7c7]">
-  <div className="w-[311px] h-[118px] absolute left-[234.41px] top-[40px] flex flex-col space-y-2">
-  <div className="text-[#757575] text-sm font-normal text-left font-['Poppins'] leading-[21px]">
-  <div className="underline">SMART LINK</div>
-  <div className="w-[310px] text-[#ebebeb] text-base font-semibold leading-normal">Mai Khush Hun , Meri Kya Galti</div>
-  <div className="ml-4"> -- Song Link </div>
-</div>
-<div className="text-[#757575] text-left text-xs font-normal">
-  last updated 3 hours ago
-</div>
-
-  </div>
-
-  <div className="w-[163px] h-[107px] absolute left-[736px] top-[46px]">
-    <div className="w-[163px] h-[107px] rounded-2xl border border-[#a6a6a6]" />
-    <div className="w-20 h-[67.69px] absolute left-[41px] top-[16px]">
-      <div className="text-[#ebebeb] text-[28px] font-medium">
-        6,420
-      </div>
-      <div className="text-[#a6a6a6] text-xl font-normal">
-        Clicks
-      </div>
-    </div>
-  </div>
-
-  <img className="w-[139.41px] h-[150.06px] rounded-2xl absolute left-[75px] top-[24px]" src="https://via.placeholder.com/139x150" />
-</div>
-
-            </div>
-          )}
-          {selectedSection === "Overview" && <div>{/* Overview code goes here */}</div>}
-          {selectedSection === "Segments" && <div>{/* Segments code goes here */}</div>}
-          {selectedSection === "Location" && <div>{/* Location code goes here */}</div>}
         </div>
       </main>
     </div>
