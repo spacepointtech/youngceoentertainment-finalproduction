@@ -132,7 +132,7 @@ const faqItems = [
     url: '/support/music-publishing/query3'
   },
   {
-    question: 'Will YCE collect Neighbouring Rights royalties?',
+    question: 'Will YCE collect neighbouring rights royalties?',
    url: '/support/music-publishing/query4'
   },
   {

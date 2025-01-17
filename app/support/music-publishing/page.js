@@ -218,7 +218,7 @@ const faqItems = [
        url: '/support/music-publishing/query1'
       },
       {
-        question: 'Do I need a YCE Music subscription to access Young Ceo Entertainment Music Publishing?',
+        question: 'Do I need a YCE music subscription to access Young Ceo Entertainment music publishing?',
        url: '/support/music-publishing/query2'
       },
       {
@@ -226,7 +226,7 @@ const faqItems = [
         url: '/support/music-publishing/query3'
       },
       {
-        question: 'Will YCE collect Neighbouring Rights royalties?',
+        question: 'Will YCE collect neighbouring rights royalties?',
        url: '/support/music-publishing/query4'
       },
       {

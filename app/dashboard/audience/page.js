@@ -853,7 +853,7 @@ export default function AudiencePage() {
           {/* Analytics Box */}
           <div className="mt-10 p-4 sm:p-6 bg-gradient-to-r from-black via-[#2d2d2d] to-black rounded-2xl"
           style={{
-            backgroundImage: 'url(/images/support.png)',
+            backgroundImage: 'url(/dashboard/timer.svg)',
             backgroundSize: 'cover',  // Ensures the image covers the entire section
             backgroundPosition: 'center',  // Centers the image
           }}

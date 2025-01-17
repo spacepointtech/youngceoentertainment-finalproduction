@@ -135,13 +135,13 @@ const faqItems = [
      url: '/support/your-account/query14'
   },
 {
-  question: 'When will my YCE merch Arrive',
+  question: 'When will my YCE merch arrive?',
    url: '/support/your-account/query15'
 },
 
 
 {
-  question: 'Does YCE Music Offer a free trail?',
+  question: 'Does YCE Music Offer a free trial?',
    url: '/support/your-account/query16'
 },
 

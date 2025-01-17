@@ -132,12 +132,11 @@ const faqItems = [
       url: '/support/subscription-renewal'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  question: 'Can I release music for multiple artists from one account?',
   url: '/support/subscription-renewal'
 },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'Can I release music for multiple artists from one account?',
   url: '/support/orders-history'
 },
 

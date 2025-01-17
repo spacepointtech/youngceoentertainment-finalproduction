@@ -356,7 +356,7 @@ const faqItems = [
    url: '/support/uploading-music/query18'
 },
 { 
-  question: 'How to send large files to YCE Music', 
+  question: 'How to send large files to YCE Music?', 
    url: '/support/uploading-music/query19'
 },
 { 

@@ -166,7 +166,7 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-  { question: 'Do I need to renew my subscription ?', 
+  { question: 'Do I need to renew my subscription?', 
     url: '/support/faqs/query9' 
 },
   { question: 'Will YCE take any of my royalties?', 

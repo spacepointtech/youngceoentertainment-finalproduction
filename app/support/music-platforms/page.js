@@ -240,7 +240,7 @@ const faqItems = [
    url: '/support/support-query-response'
   },
   {
-    question: 'Why is my release not live on Apple Music or iTunes?',
+    question: 'Why is my release not live on Apple music or iTunes?',
    url: '/support/support-query-response'
   },
   {
@@ -248,7 +248,7 @@ const faqItems = [
     url: '/support/support-query-response'
   },
   {
-    question: 'What is YouTube Music?',
+    question: 'What is YouTube music?',
   url: '/support/support-query-response'
   },
   {

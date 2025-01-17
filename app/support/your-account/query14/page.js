@@ -141,12 +141,12 @@ const faqItems = [
       url: '/support/your-account/query2'
     },
 {
-  question: 'Can I release music for multiple artists from one account ?',
+  question: 'Can I release music for multiple artists from one account?',
  
   url: '/support/your-account/query3'
 },
 {
-  question: 'Does YCE offers free trail',
+  question: 'Does YCE offers free trail?',
   url: '/support/your-account/query16'
 },
 

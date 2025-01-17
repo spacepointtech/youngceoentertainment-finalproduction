@@ -196,7 +196,7 @@ const FaqComponent = () => {
           <div className="flex flex-col">
             <FaRegClipboard className="text-2xl md:text-4xl mb-4 text-[#A6A6A6]" />
             <h2 className="text-2xl md:text-4xl font-semibold">
-             Frequently Asked  <span className='text-[#e97f18]'> Questions?   </span>
+             Frequently Asked  <span className='text-[#e97f18]'> Questions   </span>
             </h2>
             <p className="text-lg md:text-xl text-[#EBEBEB] mb-4 md:mb-6">Answers to the questions we are aksed most often.</p>
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
@@ -262,7 +262,7 @@ const faqItems = [
     //   { question: "Can I edit or remove my release after it's been sent to stores ?",
     //     url: '/support/faqs/query8' 
     // },
-      { question: 'Do I need to renew my subscription ?', 
+      { question: 'Do I need to renew my subscription?', 
         url: '/support/faqs/query9' 
     },
       { question: 'Will YCE take any of my royalties?', 

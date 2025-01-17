@@ -145,7 +145,7 @@ const faqItems = [
   url: '/support/faqs/query4'
 },
 {
-  question: 'How do I create a new release ?',
+  question: 'How do I create a new release?',
   url: '/support/faqs/query4'
 },
 

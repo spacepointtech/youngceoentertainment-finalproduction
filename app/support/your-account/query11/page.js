@@ -135,7 +135,7 @@ const faqItems = [
     url: '/support/your-account/query12'
   },
 {
-  question: 'Can I Choose where my music is released ?',
+  question: 'Can I choose where my music is released?',
   url: '/support/your-account/query13'
 },
 {

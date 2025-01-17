@@ -177,24 +177,23 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-      question: 'How do I remove a release from stores ?',
+      question: 'How do I remove a release from stores?',
       url: '/support/faqs/query2'
     },
 {
-  question: 'What payment methods does YCE accept ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
+  question: 'What payment methods does YCE accept?',
   url: '/support/faqs/query3'
 },
 {
-  question: 'Will YCE promote my music ?',
+  question: 'Will YCE promote my music?',
   url: '/support/faqs/query4'
 },
 {
-  question: 'How much will I get paid ?',
+  question: 'How much will I get paid?',
   url: '/support/faqs/query4'
 },
 {
-  question: 'How do I create a new release ?',
+  question: 'How do I create a new release?',
   url: '/support/faqs/query4'
 },
 

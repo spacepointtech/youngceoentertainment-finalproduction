@@ -137,7 +137,7 @@ const faqItems = [
      url: '/support/your-account/query14'
   },
 {
-  question: 'When will my YCE merch Arrive',
+  question: 'When will my YCE merch arrive?',
    url: '/support/your-account/query15'
 },
 

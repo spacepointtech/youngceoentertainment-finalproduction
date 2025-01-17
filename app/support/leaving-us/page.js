@@ -211,7 +211,7 @@ const faqItems = [
         url: '/support/leaving-us/query1'
       },
       {
-        question: 'How do I delete my YCE Music account & cancel my subscription?',
+        question: 'How do I delete my YCE music account & cancel my subscription?',
          url: '/support/leaving-us/query2'
       },
       {

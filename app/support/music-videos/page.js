@@ -228,10 +228,10 @@ const faqItems = [
   { question: 'How do I find my YouTube channel ID?',
     url: '/support/music-videos/query5' 
 },
-  { question: 'How do I find my YouTube Topic Channel ID?', 
+  { question: 'How do I find my YouTube topic channel ID?', 
     url: '/support/music-videos/query6' 
 },
-  { question: 'How do I get an Official Artist Channel on YouTube?',
+  { question: 'How do I get an Official Artist channel on YouTube?',
     url: '/support/music-videos/query7' 
  },
   { question: 'I still haven’t received my Official Artist Channel - how long does this take?', 

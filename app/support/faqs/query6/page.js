@@ -151,7 +151,7 @@ const faqItems = [
  //   { question: "Can I edit or remove my release after it's been sent to stores ?",
  //     url: '/support/faqs/query8' 
  // },
-   { question: 'Do I need to renew my subscription ?', 
+   { question: 'Do I need to renew my subscription?', 
      url: '/support/faqs/query9' 
  },
    { question: 'Will YCE take any of my royalties?', 
