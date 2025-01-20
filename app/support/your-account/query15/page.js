@@ -129,20 +129,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
+  {
+    question: 'Can I set the price of my Music?',
+    url: '/support/your-account/query11'
+  },
+  {
+    question: 'Can I release someone else music from my account?',
+    url: '/support/your-account/query12'
+  },
 {
-  question: 'Can I release music for multiple artists from one account?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
+  question: 'Can I Choose where my music is released?',
+  url: '/support/your-account/query13'
 },
-{
-  question: 'Can I release music for multiple artists from one account?',
-  url: '/support/orders-history'
-},
-
 
 
 ];

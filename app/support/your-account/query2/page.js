@@ -130,20 +130,19 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'What is Young Ceo Entertainment?',
-      url: '/support/your-account/query1'
-    },
-{
-  question: 'Can I release music for multiple artists from one account?',
-  
-  url: '/support/your-account/query3'
-},
-{
-  question: 'Can I release music for multiple artists from one account?',
-  url: '/support/your-account/query4'
-},
-
+  {
+    question: 'Can I release music for multiple artists from one account?',
+    url: '/support/your-account/query3',
+  },
+  {
+    question: 'Who owns the rights to my music when I distribute with YCE?',
+    url: '/support/your-account/query5',
+  },
+   
+  {
+    question: "What does 'In Review', 'Scheduled' and 'Sent To Stores' mean on my releases?",
+    url: '/support/your-account/query6'
+  },
 
 
 ];

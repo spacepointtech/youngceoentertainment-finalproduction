@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDesktop, FaChartLine } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/licensing-copy" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,23 +52,40 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaChartLine className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-2xl md:text-4xl font-semibold">
+             Licensing, Copyright & <span className='text-[#e97f18]'> Metadata </span>
+            </h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I release music for multiple artist from one account </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">Can I release cover songs, remixes, or songs using samples?</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Yes, with Young CEO Entertainment's Duo Plan, you can release for two artists and with Label Plan, you can release music for multiple artists from a single account. This plan is designed to support labels and managers handling multiple artists, providing flexibility and convenience.
+   <p className='mt-2'>
+   Absolutely, you can!
+     </p> 
+ 
+   <p className='mt-1'>   
+   If you plan to release a cover, remix, or a track with samples, you’ll likely need to purchase a license to avoid potential legal issues with the original copyright holders.
+   </p>
+      <p className='mt-1'> 
+      Once you’ve secured the required license, you can upload your documentation during the Track List stage of the Release Builder. Simply click the Edit button next to the track to add the copyright details for the song you’ve licensed.
+             </p>
+       <p className='mt-1'> 
+       For more information on music licensing and copyright, check out this article.
+       </p>
+       
          </span>
 
         
@@ -126,23 +143,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
+  {
+    question: 'How do I report fraudulent Spotify playlists?',
+      url: '/support/licensing-copy/query1'
+  },
+  {
+    question: 'Do I need a license to release my music?',
+      url: '/support/licensing-copy/query2'
+  },
   
-    {
-      question: 'Who owns the rights to my music artists from one account',
-      url: '/support/your-account/query5'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
- 
-  url: '/support/your-account/query6'
-},
-{
-  question: "what does 'In Review' 'Scheduled' and 'Sent to Stores' mean on My releases?",
-  url: '/support/your-account/query7'
-},
-
-
-
+  {
+    question: 'What is artificial streaming?',
+      url: '/support/licensing-copy/query4'
+  },
 ];
 
 export default FaqComponent;

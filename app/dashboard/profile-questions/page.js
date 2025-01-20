@@ -297,8 +297,11 @@ export default function Dashboard() {
     selectedArtistType: '',
     distributedSong: '',
     spotifyStatus: '',
+    jiosavanStatus:'',
+    jiosavanLink:'',
     spotifyLink: '',
     spotifyArtistName: '',
+    jioSavanArtistName:'',
     youtubeStatus: '',
     youtubeLink: '',
     youtubeArtistName: '',
@@ -501,7 +504,7 @@ export default function Dashboard() {
               </div>
             )}
 
-     {/* Step 3: Spotify */}
+     {/* Step 4: JioSavan */}
      {step === 4 && (
               <div>
                 <div className="flex justify-center mb-6">
@@ -512,8 +515,8 @@ export default function Dashboard() {
                 </div>
                 <select
                   className="w-[638px] ml-12 bg-transparent border border-white mt-10 text-white p-4 rounded-lg"
-                  value={formData.spotifyStatus}
-                  onChange={(e) => handleChange('spotifyStatus', e.target.value)}
+                  value={formData.jiosavanStatus}
+                  onChange={(e) => handleChange('jiosavanStatus', e.target.value)}
                 >
                   <option value="" disabled>
                     Select an option
@@ -521,25 +524,25 @@ export default function Dashboard() {
                   <option value="yes">Yes, I am already on JioSavan</option>
                   <option value="no">No, I don&apos;t have a JioSavan account</option>
                 </select>
-                {formData.spotifyStatus === 'yes' && (
+                {formData.jiosavanStatus === 'yes' && (
                   <div className="mt-4">
                     <input
                       type="text"
                       placeholder="Provide link to your JioSavan handle"
                       className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white  p-4 rounded-lg"
-                      value={formData.spotifyLink}
-                      onChange={(e) => handleChange('spotifyLink', e.target.value)}
+                      value={formData.jiosavanLink}
+                      onChange={(e) => handleChange('jiosavanLink', e.target.value)}
                     />
                   </div>
                 )}
-                {formData.spotifyStatus === 'no' && (
+                {formData.jiosavanStatus === 'no' && (
                   <div className="mt-4">
                     <input
                       type="text"
                       placeholder="What artist name do you want to be displayed on your JioSavan Profile?"
                       className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white p-4 rounded-lg"
-                      value={formData.spotifyArtistName}
-                      onChange={(e) => handleChange('spotifyArtistName', e.target.value)}
+                      value={formData.jioSavanArtistName}
+                      onChange={(e) => handleChange('jioSavanArtistName', e.target.value)}
                     />
                      <p className="font-bold text-[10px] ml-12 mt-1"> We will generate a new JioSavan Id for you based on the Artist Name that we collected at the Registration Page.</p>
                   </div>
@@ -547,7 +550,7 @@ export default function Dashboard() {
               </div>
             )}
 
-            {/* Step 4: YouTube */}
+            
             {/* Step 4: YouTube */}
             {step === 5 && (
               <div>

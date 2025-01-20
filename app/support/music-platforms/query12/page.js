@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDesktop } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/music-platforms" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,23 +52,31 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaDesktop className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Music <span className='text-[#e97f18]'>  Platforms </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']">  Can I release someone else music from my account? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> Why don’t my streams and views match my royalty payments? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-        
-    Yes, you can release someone else's music from your account, but you'll need to ensure that you have the proper legal rights and permissions to distribute their music. This is typically relevant for music managers, labels, or distributors who are authorized to handle and release music on behalf of artists. Make sure you have the appropriate agreements in place to avoid any copyright issues.
+  
+  
+
+    The discrepancy between streams/views and royalty payments can be due to factors like different payout rates, platform-specific revenue models, or delays in reporting. Payments are based on a share of the revenue generated from streams, not just the number of views.
+
+
+
+
          </span>
 
         
@@ -126,20 +134,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
+ 
   {
-    question: 'Can I Choose where my music is released ?',
-    url: '/support/your-account/query13'
+    question: 'Can I release music to Instagram & Facebook?',
+    url: '/support/music-platforms/query9'
   },
   {
-    question: 'How many tracks are on Single, EP and Album?',
-     url: '/support/your-account/query14'
+    question: 'Can I add or remove songs to a release that is live?',
+    url: '/support/music-platforms/query10'
   },
-{
-  question: 'When will my YCE merch Arrive',
-   url: '/support/your-account/query15'
-},
-
-
+  {
+    question: 'What is artificial streaming?',
+    url: '/support/music-platforms/query11'
+  },
 
 ];
 

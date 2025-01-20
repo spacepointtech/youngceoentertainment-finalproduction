@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDesktop, FaChartLine } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/licensing-copy" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,29 +52,40 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaChartLine className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-2xl md:text-4xl font-semibold">
+             Licensing, Copyright & <span className='text-[#e97f18]'> Metadata </span>
+            </h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> How much does music distribution cost with Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']">Do I need a license to release my music?</div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-     <p className='mb-2'> Young CEO Entertainment offers flexible music distribution plans to suit every artist&apos;s needs:</p>
-         <ul className='list-disc  list-inside '> 
-          <li> Independent Artists: Ideal for solo musicians, priced at ₹1001. </li>
-          <li> Duo Plan: Perfect for collaborations, available at ₹2001. </li>
-          <li> Label Plan: Tailored for music labels, starting at ₹4899.
-          </li>
-         </ul>
+   <p className='mt-2'>
+   If your music is entirely your own original creation, you automatically own the copyright and likely won’t need any licenses! 🙌
+     </p> 
+ 
+   <p className='mt-1'>   
+   Keep in mind: This can vary depending on your region 🌍.
+   </p>
+      <p className='mt-1'> 
+      However, if you’re releasing a cover, remix, or a track that includes samples, you’ll usually need to obtain a license before releasing your music to avoid potential legal issues with the original copyright holders.
+       </p>
+       <p className='mt-1'> 
+       For more information on music licensing, check out this article 🎶.
+       </p>
+       
          </span>
 
         
@@ -132,23 +143,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
+  {
+    question: 'How do I report fraudulent Spotify playlists?',
+      url: '/support/licensing-copy/query1'
+  },
   
-    {
-      question: 'what is Young Ceo Entertainment',
-      url: '/support/your-account/query1'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/your-account/query3'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/your-account/query4'
-},
-
-
-
+  {
+    question: 'Can I release cover songs, remixes, or songs using samples?',
+      url: '/support/licensing-copy/query3'
+  },
+  {
+    question: 'What is artificial streaming?',
+      url: '/support/licensing-copy/query4'
+  },
 ];
 
 export default FaqComponent;

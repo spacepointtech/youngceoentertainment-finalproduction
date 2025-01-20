@@ -128,21 +128,19 @@ const FaqComponent = () => {
 
 // FAQ Items
 const faqItems = [
-  
-    {
-      question: 'Who owns the rights to my music artists from one account?',
-      url: '/support/your-account/query5'
-    },
-{
-  question: 'Can I release music for multiple artists from one account?',
- 
-  url: '/support/your-account/query6'
-},
-{
-  question: "what does 'In Review' 'Scheduled' and 'Sent to Stores' mean on My releases?",
-  url: '/support/your-account/query7'
-},
-
+  {
+    question: 'Who owns the rights to my music when I distribute with YCE?',
+    url: '/support/your-account/query5',
+  },
+   
+  {
+    question: "What does 'In Review', 'Scheduled' and 'Sent To Stores' mean on my releases?",
+    url: '/support/your-account/query6'
+  },
+  {
+    question: "Can I release music in specific countries?",
+    url: '/support/your-account/query7'
+  },
 
 
 ];

@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDesktop } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/music-platforms" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,22 +52,28 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaDesktop className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Music <span className='text-[#e97f18]'>  Platforms </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> Can I release music for specific Countries ? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> How do I sign up for Apple Music for Artists? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
-    Currently, Young CEO Entertainment does not support country-specific releases. Your music will be distributed globally to all available platforms and regions. We aim to maximize your reach and audience worldwide. Stay tuned for updates as we continue to enhance our services!
+        
+   
+ <p> To sign up for Apple Music for Artists, visit artists.apple.com and follow the instructions. Simply answer a few basic questions to verify your identity. </p>
+ <p className='mt-1'> Once completed, you’ll gain access to your artist profile. </p>
+
          </span>
 
         
@@ -127,20 +133,18 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-    question: 'Can I view music analytics in more detail ?',
-    url: '/support/your-account/query8'
+    question: 'Which stores & platforms can I release my music on?',
+    url: '/support/music-platforms/query8'
   },
-{
-  question: 'How Does Pre-Release Work?',
-  url: '/support/your-account/query9'
-},
-{
-  question: 'What is pre-order Gratification?',
-  url: '/support/your-account/query10'
-},
-
-
-
+  {
+    question: 'Can I release music to Instagram & Facebook?',
+    url: '/support/music-platforms/query9'
+  },
+  {
+    question: 'Can I add or remove songs to a release that is live?',
+    url: '/support/music-platforms/query10'
+  },
+  
 ];
 
 export default FaqComponent;

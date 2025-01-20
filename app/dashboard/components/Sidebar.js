@@ -299,9 +299,8 @@ export default function Sidebar({ progress }) {
   />
   <span className="text-white font-semibold text-[16px] mt-1">User</span>
 </div>
-
 {/* Progress Bar and Button */}
-<div className="flex flex-col items-start gap-4 left-1 ml-2">
+<div className="flex flex-col items-start gap-4 ml-2">
   {/* Progress Bar */}
   <div className="flex items-center">
     <div className="relative w-[139px] h-2 bg-[#615f5f] rounded-[100px] overflow-hidden">
@@ -311,11 +310,15 @@ export default function Sidebar({ progress }) {
   </div>
 
   {/* Button */}
-  <button className="mt-2 w-[192px] h-[35px] px-4 py-1 text-[14px] font-medium text-white border border-white rounded-full"
-  onClick={navigateToProfileQuestions}>
+  <button
+    className="w-[192px] h-[35px] px-4 py-1 text-[14px] font-medium text-white border border-white rounded-full ml-[-10px]"
+    onClick={navigateToProfileQuestions}
+  >
     Complete Your Profile
   </button>
 </div>
+
+
 
 </div>
 
@@ -348,10 +351,9 @@ export default function Sidebar({ progress }) {
       }`}
       style={{
         width: '110%', // Ensures the background spans the full width
-        borderTopLeftRadius: '28px',
-        borderBottomLeftRadius: '28px',
-        borderTopRightRadius: isActive(path) ? '0px' : '0px', // Upside curvy for active state
-        borderBottomRightRadius: isActive(path) ? '0px' : '0px', // Downside curvy for active state
+        borderTopLeftRadius: '30px',
+        borderBottomLeftRadius: '30px',
+       
       }}
     >
       <FontAwesomeIcon icon={icon} className={`${!disabled && 'text-lg'}`} />
@@ -377,23 +379,59 @@ export default function Sidebar({ progress }) {
       <div className="flex-grow" />
 
       {/* Upgrade Box at the bottom */}
-      <div className="h-[265px] w-[226px] bg-[#121212] rounded-2xl shadow-lg flex flex-col items-center justify-center relative">
-        {/* Outer Circle */}
-        <div className="w-[132px] h-[141.62px] rounded-full bg-[#333] flex items-center justify-center mt-6">
-          {/* Inner Circle */}
-          <div className="w-[84px] h-[84px] rounded-full bg-black flex items-center justify-center">
-            <FontAwesomeIcon icon={faBolt} className="text-white text-[44px]" />
-          </div>
-        </div>
 
-        {/* Upgrade Button */}
-        <button
-          onClick={handleUpgrade}
-          className="text-white font-semibold w-[178px] h-[50.43] bg-[#0F0F0F] border border-[#757575] px-10 py-4 rounded-2xl mt-6"
-        >
-          UPGRADE
-        </button>
-      </div>
+         {/* Main Box */}
+    {/* Main Box */}
+<div
+  className="h-[265px] ml-3 w-[226px] rounded-[36px]  flex flex-col items-center justify-center relative "
+  style={{
+    background: 'rgba(18, 18, 18, 1)',
+    backgroundBlendMode: 'multiply',
+    backgroundColor: 'rgba(255, 255, 255, 0.12)',
+  }}
+>
+  {/* Outer Circle with Gradient */}
+  <div
+    className="w-[132px] h-[141.62px] rounded-full flex items-center justify-center"
+    style={{
+      background: 'linear-gradient(to bottom, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0) 66%)',
+    }}
+  >
+    {/* Inner Circle with Gradient Stroke */}
+    <div
+      className="w-[84px] h-[84px] rounded-full flex items-center justify-center relative"
+      style={{
+        background: 'linear-gradient(to bottom, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0) 100%)',
+      }}
+    >
+      {/* Gradient Stroke */}
+      <div
+        className="absolute inset-0 rounded-full"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0) 85%)',
+          WebkitMask: 'radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
+          mask: 'radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
+        }}
+      />
+      {/* Icon with White Color */}
+      <FontAwesomeIcon
+        icon={faBolt}
+        className="text-white text-[44px] relative z-10"
+      />
+    </div>
+  </div>
+
+  {/* Upgrade Button */}
+  <button
+  onClick={handleUpgrade}
+  className="text-white font-semibold w-[178px] h-[50.43px] bg-[#0F0F0F] border border-[#757575] rounded-2xl flex items-center justify-center"
+>
+  UPGRADE
+</button>
+
+</div>
+
+
     </aside>
   );
 }

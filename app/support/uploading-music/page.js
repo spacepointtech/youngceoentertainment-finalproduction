@@ -360,7 +360,7 @@ const faqItems = [
    url: '/support/uploading-music/query19'
 },
 { 
-  question: 'How do I find my Amazon Music Artist ID?', 
+  question: 'How do I find my Amazon music Artist ID?', 
    url: '/support/uploading-music/query20'
 },
 { 

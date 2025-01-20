@@ -2,7 +2,7 @@
 import '@/app/style.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt } from 'react-icons/fa';
+import { FaSearch, FaChevronRight, FaChevronDown, FaEdit, FaThumbsUp, FaThumbsDown, FaUserAlt, FaDesktop } from 'react-icons/fa';
 import Link from 'next/link';
 const FaqComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container mx-16 px-6 py-4">
-        <Link href="/support" className="back-link ml-1 text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/music-platforms" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -52,23 +52,26 @@ const FaqComponent = () => {
       <div className="container mx-auto px-6 pb-16">
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
-            <FaUserAlt className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">Your <span className='text-[#e97f18]'>  Account </span></h2>
+            <FaDesktop className="text-4xl mb-4 text-[#A6A6A6]" />
+            <h2 className="text-4xl font-semibold">Music <span className='text-[#e97f18]'>  Platforms </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
-          <div className="faq-logo">
-            <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
-          </div>
+          <Link href="/">
+           <div className="faq-logo">
+                      <Image src="/images/logo.png" alt="Young CEO Entertainment" height={100} width={150} />
+                    </div>
+          </Link>
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> What is YouTube Music? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
+    YouTube Music is a separate streaming service by YouTube 🎥, offering music based on trends, tastes, and playlists 📈. To distribute your music there, simply select YouTube Music as a store in the YCE Release Builder!
+
          </span>
 
         
@@ -127,22 +130,19 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/subscription-renewal'
-    },
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account ?',
-  url: '/support/orders-history'
-},
-
-
-
+  {
+    question: 'How do I sign up for Apple Music for Artists?',
+   url: '/support/music-platforms/query5'
+  },
+  {
+    question: 'How do I get a blue tick on my Spotify profile?',
+   url: '/support/music-platforms/query6'
+  },
+  {
+    question: 'How do I sign up for Spotify for Artists?',
+   url: '/support/music-platforms/query7'
+  },
+  
 ];
 
 export default FaqComponent;

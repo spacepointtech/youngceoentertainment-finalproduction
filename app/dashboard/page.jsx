@@ -31,7 +31,7 @@ export default function Dashboard() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
-  const targetDate = new Date('2024-11-20T00:00:00').getTime();
+  const targetDate = new Date('2025-02-25T12:16:59').getTime();
 
   const chartData = {
     labels: ['May 7', 'May 14', 'May 21', 'May 28'],
@@ -105,7 +105,8 @@ export default function Dashboard() {
       <main className="flex-1 p-4 sm:p-6 flex flex-col gap-6 text-white">
         {/* Header */}
         <Header />
-        
+  
+
         {/* Timer Section */}
         <section
   className="p-4 sm:p-6 bg-cover bg-center rounded-2xl hover:shadow-sm hover:shadow-[#e97f18] border-0 border-[#EBEBEB] mx-0 sm:mx-[20px] lg:mx-[40px] mb-6 lg:mb-0"
@@ -134,7 +135,7 @@ export default function Dashboard() {
       {/* Song Image and Details */}
       <div className="flex items-center gap-4 ml-5">
         <Image
-          src="/images/song-image.jpg"
+          src="/dashboard/coverart.jpg"
           alt="Song Cover art image "
           width='80'
           height='80'

@@ -129,19 +129,18 @@ const FaqComponent = () => {
 // FAQ Items
 const faqItems = [
   
-    {
-      question: 'How much does music distribution cost with Young Ceo Entertainment?',
-      url: '/support/your-account/query2'
-    },
-{
-  question: 'Can I release music for multiple artists from one account?',
- 
-  url: '/support/subscription-renewal'
-},
-{
-  question: 'Can I release music for multiple artists from one account?',
-  url: '/support/orders-history'
-},
+  {
+    question: 'How much does music distribution cost with Young Ceo Entertainment?',
+    url: '/support/your-account/query2',
+  },
+  {
+    question: 'Can I release music for multiple artists from one account?',
+    url: '/support/your-account/query3',
+  },
+  {
+    question: 'Who owns the rights to my music when I distribute with YCE?',
+    url: '/support/your-account/query5',
+  },
 
 
 

@@ -52,7 +52,7 @@ const FaqComponent = () => {
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
             <FaCloudUploadAlt  className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">uploading <span className='text-[#e97f18]'>  Music </span></h2>
+            <h2 className="text-4xl font-semibold">Uploading <span className='text-[#e97f18]'>  Music </span></h2>
             <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 

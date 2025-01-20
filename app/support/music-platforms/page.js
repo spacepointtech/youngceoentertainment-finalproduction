@@ -89,51 +89,51 @@
 // const faqItems = [
 //   {
 //     question: 'How do I check if my music is live in stores?',
-//    url: '/support/support-query-response'
+//    url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'Why is my release not live on Apple Music or iTunes?',
-//    url: '/support/support-query-response'
+//    url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'What payment methods does YCE accept?',
-//     url: '/support/support-query-response'
+//     url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'What is YouTube Music?',
-//   url: '/support/support-query-response'
+//   url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'How do I sign up for Apple Music for Artists?',
-//    url: '/support/support-query-response'
+//    url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'How do I get a blue tick on my Spotify profile?',
-//    url: '/support/support-query-response'
+//    url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'How do I sign up for Spotify for Artists?',
-//    url: '/support/support-query-response'
+//    url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'Which stores & platforms can I release my music on?',
-//     url: '/support/support-query-response'
+//     url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'Can I release music to Instagram & Facebook?',
-//     url: '/support/support-query-response'
+//     url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'How do I find my Spotify ID?',
-//     url: '/support/support-query-response'
+//     url: '/support/music-platforms/query1'
 //   },
 //   {
 //     question: 'What is artificial streaming?',
-//     url: '/support/support-query-response'
+//     url: '/support/music-platforms/query1'
 //   },
 //       {
 //         question: 'Why don\’t my streams and views match my royalty payments?',
-//           url: '/support/support-query-response'
+//           url: '/support/music-platforms/query1'
 //       },
 
 // ];
@@ -237,51 +237,51 @@ const PlatformSupport = () => {
 const faqItems = [
   {
     question: 'How do I check if my music is live in stores?',
-   url: '/support/support-query-response'
+   url: '/support/music-platforms/query1'
   },
   {
-    question: 'Why is my release not live on Apple music or iTunes?',
-   url: '/support/support-query-response'
+    question: 'Why is my release not live on Apple Music or iTunes?',
+   url: '/support/music-platforms/query2'
   },
   {
-    question: 'What payment methods does YCE accept?',
-    url: '/support/support-query-response'
+    question: 'Can I release music to Beatport?',
+    url: '/support/music-platforms/query3'
   },
   {
     question: 'What is YouTube music?',
-  url: '/support/support-query-response'
-  },
-  {
-    question: 'How do I sign up for Apple Music for Artists?',
-   url: '/support/support-query-response'
-  },
-  {
-    question: 'How do I get a blue tick on my Spotify profile?',
-   url: '/support/support-query-response'
+  url: '/support/music-platforms/query4'
   },
   {
     question: 'How do I sign up for Spotify for Artists?',
-   url: '/support/support-query-response'
+   url: '/support/music-platforms/query5'
+  },
+  {
+    question: 'How do I get a blue tick on my Spotify profile?',
+   url: '/support/music-platforms/query6'
+  },
+  {
+    question: 'How do I sign up for Apple Music for Artists?',
+   url: '/support/music-platforms/query7'
   },
   {
     question: 'Which stores & platforms can I release my music on?',
-    url: '/support/support-query-response'
+    url: '/support/music-platforms/query8'
   },
   {
     question: 'Can I release music to Instagram & Facebook?',
-    url: '/support/support-query-response'
+    url: '/support/music-platforms/query9'
   },
   {
-    question: 'How do I find my Spotify ID?',
-    url: '/support/support-query-response'
+    question: 'Can I add or remove songs to a release that is live?',
+    url: '/support/music-platforms/query10'
   },
   {
     question: 'What is artificial streaming?',
-    url: '/support/support-query-response'
+    url: '/support/music-platforms/query11'
   },
       {
         question: 'Why don\’t my streams and views match my royalty payments?',
-          url: '/support/support-query-response'
+          url: '/support/music-platforms/query12'
       },
 
 ];

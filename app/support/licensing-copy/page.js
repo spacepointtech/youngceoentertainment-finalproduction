@@ -225,45 +225,22 @@ const LicenseSupport = () => {
 };
 const faqItems = [
     {
-        question: 'Do I need a license to release my music?',
-          url: '/support/support-query-response'
+        question: 'How do I report fraudulent Spotify playlists?',
+          url: '/support/licensing-copy/query1'
       },
       {
-        question: 'What is a UPC/EAN code?',
-          url: '/support/support-query-response'
+        question: 'Do I need a license to release my music?',
+          url: '/support/licensing-copy/query2'
       },
       {
         question: 'Can I release cover songs, remixes, or songs using samples?',
-         url: '/support/support-query-response'
+          url: '/support/licensing-copy/query3'
       },
       {
-        question: 'Will YCE promote my music?',
-          url: '/support/support-query-response'
+        question: 'What is artificial streaming?',
+          url: '/support/licensing-copy/query4'
       },
-      {
-        question: 'Does YCE provide ISRC & UPC codes?',
-          url: '/support/support-query-response'
-      },
-      {
-        question: 'Can I work with other distributors & record labels at the same time as YCE?',
-         url: '/support/support-query-response'
-      },
-      {
-        question: 'What is an ISRC code?',
-          url: '/support/support-query-response'
-      },
-      {
-        question: 'Can I use existing ISRC or UPC codes?',
-          url: '/support/support-query-response'
-      },
-      {
-        question: 'Where can I see my contract with Young Ceo Entertainment?',
-         url: '/support/support-query-response'
-      },
-      {
-        question: 'Why don\’t my streams and views match my royalty payments?',
-          url: '/support/support-query-response'
-      },
+     
 
 ];
 
