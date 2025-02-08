@@ -42,7 +42,7 @@ const FaqComponent = () => {
 
        {/* Back Link */}
        <div className="container mx-auto px-4 py-4">
-        <Link href="/support" className="back-link text-white text-sm md:text-lg">
+        <Link href="/support/articles" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -128,25 +128,17 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-      question: 'How do I remove a release from stores?',
-      url: '/support/faqs/query2'
-    },
+    question: 'What is Young Ceo Entertainment?',
+    url: '/support/articles/query1'
+  },
+ 
 {
-  question: 'What payment methods does YCE accept?',
-  answer: 'Your subscription renewal date is typically one year from the date of your last payment.',
-  url: '/support/faqs/query3'
+  question: 'Can I release music for multiple artists from one account? ',
+  url: '/support/articles/query3'
 },
 {
-  question: 'Will YCE promote my music?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How much will I get paid?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How do I create a new release?',
-  url: '/support/faqs/query4'
+  question: 'Who owns the rights to my music when I distribute with Young CEO Entertainment?',
+  url: '/support/articles/query4'
 },
 
 ];

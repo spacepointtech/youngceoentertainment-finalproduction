@@ -263,7 +263,7 @@ export default function Home() {
           </p>
         </div>
         <Link href="/signup">
-          <div className="h-[50px] sm:h-[62px] px-6 sm:px-[84px] ml-4 md:ml-10 hover:bg-[#A35911] py-4 mt-6 sm:mt-10 bg-[#e97f18] rounded-lg justify-center items-center gap-2.5 inline-flex hover:scale-105 transition-transform duration-300 ease-in-out">
+          <div className="h-[50px] sm:h-[62px] px-6  sm:px-[84px] ml-4 md:ml-10 hover:bg-[#A35911] py-4 mt-6 sm:mt-10 bg-[#e97f18] rounded-lg justify-center items-center gap-2.5 inline-flex hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="text-sm sm:text-base md:text-xl w-full text-white font-semibold text-center">
               Get Started
             </div>

@@ -42,8 +42,8 @@ const FaqComponent = () => {
 
 
       {/* Back Link */}
-      <div className="container md:mx-7 px-6 py-4">
-        <Link href="/support" className="back-link  text-white text-lg">
+      <div className="container mx-auto px-4 py-4">
+        <Link href="/support/articles" className="back-link ml-1 text-white text-lg">
           &lt; Back
         </Link>
       </div>
@@ -53,8 +53,8 @@ const FaqComponent = () => {
         <div className="faq-header flex items-center justify-between mb-6">
           <div className="flex flex-col">
             <FaCheck className="text-4xl mb-4 text-[#A6A6A6]" />
-            <h2 className="text-4xl font-semibold">What is <span className='text-[#e97f18]'>  Young Ceo Entertainment?</span></h2>
-            <p className="text-xl text-[#EBEBEB ] mb-6">Answers to questions we are asked most often.</p>
+            <h2 className="text-4xl font-semibold">What is <span className='text-[#e97f18]'>  Young Ceo Entertainment? </span></h2>
+            <p className="text-xl text-[#EBEBEB ] mb-6">How to get Started releasing music</p>
         <p className="text-[16px] mb-12 text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
 
           </div>
@@ -64,11 +64,11 @@ const FaqComponent = () => {
         </div>
        
         <div className="w-[1240px] h-[443px] p-[60px] bg-[#121212] rounded-[10px] shadow border border-[#e97f18] flex-col justify-start items-start inline-flex">
-    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment ? </div>
+    <div className="text-white text-4xl font-bold font-['Poppins']"> What is Young Ceo Entertainment? </div>
     <div className="self-stretch h-5" />
     <div className="self-stretch"><span className="text-[#ebebeb] text-base font-normal font-['Poppins'] leading-normal">  
         
-   
+    Young CEO Entertainment is a platform for local street artists, rappers, musicians, and beat producers to empower them to become their own CEOs and bring them to major audio streaming platforms like Spotify, AppleMusic, JioSaavn etc. Popular streaming platforms like these do not work with artists directly, they only work with distribution companies. That is where we come into the picture. We enable artists to leave the hassles of distribution to us and focus more on their art & creativity!
          </span>
 
         
@@ -96,7 +96,7 @@ const FaqComponent = () => {
 
         {/* FAQ Container */}
           {/* FAQ Container */}
-          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6 font-poppins">
+          <div className="faq-container bg-[#484848] bg-opacity-[24%] w-[1240] border border-[#A6A6A6] rounded-lg p-6">
           <div className="faq-list">
             {filteredFaqItems.length > 0 ? (
               filteredFaqItems.map((item, index) => (
@@ -128,25 +128,20 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-      question: 'How do I remove a release from stores?',
-      url: '/support/faqs/query2'
+    question: 'What is Young Ceo Entertainment?',
+    url: '/support/articles/query1'
+  },
+  {
+      question: 'How much does it cost to release music with Young CEO Entertainment? ',
+      url: '/support/articles/query2'
     },
 {
-  question: 'What payment methods does YCE accept?',
-  url: '/support/faqs/query3'
+  question: 'Can I release music for multiple artists from one account? ',
+  url: '/support/articles/query3'
 },
-{
-  question: 'Will YCE promote my music?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How much will I get paid?',
-  url: '/support/faqs/query4'
-},
-{
-  question: 'How do I create a new release?',
-  url: '/support/faqs/query4'
-},
+
+
+
 
 ];
 

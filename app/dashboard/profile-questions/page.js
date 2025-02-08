@@ -325,8 +325,8 @@ export default function Dashboard() {
   return (
     <div className="flex w-full h-[1742px] bg-[#0F0F0F] relative font-poppins">
       <Sidebar />
-      <main className="flex-1 p-6 flex flex-col gap-6 text-white font-poppins">
-        <div className=" bg-opacity-40 top-12 backdrop-blur-lg text-white w-[800px] p-8 rounded-lg shadow-lg z-10 relative ml-32"
+      <main className="flex-1 p-6 items-center flex flex-col gap-6 text-white font-poppins">
+        <div className=" bg-opacity-40  top-12 backdrop-blur-lg text-white w-[925px] p-8 rounded-xl z-10 relative"
         style={{ backgroundImage: "url('/dashboard/profile.svg')" }}
         >
           <div className="flex justify-between items-center mb-4">
@@ -349,7 +349,7 @@ export default function Dashboard() {
         placeholder="First Name"
         value={formData.fname}
         onChange={(e) => handleChange('fname', e.target.value)}
-        className="w-[304px] placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-10 bg-transparent border text-white p-4 rounded-lg mb-4"
+        className="w-[304px] placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-24 bg-transparent border text-white p-4 rounded-lg mb-4"
         required
       />
       <input
@@ -366,7 +366,7 @@ export default function Dashboard() {
       placeholder="Your Email Address"
       value={formData.email}
       onChange={(e) => handleChange('email', e.target.value)}
-      className="bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-10 border text-white w-[638px] p-4 mt-4 rounded-lg mb-4"
+      className="bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-24 border text-white w-[638px] p-4 mt-4 rounded-lg mb-4"
       disabled
     />
     <input
@@ -374,12 +374,12 @@ export default function Dashboard() {
       placeholder="Your Mobile No."
       value={formData.mobile}
       onChange={(e) => handleChange('mobile', e.target.value)}
-      className="bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-10 border w-[638px] text-white p-4 mt-4 rounded-lg mb-4"
+      className="bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold ml-24 border w-[638px] text-white p-4 mt-4 rounded-lg mb-4"
       required
     />
     <div className="mt-4">
       <p className="mb-4 text-center font-bold">I am a:</p>
-      <div className="border w-[638px] ml-10 border-[#e97f18] rounded-2xl flex items-center justify-center">
+      <div className="border w-[638px] ml-24 border-[#e97f18] rounded-2xl flex items-center justify-center">
         {['independent', 'label'].map((type) => (
           <div
             key={type}
@@ -468,7 +468,7 @@ export default function Dashboard() {
                   <p className="text-center">Do you have previous works <br /> on Spotify?</p>
                 </div>
                 <select
-                  className="w-[638px] ml-12 bg-transparent border border-white mt-10 text-white p-4 rounded-lg"
+                  className="w-[638px] ml-32 bg-transparent border border-white mt-10 text-white p-4 rounded-lg"
                   value={formData.spotifyStatus}
                   onChange={(e) => handleChange('spotifyStatus', e.target.value)}
                 >
@@ -483,7 +483,7 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="Provide link to your Spotify handle"
-                      className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white  p-4 rounded-lg"
+                      className="w-[638px] ml-32 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white  p-4 rounded-lg"
                       value={formData.spotifyLink}
                       onChange={(e) => handleChange('spotifyLink', e.target.value)}
                     />
@@ -494,11 +494,11 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="What artist name do you want to be displayed on your Spotify Profile?"
-                      className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white p-4 rounded-lg"
+                      className="w-[638px] ml-32 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white p-4 rounded-lg"
                       value={formData.spotifyArtistName}
                       onChange={(e) => handleChange('spotifyArtistName', e.target.value)}
                     />
-                     <p className="font-bold text-[10px] ml-12 mt-1"> We will generate a new Spotify Id for you based on the Artist Name that we collected at the Registration Page.</p>
+                     <p className="font-bold text-[10px] ml-32 mt-1"> We will generate a new Spotify Id for you based on the Artist Name that we collected at the Registration Page.</p>
                   </div>
                 )}
               </div>
@@ -514,7 +514,7 @@ export default function Dashboard() {
                   <p className="text-center">Do you have previous works <br /> on JioSavan?</p>
                 </div>
                 <select
-                  className="w-[638px] ml-12 bg-transparent border border-white mt-10 text-white p-4 rounded-lg"
+                  className="w-[638px] ml-32 bg-transparent border border-white mt-10 text-white p-4 rounded-lg"
                   value={formData.jiosavanStatus}
                   onChange={(e) => handleChange('jiosavanStatus', e.target.value)}
                 >
@@ -529,7 +529,7 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="Provide link to your JioSavan handle"
-                      className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white  p-4 rounded-lg"
+                      className="w-[638px] ml-32 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white  p-4 rounded-lg"
                       value={formData.jiosavanLink}
                       onChange={(e) => handleChange('jiosavanLink', e.target.value)}
                     />
@@ -540,11 +540,11 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="What artist name do you want to be displayed on your JioSavan Profile?"
-                      className="w-[638px] ml-12 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white p-4 rounded-lg"
+                      className="w-[638px] ml-32 bg-transparent placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold border border-white text-white p-4 rounded-lg"
                       value={formData.jioSavanArtistName}
                       onChange={(e) => handleChange('jioSavanArtistName', e.target.value)}
                     />
-                     <p className="font-bold text-[10px] ml-12 mt-1"> We will generate a new JioSavan Id for you based on the Artist Name that we collected at the Registration Page.</p>
+                     <p className="font-bold text-[10px] ml-32 mt-1"> We will generate a new JioSavan Id for you based on the Artist Name that we collected at the Registration Page.</p>
                   </div>
                 )}
               </div>
@@ -561,7 +561,7 @@ export default function Dashboard() {
                   <p className="text-center">Do you have previous works <br /> on YouTube?</p>
                 </div>
                 <select
-                  className="w-[638px] ml-12 bg-transparent border border-white mt-10 text-white  p-4 rounded-lg"
+                  className="w-[638px] ml-32 bg-transparent border border-white mt-10 text-white  p-4 rounded-lg"
                   value={formData.youtubeStatus}
                   onChange={(e) => handleChange('youtubeStatus', e.target.value)}
                 >
@@ -576,7 +576,7 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="Provide link to your YouTube Channel"
-                      className="w-[638px] ml-12 placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold bg-transparent border border-white text-white p-4 rounded-lg"
+                      className="w-[638px] ml-32 placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold bg-transparent border border-white text-white p-4 rounded-lg"
                       value={formData.youtubeLink}
                       onChange={(e) => handleChange('youtubeLink', e.target.value)}
                     />
@@ -587,11 +587,11 @@ export default function Dashboard() {
                     <input
                       type="text"
                       placeholder="What artist name do you want to be displayed on your YouTube Profile?"
-                      className="w-[638px] placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold bg-transparent border border-white text-white ml-12 p-4 rounded-lg"
+                      className="w-[638px] placeholder:text-[#ffffff] placeholder:opacity-20 placeholder:font-semibold bg-transparent border border-white text-white ml-32 p-4 rounded-lg"
                       value={formData.youtubeArtistName}
                       onChange={(e) => handleChange('youtubeArtistName', e.target.value)}
                     />
-                    <p className="font-bold text-[10px] ml-12 mt-1"> We will generate a new Youtube Channel for you based on the Artist Name that we collected at the Registration Page.</p>
+                    <p className="font-bold text-[10px] ml-32 mt-1"> We will generate a new Youtube Channel for you based on the Artist Name that we collected at the Registration Page.</p>
                   </div>
                 )}
               </div>
@@ -607,7 +607,7 @@ export default function Dashboard() {
     <div className="mt-4">
       <p className="text-center mb-2 font-bold text-4xl">Social Media Presence</p>
       <div className="mt-10 space-y-4">
-        <div className="relative w-[638px] ml-12">
+        <div className="relative w-[638px] left-32">
           <FaInstagram className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white opacity-80" />
           <input
             type="text"
@@ -617,7 +617,7 @@ export default function Dashboard() {
             onChange={(e) => handleChange('instagramLink', e.target.value)}
           />
         </div>
-        <div className="relative w-[638px] ml-12">
+        <div className="relative w-[638px] left-32">
           <FaFacebook className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white opacity-80" />
           <input
             type="text"
@@ -627,7 +627,7 @@ export default function Dashboard() {
             onChange={(e) => handleChange('facebookLink', e.target.value)}
           />
         </div>
-        <div className="relative w-[638px] ml-12">
+        <div className="relative w-[638px] left-32">
           <FaTwitter className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white opacity-80" />
           <input
             type="text"

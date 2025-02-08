@@ -2,12 +2,12 @@
 import Sidebar from '@/app/dashboard/components/Sidebar';
 import Image from 'next/image';
 import { FaPencilAlt, FaArrowUp, FaInstagram, FaFacebookF, FaTwitter, FaYoutube, FaCheckCircle, FaSpotify, FaItunes, FaAmazon } from 'react-icons/fa';
-import { useSession } from "next-auth/react";
+// import { useSession } from "next-auth/react";
 import Header from '@/app/dashboard/components/Header';
 
 
 export default function Profile() {
-    const { data: session } = useSession();
+    // const { data: session } = useSession();
   return (
     <div className="flex flex-auto w-full h-[2100px] bg-[#0F0F0F]">
       <Sidebar progress={100}/>

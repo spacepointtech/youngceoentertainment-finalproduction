@@ -148,7 +148,7 @@ export default function Header() {
   return (
     <div className="relative">
       <div className="flex justify-end items-center mb-4">
-        <div className="flex items-center gap-4 mr-10">
+        <div className="flex items-center gap-1 mr-10">
           <Icon 
             icon="material-symbols:circle-notifications-rounded" 
             className='w-[41px] h-[41px] cursor-pointer'

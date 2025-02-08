@@ -207,7 +207,7 @@ const FaqComponent = () => {
           <div className="flex flex-col">
             <FaCheck className="text-2xl md:text-4xl mb-4 text-[#A6A6A6]" />
             <h2 className="text-2xl md:text-4xl font-semibold">
-             What is  <span className='text-[#e97f18]'> YCE ? </span>
+             What is  <span className='text-[#e97f18]'> Young Ceo Entertainment? </span>
             </h2>
             <p className="text-lg md:text-xl text-[#EBEBEB] mb-4 md:mb-6">How to get Started releasing music</p>
             <p className="text-sm md:text-base text-[#A6A6A6]">{filteredFaqItems.length} Articles</p>
@@ -250,24 +250,43 @@ const FaqComponent = () => {
 const faqItems = [
   
   {
-      question: 'How much does it cost to release music with YCE?',
-      url: '/support/faqs/query2'
+    question: 'What is Young Ceo Entertainment?',
+    url: '/support/articles/query1'
+  },
+  {
+      question: 'How much does it cost to release music with Young CEO Entertainment? ',
+      url: '/support/articles/query2'
     },
 {
-  question: 'How do I remove a release from stores?',
-  url: '/support/faqs/query3'
+  question: 'Can I release music for multiple artists from one account? ',
+  url: '/support/articles/query3'
 },
 {
-  question: 'Will YCE promote my music ?',
-  url: '/support/faqs/query4'
+  question: 'Who owns the rights to my music when I distribute with Young CEO Entertainment?',
+  url: '/support/articles/query4'
 },
 {
-  question: 'How much will I get paid ?',
-  url: '/support/faqs/query4'
+  question: "What does 'In Review', 'Scheduled', and 'Sent To Stores' mean on my releases?",
+  url: '/support/articles/query5'
 },
 {
-  question: 'How do I create a new release ?',
-  url: '/support/faqs/query4'
+  question: 'Can I release music in specific countries?',
+  url: '/support/articles/query6'
+},
+
+{
+  question: 'Can I view my music analytics in more detail?',
+  url: '/support/articles/query7'
+},
+
+{
+  question: 'How does Chart Registration Work?',
+  url: '/support/faqs/query8'
+},
+
+{
+  question: 'How does Pre-Release work?',
+  url: '/support/faqs/query9'
 },
 ];
 export default FaqComponent;

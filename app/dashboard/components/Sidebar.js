@@ -258,7 +258,7 @@
 'use client';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faUsers, faTshirt, faVideo, faCog, faSignOutAlt, faUser, faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faUsers, faTshirt, faVideo, faCog, faSignOutAlt, faUser, faBolt, faDesktop, faLinkSlash } from '@fortawesome/free-solid-svg-icons';
 import { useRouter, usePathname } from 'next/navigation';
 // import { signOut } from "next-auth/react";
 import { Icon } from "@iconify/react";
@@ -335,8 +335,8 @@ export default function Sidebar({ progress }) {
   {[
     { label: 'Music', path: '/dashboard', icon: faMusic },
     { label: 'Audience', path: '/dashboard/audience', icon: faUsers },
-    { label: 'Merch', path: null, icon: faTshirt, disabled: true },
-    { label: 'Video & Visuals', path: null, icon: faVideo, disabled: true },
+    { label: 'Your Release', path: '/dashboard/your-release', icon: faLinkSlash  },
+    { label: 'Revenue', path: '/dashboard/revenue', icon: faDesktop },
     { label: 'Settings', path: '/dashboard/settings', icon: faCog },
   ].map(({ label, path, icon, disabled }) => (
     <div
@@ -350,7 +350,7 @@ export default function Sidebar({ progress }) {
           : 'text-white'
       }`}
       style={{
-        width: '110%', // Ensures the background spans the full width
+        width: '117%', // Ensures the background spans the full width
         borderTopLeftRadius: '30px',
         borderBottomLeftRadius: '30px',
        
@@ -381,9 +381,9 @@ export default function Sidebar({ progress }) {
       {/* Upgrade Box at the bottom */}
 
          {/* Main Box */}
-    {/* Main Box */}
+  {/* Main Box */}
 <div
-  className="h-[265px] ml-3 w-[226px] rounded-[36px]  flex flex-col items-center justify-center relative "
+  className="h-[265px] ml-3 w-[226px] rounded-[36px] flex flex-col items-center justify-center relative"
   style={{
     background: 'rgba(18, 18, 18, 1)',
     backgroundBlendMode: 'multiply',
@@ -399,14 +399,14 @@ export default function Sidebar({ progress }) {
   >
     {/* Inner Circle with Gradient Stroke */}
     <div
-      className="w-[84px] h-[84px] rounded-full flex items-center justify-center relative"
+      className="w-[84px] h-[84px] rounded-full flex items-center justify-center relative shadow-lg"
       style={{
         background: 'linear-gradient(to bottom, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0) 100%)',
       }}
     >
       {/* Gradient Stroke */}
       <div
-        className="absolute inset-0 rounded-full"
+        className="absolute inset-0 rounded-full shadow-sm"
         style={{
           background: 'linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0) 85%)',
           WebkitMask: 'radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
@@ -423,12 +423,11 @@ export default function Sidebar({ progress }) {
 
   {/* Upgrade Button */}
   <button
-  onClick={handleUpgrade}
-  className="text-white font-semibold w-[178px] h-[50.43px] bg-[#0F0F0F] border border-[#757575] rounded-2xl flex items-center justify-center"
->
-  UPGRADE
-</button>
-
+    onClick={handleUpgrade}
+    className="text-white font-semibold w-[178px] h-[50.43px] bg-[#0F0F0F] border border-[#757575] rounded-2xl flex items-center justify-center"
+  >
+    UPGRADE
+  </button>
 </div>
 
 

@@ -437,9 +437,10 @@ export default function Pricing() {
 
       {activeTab === 'singleTrack' && (
      <div className=''> 
-    <div className="w-[1240px]  h-[252px] justify-center items-center inline-flex">
+    <div className="w-[1240px]   h-[252px] justify-center items-center inline-flex">
      </div>
-    <div className="w-[1240px] right-8 ml-20 mt-[120px] h-[252px] px-10 pt-5 pb-[22px] relative bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] justify-center inline-flex transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mr-10">
+    <div className="w-[1240px] mx-auto ml-20 mt-[120px] h-[252px] px-10 pt-5 pb-[22px] relative bg-[#0b0b0d] rounded-xl border border-[#9f9fa1] justify-center inline-flex transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#e97f18] hover:border-[#e97f18] hover:mr-10">
+      
     <div className="grow shrink basis-0 self-stretch pl-px py-[3px] justify-center items-center inline-flex">
 <div className="grow shrink basis-0 self-stretch justify-between items-center inline-flex">
 <div className="w-[689px] flex-col justify-start items-start gap-4 inline-flex">

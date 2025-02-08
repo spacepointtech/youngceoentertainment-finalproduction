@@ -716,6 +716,7 @@
 //         <div className="mt-10">
 //           {selectedSection === "Smart Link" && (
 //             <div>
+
 //               <div className="text-white text-2xl sm:text-4xl font-semibold font-['Poppins'] leading-tight">
 //                 Smart Link Traffic
 //               </div>

@@ -38,7 +38,7 @@ export default function Layout({ children }) {
   const pathname = usePathname(); // Get the current path
 
   // Hide Navbar 
-  const hideNavbar = ['/login', '/signup', '/reset', '/upgrade', '/upgrade-duo', '/upgrade-label', '/quest', '/subscription', '/pre-save', '/smart-links']
+  const hideNavbar = ['/login', '/signup', '/reset', '/upgrade', '/upgrade-duo', '/upgrade-label', '/quest', '/subscription', '/pre-save', '/smart-links', '/single-track']
     .includes(pathname) || pathname.startsWith('/dashboard');
 
   return (
