@@ -738,6 +738,8 @@ export default function Dashboard() {
   const [contributors, setContributors] = useState([]);
   const [role, setRole] = useState('');
   const [name, setName] = useState('');
+  const [releaseType, setReleaseType] = useState('');
+  const [showOtherInput, setShowOtherInput] = useState(false);
 
   const [tooltip, setTooltip] = useState({ visible: false, message: '', position: '' });
   const [selectedDate, setSelectedDate] = useState('');
@@ -901,17 +903,17 @@ export default function Dashboard() {
               alt="Key Details Illustration"
               objectFit="cover"
               className="absolute opacity-70 left-0 top-32"
-              width={470}
+              width={500}
               height={220}
             />
 
-            <div className="relative z-5 ml-72  mr-8">  
+            <div className="relative z-5 ml-80  mr-4">  
               {/* mr-8 */}
               {/* Text */}
               <p className="text-white text-[32px] font-normal text-left mb-6">Key Details of Your Release</p>
 
               {/* Progress Bar */}
-              <div className="bg-white w-[505px]  rounded-full h-2 mb-20 ">
+              <div className="bg-white w-[505px]  rounded-full h-2 mb-28 ">
                 <div className="bg-[#e97f18]  h-2 rounded-full" style={{ width: '25%' }}></div>
               </div>
 
