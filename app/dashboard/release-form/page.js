@@ -904,7 +904,7 @@ export default function Dashboard() {
               objectFit="cover"
               className="absolute opacity-70 left-0 top-32"
               width={500}
-              height={220}
+              height={221}
             />
 
             <div className="relative z-5 ml-80  mr-4">  
